@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>1月</string>
+		<key>valueX</key>
+		<string>1</string>
+		<key>valueY</key>
+		<string>200</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>2月</string>
+		<key>valueX</key>
+		<string>2</string>
+		<key>valueY</key>
+		<string>100</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>4月</string>
+		<key>valueX</key>
+		<string>4</string>
+		<key>valueY</key>
+		<string>300</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>5月</string>
+		<key>valueX</key>
+		<string>5</string>
+		<key>valueY</key>
+		<string>500</string>
+	</dict>
+    <dict>
+		<key>name</key>
+		<string>6月</string>
+		<key>valueX</key>
+		<string>6</string>
+		<key>valueY</key>
+		<string>250</string>
+	</dict>
+    <dict>
+		<key>name</key>
+		<string>9月</string>
+		<key>valueX</key>
+		<string>9</string>
+		<key>valueY</key>
+		<string>390</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>12月</string>
+		<key>valueX</key>
+		<string>12</string>
+		<key>valueY</key>
+		<string>400</string>
+	</dict>
+</array>
+</plist>

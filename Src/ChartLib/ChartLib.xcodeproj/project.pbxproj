@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50215A7D174F13F000157D66 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50215A7C174F13F000157D66 /* UIKit.framework */; };
+		50215A7F174F13F000157D66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50215A7E174F13F000157D66 /* Foundation.framework */; };
+		50215A81174F13F000157D66 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50215A80174F13F000157D66 /* CoreGraphics.framework */; };
+		50215A87174F13F000157D66 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50215A85174F13F000157D66 /* InfoPlist.strings */; };
+		50215A89174F13F000157D66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50215A88174F13F000157D66 /* main.m */; };
+		50215A8D174F13F000157D66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50215A8C174F13F000157D66 /* AppDelegate.m */; };
+		50215A8F174F13F000157D66 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 50215A8E174F13F000157D66 /* Default.png */; };
+		50215A91174F13F000157D66 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50215A90174F13F000157D66 /* Default@2x.png */; };
+		50215A93174F13F000157D66 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50215A92174F13F000157D66 /* Default-568h@2x.png */; };
+		50215A96174F13F000157D66 /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50215A95174F13F000157D66 /* GalleryViewController.m */; };
+		50215A99174F13F000157D66 /* GalleryViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50215A97174F13F000157D66 /* GalleryViewController_iPhone.xib */; };
+		50215A9C174F13F000157D66 /* GalleryViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50215A9A174F13F000157D66 /* GalleryViewController_iPad.xib */; };
+		50215AA7174F177E00157D66 /* ISSChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50215AA6174F177E00157D66 /* ISSChartView.m */; };
+		50215AAA174F17B500157D66 /* ISSChartHistogramLegendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50215AA9174F17B500157D66 /* ISSChartHistogramLegendView.m */; };
+		50215AAD174F17D500157D66 /* ISSChartHistogramContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50215AAC174F17D500157D66 /* ISSChartHistogramContentView.m */; };
+		50215AB3174F4DF800157D66 /* ISSChartHistogramAxisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50215AB2174F4DF800157D66 /* ISSChartHistogramAxisView.m */; };
+		50215AB6174F4F2200157D66 /* ISSChartAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 50215AB5174F4F2200157D66 /* ISSChartAxis.m */; };
+		504DDA291754492A00DA75CC /* ISSChartHistogramData.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DDA281754492A00DA75CC /* ISSChartHistogramData.m */; };
+		504DDA2C17544A7100DA75CC /* ISSComponentProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DDA2B17544A7100DA75CC /* ISSComponentProperty.m */; };
+		504DDA2F17544B5300DA75CC /* ISSChartAxisProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DDA2E17544B5300DA75CC /* ISSChartAxisProperty.m */; };
+		504DDA331754517500DA75CC /* ISSChartBarProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DDA321754517500DA75CC /* ISSChartBarProperty.m */; };
+		504DDA361754582D00DA75CC /* ISSChartBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DDA351754582D00DA75CC /* ISSChartBar.m */; };
+		504DDA38175481CC00DA75CC /* histogram.plist in Resources */ = {isa = PBXBuildFile; fileRef = 504DDA37175481CB00DA75CC /* histogram.plist */; };
+		504DDA3B1754864500DA75CC /* ITTBaseModelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DDA3A1754864500DA75CC /* ITTBaseModelObject.m */; };
+		504DDA4617549D5100DA75CC /* histogram2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 504DDA4517549D5100DA75CC /* histogram2.plist */; };
+		505BE53217587D6D0026F7CF /* ISSChartColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 505BE53117587D6D0026F7CF /* ISSChartColorUtil.m */; };
+		505BE535175884D50026F7CF /* ISSChartHistogramView.m in Sources */ = {isa = PBXBuildFile; fileRef = 505BE534175884D50026F7CF /* ISSChartHistogramView.m */; };
+		507577791758A50D00AF3DB4 /* ISSChartCoordinateSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 507577781758A50D00AF3DB4 /* ISSChartCoordinateSystem.m */; };
+		50D8E7C11756EBDB009FD6E6 /* ISSChartHistogramCoordinateSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D8E7C01756EBDA009FD6E6 /* ISSChartHistogramCoordinateSystem.m */; };
+		50D8E7C41756F64B009FD6E6 /* ISSChartAxisItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D8E7C31756F64B009FD6E6 /* ISSChartAxisItem.m */; };
+		50D8E7C7175752DD009FD6E6 /* ISSChartBarGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D8E7C6175752DC009FD6E6 /* ISSChartBarGroup.m */; };
+		50EF2DEF17530D7D0014D001 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EF2DEE17530D7D0014D001 /* QuartzCore.framework */; };
+		50EF2DF717533A1A0014D001 /* ISSChatGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EF2DF617533A1A0014D001 /* ISSChatGallery.m */; };
+		50EF2DFA17533AE30014D001 /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EF2DF917533AE30014D001 /* Manager.m */; };
+		50EF2DFF1753401E0014D001 /* ISSChartHistogramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EF2DFD1753401D0014D001 /* ISSChartHistogramViewController.m */; };
+		50EF2E001753401E0014D001 /* ISSChartHistogramViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50EF2DFE1753401E0014D001 /* ISSChartHistogramViewController.xib */; };
+		50EF2E031753481C0014D001 /* ISSDashing.c in Sources */ = {isa = PBXBuildFile; fileRef = 50EF2E011753481B0014D001 /* ISSDashing.c */; };
+		50EF2E0A1753561E0014D001 /* NSString+ITTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EF2E091753561E0014D001 /* NSString+ITTAdditions.m */; };
+		50EF2E0D175357960014D001 /* UIFont+ITTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EF2E0C175357960014D001 /* UIFont+ITTAdditions.m */; };
+		50FF3C9F175853BD00B41692 /* ISSChartAxisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF3C9E175853BD00B41692 /* ISSChartAxisView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		50215A79174F13F000157D66 /* ChartLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50215A7C174F13F000157D66 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		50215A7E174F13F000157D66 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		50215A80174F13F000157D66 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		50215A84174F13F000157D66 /* ChartLib-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChartLib-Info.plist"; sourceTree = "<group>"; };
+		50215A86174F13F000157D66 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		50215A88174F13F000157D66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		50215A8A174F13F000157D66 /* ChartLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChartLib-Prefix.pch"; sourceTree = "<group>"; };
+		50215A8B174F13F000157D66 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		50215A8C174F13F000157D66 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		50215A8E174F13F000157D66 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		50215A90174F13F000157D66 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		50215A92174F13F000157D66 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		50215A94174F13F000157D66 /* GalleryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
+		50215A95174F13F000157D66 /* GalleryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
+		50215A98174F13F000157D66 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GalleryViewController_iPhone.xib; sourceTree = "<group>"; };
+		50215A9B174F13F000157D66 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GalleryViewController_iPad.xib; sourceTree = "<group>"; };
+		50215AA5174F177E00157D66 /* ISSChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartView.h; sourceTree = "<group>"; };
+		50215AA6174F177E00157D66 /* ISSChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartView.m; sourceTree = "<group>"; };
+		50215AA8174F17B500157D66 /* ISSChartHistogramLegendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramLegendView.h; sourceTree = "<group>"; };
+		50215AA9174F17B500157D66 /* ISSChartHistogramLegendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramLegendView.m; sourceTree = "<group>"; };
+		50215AAB174F17D500157D66 /* ISSChartHistogramContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramContentView.h; sourceTree = "<group>"; };
+		50215AAC174F17D500157D66 /* ISSChartHistogramContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramContentView.m; sourceTree = "<group>"; };
+		50215AB1174F4DF700157D66 /* ISSChartHistogramAxisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramAxisView.h; sourceTree = "<group>"; };
+		50215AB2174F4DF800157D66 /* ISSChartHistogramAxisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramAxisView.m; sourceTree = "<group>"; };
+		50215AB4174F4F2200157D66 /* ISSChartAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartAxis.h; sourceTree = "<group>"; };
+		50215AB5174F4F2200157D66 /* ISSChartAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartAxis.m; sourceTree = "<group>"; };
+		504DDA271754492A00DA75CC /* ISSChartHistogramData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramData.h; sourceTree = "<group>"; };
+		504DDA281754492A00DA75CC /* ISSChartHistogramData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramData.m; sourceTree = "<group>"; };
+		504DDA2A17544A7100DA75CC /* ISSComponentProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSComponentProperty.h; sourceTree = "<group>"; };
+		504DDA2B17544A7100DA75CC /* ISSComponentProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSComponentProperty.m; sourceTree = "<group>"; };
+		504DDA2D17544B5300DA75CC /* ISSChartAxisProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartAxisProperty.h; sourceTree = "<group>"; };
+		504DDA2E17544B5300DA75CC /* ISSChartAxisProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartAxisProperty.m; sourceTree = "<group>"; };
+		504DDA311754517500DA75CC /* ISSChartBarProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartBarProperty.h; sourceTree = "<group>"; };
+		504DDA321754517500DA75CC /* ISSChartBarProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartBarProperty.m; sourceTree = "<group>"; };
+		504DDA341754582C00DA75CC /* ISSChartBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartBar.h; sourceTree = "<group>"; };
+		504DDA351754582D00DA75CC /* ISSChartBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartBar.m; sourceTree = "<group>"; };
+		504DDA37175481CB00DA75CC /* histogram.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = histogram.plist; sourceTree = "<group>"; };
+		504DDA391754864400DA75CC /* ITTBaseModelObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITTBaseModelObject.h; sourceTree = "<group>"; };
+		504DDA3A1754864500DA75CC /* ITTBaseModelObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITTBaseModelObject.m; sourceTree = "<group>"; };
+		504DDA4517549D5100DA75CC /* histogram2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = histogram2.plist; sourceTree = "<group>"; };
+		505BE53017587D6D0026F7CF /* ISSChartColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartColorUtil.h; sourceTree = "<group>"; };
+		505BE53117587D6D0026F7CF /* ISSChartColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartColorUtil.m; sourceTree = "<group>"; };
+		505BE533175884D50026F7CF /* ISSChartHistogramView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramView.h; sourceTree = "<group>"; };
+		505BE534175884D50026F7CF /* ISSChartHistogramView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramView.m; sourceTree = "<group>"; };
+		507577771758A50B00AF3DB4 /* ISSChartCoordinateSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartCoordinateSystem.h; sourceTree = "<group>"; };
+		507577781758A50D00AF3DB4 /* ISSChartCoordinateSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartCoordinateSystem.m; sourceTree = "<group>"; };
+		508B649A17536BA600BA6510 /* Consts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Consts.h; sourceTree = "<group>"; };
+		50D8E7BF1756EBDA009FD6E6 /* ISSChartHistogramCoordinateSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramCoordinateSystem.h; sourceTree = "<group>"; };
+		50D8E7C01756EBDA009FD6E6 /* ISSChartHistogramCoordinateSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramCoordinateSystem.m; sourceTree = "<group>"; };
+		50D8E7C21756F64B009FD6E6 /* ISSChartAxisItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartAxisItem.h; sourceTree = "<group>"; };
+		50D8E7C31756F64B009FD6E6 /* ISSChartAxisItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartAxisItem.m; sourceTree = "<group>"; };
+		50D8E7C5175752DC009FD6E6 /* ISSChartBarGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartBarGroup.h; sourceTree = "<group>"; };
+		50D8E7C6175752DC009FD6E6 /* ISSChartBarGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartBarGroup.m; sourceTree = "<group>"; };
+		50EF2DEE17530D7D0014D001 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		50EF2DF0175338400014D001 /* ITTCommonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITTCommonMacros.h; sourceTree = "<group>"; };
+		50EF2DF1175338400014D001 /* ITTDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITTDebug.h; sourceTree = "<group>"; };
+		50EF2DF517533A1A0014D001 /* ISSChatGallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChatGallery.h; sourceTree = "<group>"; };
+		50EF2DF617533A1A0014D001 /* ISSChatGallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChatGallery.m; sourceTree = "<group>"; };
+		50EF2DF817533AE30014D001 /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Manager.h; sourceTree = "<group>"; };
+		50EF2DF917533AE30014D001 /* Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Manager.m; sourceTree = "<group>"; };
+		50EF2DFC1753401D0014D001 /* ISSChartHistogramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramViewController.h; sourceTree = "<group>"; };
+		50EF2DFD1753401D0014D001 /* ISSChartHistogramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramViewController.m; sourceTree = "<group>"; };
+		50EF2DFE1753401E0014D001 /* ISSChartHistogramViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ISSChartHistogramViewController.xib; sourceTree = "<group>"; };
+		50EF2E011753481B0014D001 /* ISSDashing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ISSDashing.c; sourceTree = "<group>"; };
+		50EF2E021753481C0014D001 /* ISSDashing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSDashing.h; sourceTree = "<group>"; };
+		50EF2E081753561E0014D001 /* NSString+ITTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ITTAdditions.h"; sourceTree = "<group>"; };
+		50EF2E091753561E0014D001 /* NSString+ITTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ITTAdditions.m"; sourceTree = "<group>"; };
+		50EF2E0B175357960014D001 /* UIFont+ITTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+ITTAdditions.h"; sourceTree = "<group>"; };
+		50EF2E0C175357960014D001 /* UIFont+ITTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+ITTAdditions.m"; sourceTree = "<group>"; };
+		50FF3C9D175853BD00B41692 /* ISSChartAxisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartAxisView.h; sourceTree = "<group>"; };
+		50FF3C9E175853BD00B41692 /* ISSChartAxisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartAxisView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50215A76174F13F000157D66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50EF2DEF17530D7D0014D001 /* QuartzCore.framework in Frameworks */,
+				50215A7D174F13F000157D66 /* UIKit.framework in Frameworks */,
+				50215A7F174F13F000157D66 /* Foundation.framework in Frameworks */,
+				50215A81174F13F000157D66 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		501373D8175C437600AF52C4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				50215AA5174F177E00157D66 /* ISSChartView.h */,
+				50215AA6174F177E00157D66 /* ISSChartView.m */,
+				50FF3C9D175853BD00B41692 /* ISSChartAxisView.h */,
+				50FF3C9E175853BD00B41692 /* ISSChartAxisView.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		50215A70174F13F000157D66 = {
+			isa = PBXGroup;
+			children = (
+				50215A82174F13F000157D66 /* ChartLib */,
+				50215A7B174F13F000157D66 /* Frameworks */,
+				50215A7A174F13F000157D66 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50215A7A174F13F000157D66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50215A79174F13F000157D66 /* ChartLib.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50215A7B174F13F000157D66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50EF2DEE17530D7D0014D001 /* QuartzCore.framework */,
+				50215A7C174F13F000157D66 /* UIKit.framework */,
+				50215A7E174F13F000157D66 /* Foundation.framework */,
+				50215A80174F13F000157D66 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50215A82174F13F000157D66 /* ChartLib */ = {
+			isa = PBXGroup;
+			children = (
+				50EF2E071753561D0014D001 /* Addition */,
+				50215AA2174F14C700157D66 /* Common */,
+				50215AA3174F14C700157D66 /* Model */,
+				50215AA4174F14C700157D66 /* View */,
+				50215A8B174F13F000157D66 /* AppDelegate.h */,
+				50215A8C174F13F000157D66 /* AppDelegate.m */,
+				50215A94174F13F000157D66 /* GalleryViewController.h */,
+				50215A95174F13F000157D66 /* GalleryViewController.m */,
+				50215A97174F13F000157D66 /* GalleryViewController_iPhone.xib */,
+				50215A9A174F13F000157D66 /* GalleryViewController_iPad.xib */,
+				50EF2DFC1753401D0014D001 /* ISSChartHistogramViewController.h */,
+				50EF2DFD1753401D0014D001 /* ISSChartHistogramViewController.m */,
+				50EF2DFE1753401E0014D001 /* ISSChartHistogramViewController.xib */,
+				50215A83174F13F000157D66 /* Supporting Files */,
+			);
+			path = ChartLib;
+			sourceTree = "<group>";
+		};
+		50215A83174F13F000157D66 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				504DDA37175481CB00DA75CC /* histogram.plist */,
+				504DDA4517549D5100DA75CC /* histogram2.plist */,
+				50215A84174F13F000157D66 /* ChartLib-Info.plist */,
+				50215A85174F13F000157D66 /* InfoPlist.strings */,
+				50215A88174F13F000157D66 /* main.m */,
+				50215A8A174F13F000157D66 /* ChartLib-Prefix.pch */,
+				50215A8E174F13F000157D66 /* Default.png */,
+				50215A90174F13F000157D66 /* Default@2x.png */,
+				50215A92174F13F000157D66 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50215AA2174F14C700157D66 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				50EF2DF817533AE30014D001 /* Manager.h */,
+				50EF2DF917533AE30014D001 /* Manager.m */,
+				50EF2DF517533A1A0014D001 /* ISSChatGallery.h */,
+				50EF2DF617533A1A0014D001 /* ISSChatGallery.m */,
+				50EF2DF0175338400014D001 /* ITTCommonMacros.h */,
+				50EF2DF1175338400014D001 /* ITTDebug.h */,
+				50EF2E021753481C0014D001 /* ISSDashing.h */,
+				50EF2E011753481B0014D001 /* ISSDashing.c */,
+				508B649A17536BA600BA6510 /* Consts.h */,
+				505BE53017587D6D0026F7CF /* ISSChartColorUtil.h */,
+				505BE53117587D6D0026F7CF /* ISSChartColorUtil.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		50215AA3174F14C700157D66 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				504DDA391754864400DA75CC /* ITTBaseModelObject.h */,
+				504DDA3A1754864500DA75CC /* ITTBaseModelObject.m */,
+				50215AB4174F4F2200157D66 /* ISSChartAxis.h */,
+				50215AB5174F4F2200157D66 /* ISSChartAxis.m */,
+				504DDA2D17544B5300DA75CC /* ISSChartAxisProperty.h */,
+				504DDA2E17544B5300DA75CC /* ISSChartAxisProperty.m */,
+				504DDA341754582C00DA75CC /* ISSChartBar.h */,
+				504DDA351754582D00DA75CC /* ISSChartBar.m */,
+				504DDA311754517500DA75CC /* ISSChartBarProperty.h */,
+				504DDA321754517500DA75CC /* ISSChartBarProperty.m */,
+				504DDA2A17544A7100DA75CC /* ISSComponentProperty.h */,
+				504DDA2B17544A7100DA75CC /* ISSComponentProperty.m */,
+				50D8E7C5175752DC009FD6E6 /* ISSChartBarGroup.h */,
+				50D8E7C6175752DC009FD6E6 /* ISSChartBarGroup.m */,
+				504DDA271754492A00DA75CC /* ISSChartHistogramData.h */,
+				504DDA281754492A00DA75CC /* ISSChartHistogramData.m */,
+				507577771758A50B00AF3DB4 /* ISSChartCoordinateSystem.h */,
+				507577781758A50D00AF3DB4 /* ISSChartCoordinateSystem.m */,
+				50D8E7BF1756EBDA009FD6E6 /* ISSChartHistogramCoordinateSystem.h */,
+				50D8E7C01756EBDA009FD6E6 /* ISSChartHistogramCoordinateSystem.m */,
+				50D8E7C21756F64B009FD6E6 /* ISSChartAxisItem.h */,
+				50D8E7C31756F64B009FD6E6 /* ISSChartAxisItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		50215AA4174F14C700157D66 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				501373D8175C437600AF52C4 /* Base */,
+				50215AAB174F17D500157D66 /* ISSChartHistogramContentView.h */,
+				50215AAC174F17D500157D66 /* ISSChartHistogramContentView.m */,
+				50215AA8174F17B500157D66 /* ISSChartHistogramLegendView.h */,
+				50215AA9174F17B500157D66 /* ISSChartHistogramLegendView.m */,
+				505BE533175884D50026F7CF /* ISSChartHistogramView.h */,
+				505BE534175884D50026F7CF /* ISSChartHistogramView.m */,
+				50215AB1174F4DF700157D66 /* ISSChartHistogramAxisView.h */,
+				50215AB2174F4DF800157D66 /* ISSChartHistogramAxisView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		50EF2E071753561D0014D001 /* Addition */ = {
+			isa = PBXGroup;
+			children = (
+				50EF2E0B175357960014D001 /* UIFont+ITTAdditions.h */,
+				50EF2E0C175357960014D001 /* UIFont+ITTAdditions.m */,
+				50EF2E081753561E0014D001 /* NSString+ITTAdditions.h */,
+				50EF2E091753561E0014D001 /* NSString+ITTAdditions.m */,
+			);
+			path = Addition;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50215A78174F13F000157D66 /* ChartLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50215A9F174F13F000157D66 /* Build configuration list for PBXNativeTarget "ChartLib" */;
+			buildPhases = (
+				50215A75174F13F000157D66 /* Sources */,
+				50215A76174F13F000157D66 /* Frameworks */,
+				50215A77174F13F000157D66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChartLib;
+			productName = ChartLib;
+			productReference = 50215A79174F13F000157D66 /* ChartLib.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50215A71174F13F000157D66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Sword Zhou";
+			};
+			buildConfigurationList = 50215A74174F13F000157D66 /* Build configuration list for PBXProject "ChartLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 50215A70174F13F000157D66;
+			productRefGroup = 50215A7A174F13F000157D66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50215A78174F13F000157D66 /* ChartLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50215A77174F13F000157D66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50215A87174F13F000157D66 /* InfoPlist.strings in Resources */,
+				50215A8F174F13F000157D66 /* Default.png in Resources */,
+				50215A91174F13F000157D66 /* Default@2x.png in Resources */,
+				50215A93174F13F000157D66 /* Default-568h@2x.png in Resources */,
+				50215A99174F13F000157D66 /* GalleryViewController_iPhone.xib in Resources */,
+				50215A9C174F13F000157D66 /* GalleryViewController_iPad.xib in Resources */,
+				50EF2E001753401E0014D001 /* ISSChartHistogramViewController.xib in Resources */,
+				504DDA38175481CC00DA75CC /* histogram.plist in Resources */,
+				504DDA4617549D5100DA75CC /* histogram2.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50215A75174F13F000157D66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50215A89174F13F000157D66 /* main.m in Sources */,
+				50215A8D174F13F000157D66 /* AppDelegate.m in Sources */,
+				50215A96174F13F000157D66 /* GalleryViewController.m in Sources */,
+				50215AA7174F177E00157D66 /* ISSChartView.m in Sources */,
+				50215AAA174F17B500157D66 /* ISSChartHistogramLegendView.m in Sources */,
+				50215AAD174F17D500157D66 /* ISSChartHistogramContentView.m in Sources */,
+				50215AB3174F4DF800157D66 /* ISSChartHistogramAxisView.m in Sources */,
+				50215AB6174F4F2200157D66 /* ISSChartAxis.m in Sources */,
+				50EF2DF717533A1A0014D001 /* ISSChatGallery.m in Sources */,
+				50EF2DFA17533AE30014D001 /* Manager.m in Sources */,
+				50EF2DFF1753401E0014D001 /* ISSChartHistogramViewController.m in Sources */,
+				50EF2E031753481C0014D001 /* ISSDashing.c in Sources */,
+				50EF2E0A1753561E0014D001 /* NSString+ITTAdditions.m in Sources */,
+				50EF2E0D175357960014D001 /* UIFont+ITTAdditions.m in Sources */,
+				504DDA291754492A00DA75CC /* ISSChartHistogramData.m in Sources */,
+				504DDA2C17544A7100DA75CC /* ISSComponentProperty.m in Sources */,
+				504DDA2F17544B5300DA75CC /* ISSChartAxisProperty.m in Sources */,
+				504DDA331754517500DA75CC /* ISSChartBarProperty.m in Sources */,
+				504DDA361754582D00DA75CC /* ISSChartBar.m in Sources */,
+				504DDA3B1754864500DA75CC /* ITTBaseModelObject.m in Sources */,
+				50D8E7C11756EBDB009FD6E6 /* ISSChartHistogramCoordinateSystem.m in Sources */,
+				50D8E7C41756F64B009FD6E6 /* ISSChartAxisItem.m in Sources */,
+				50D8E7C7175752DD009FD6E6 /* ISSChartBarGroup.m in Sources */,
+				50FF3C9F175853BD00B41692 /* ISSChartAxisView.m in Sources */,
+				505BE53217587D6D0026F7CF /* ISSChartColorUtil.m in Sources */,
+				505BE535175884D50026F7CF /* ISSChartHistogramView.m in Sources */,
+				507577791758A50D00AF3DB4 /* ISSChartCoordinateSystem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		50215A85174F13F000157D66 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50215A86174F13F000157D66 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		50215A97174F13F000157D66 /* GalleryViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50215A98174F13F000157D66 /* en */,
+			);
+			name = GalleryViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		50215A9A174F13F000157D66 /* GalleryViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50215A9B174F13F000157D66 /* en */,
+			);
+			name = GalleryViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50215A9D174F13F000157D66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50215A9E174F13F000157D66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50215AA0174F13F000157D66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: LI XIAO (MK636A256V)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChartLib/ChartLib-Prefix.pch";
+				INFOPLIST_FILE = "ChartLib/ChartLib-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "185C78C2-8C08-46F5-88A3-2684665F2FC8";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		50215AA1174F13F000157D66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Beijing iTotem Tech Co., Ltd.";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChartLib/ChartLib-Prefix.pch";
+				INFOPLIST_FILE = "ChartLib/ChartLib-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F288BF7F-2ED8-48E4-B33B-E105118ED27B";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50215A74174F13F000157D66 /* Build configuration list for PBXProject "ChartLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50215A9D174F13F000157D66 /* Debug */,
+				50215A9E174F13F000157D66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50215A9F174F13F000157D66 /* Build configuration list for PBXNativeTarget "ChartLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50215AA0174F13F000157D66 /* Debug */,
+				50215AA1174F13F000157D66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50215A71174F13F000157D66 /* Project object */;
+}
