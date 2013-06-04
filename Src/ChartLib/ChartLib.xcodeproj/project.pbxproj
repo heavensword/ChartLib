@@ -32,7 +32,7 @@
 		504DDA331754517500DA75CC /* ISSChartBarProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DDA321754517500DA75CC /* ISSChartBarProperty.m */; };
 		504DDA361754582D00DA75CC /* ISSChartBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DDA351754582D00DA75CC /* ISSChartBar.m */; };
 		504DDA38175481CC00DA75CC /* histogram.plist in Resources */ = {isa = PBXBuildFile; fileRef = 504DDA37175481CB00DA75CC /* histogram.plist */; };
-		504DDA3B1754864500DA75CC /* ITTBaseModelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DDA3A1754864500DA75CC /* ITTBaseModelObject.m */; };
+		504DDA3B1754864500DA75CC /* ISSChartBaseModelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DDA3A1754864500DA75CC /* ISSChartBaseModelObject.m */; };
 		504DDA4617549D5100DA75CC /* histogram2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 504DDA4517549D5100DA75CC /* histogram2.plist */; };
 		505BE53217587D6D0026F7CF /* ISSChartColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 505BE53117587D6D0026F7CF /* ISSChartColorUtil.m */; };
 		505BE535175884D50026F7CF /* ISSChartHistogramView.m in Sources */ = {isa = PBXBuildFile; fileRef = 505BE534175884D50026F7CF /* ISSChartHistogramView.m */; };
@@ -95,8 +95,8 @@
 		504DDA341754582C00DA75CC /* ISSChartBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartBar.h; sourceTree = "<group>"; };
 		504DDA351754582D00DA75CC /* ISSChartBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartBar.m; sourceTree = "<group>"; };
 		504DDA37175481CB00DA75CC /* histogram.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = histogram.plist; sourceTree = "<group>"; };
-		504DDA391754864400DA75CC /* ITTBaseModelObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITTBaseModelObject.h; sourceTree = "<group>"; };
-		504DDA3A1754864500DA75CC /* ITTBaseModelObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITTBaseModelObject.m; sourceTree = "<group>"; };
+		504DDA391754864400DA75CC /* ISSChartBaseModelObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartBaseModelObject.h; sourceTree = "<group>"; };
+		504DDA3A1754864500DA75CC /* ISSChartBaseModelObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartBaseModelObject.m; sourceTree = "<group>"; };
 		504DDA4517549D5100DA75CC /* histogram2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = histogram2.plist; sourceTree = "<group>"; };
 		505BE53017587D6D0026F7CF /* ISSChartColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartColorUtil.h; sourceTree = "<group>"; };
 		505BE53117587D6D0026F7CF /* ISSChartColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartColorUtil.m; sourceTree = "<group>"; };
@@ -247,8 +247,8 @@
 		50215AA3174F14C700157D66 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				504DDA391754864400DA75CC /* ITTBaseModelObject.h */,
-				504DDA3A1754864500DA75CC /* ITTBaseModelObject.m */,
+				504DDA391754864400DA75CC /* ISSChartBaseModelObject.h */,
+				504DDA3A1754864500DA75CC /* ISSChartBaseModelObject.m */,
 				50215AB4174F4F2200157D66 /* ISSChartAxis.h */,
 				50215AB5174F4F2200157D66 /* ISSChartAxis.m */,
 				504DDA2D17544B5300DA75CC /* ISSChartAxisProperty.h */,
@@ -393,7 +393,7 @@
 				504DDA2F17544B5300DA75CC /* ISSChartAxisProperty.m in Sources */,
 				504DDA331754517500DA75CC /* ISSChartBarProperty.m in Sources */,
 				504DDA361754582D00DA75CC /* ISSChartBar.m in Sources */,
-				504DDA3B1754864500DA75CC /* ITTBaseModelObject.m in Sources */,
+				504DDA3B1754864500DA75CC /* ISSChartBaseModelObject.m in Sources */,
 				50D8E7C11756EBDB009FD6E6 /* ISSChartHistogramCoordinateSystem.m in Sources */,
 				50D8E7C41756F64B009FD6E6 /* ISSChartAxisItem.m in Sources */,
 				50D8E7C7175752DD009FD6E6 /* ISSChartBarGroup.m in Sources */,

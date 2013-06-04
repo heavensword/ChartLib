@@ -6,12 +6,12 @@
 //  Copyright (c) 2013 Sword Zhou. All rights reserved.
 //
 
-#import "ITTBaseModelObject.h"
+#import "ISSChartBaseModelObject.h"
 
 @class ISSChartAxisItem;
 @class ISSChartAxisProperty;
 
-@interface ISSChartAxis : ITTBaseModelObject
+@interface ISSChartAxis : ISSChartBaseModelObject
 
 @property (nonatomic, retain) NSArray *axisItems;
 @property (nonatomic, assign) CGFloat baseValue;

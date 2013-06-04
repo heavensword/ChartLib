@@ -5,7 +5,7 @@
 //
 
 
-@interface ITTBaseModelObject :NSObject <NSCoding, NSCopying>
+@interface ISSChartBaseModelObject :NSObject <NSCoding, NSCopying>
 {
 }
 

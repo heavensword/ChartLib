@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Sword Zhou. All rights reserved.
 //
 
-#import "ITTBaseModelObject.h"
+#import "ISSChartBaseModelObject.h"
 
-@interface ISSComponentProperty : ITTBaseModelObject
+@interface ISSComponentProperty : ISSChartBaseModelObject
 
 @end

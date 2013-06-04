@@ -192,24 +192,6 @@
 - (CGRect)getDrawableFrame
 {
     CGRect frame = self.bounds;
-    switch (_histogram.legendPosition) {
-        case ISSChartLegendPositionLeft:
-//            frame.size.width = CGRectGetWidth(self.bounds) - CGRectGetWidth(_legendView.frame);
-//            frame.origin.x = CGRectGetWidth(_legendView.frame);
-            break;
-        case ISSChartLegendPositionRight:
-//            frame.size.width = CGRectGetWidth(self.bounds) - CGRectGetWidth(_legendView.frame);
-            break;
-        case ISSChartLegendPositionTop:
-//            frame.origin.y = CGRectGetHeight(_legendView.frame);
-//            frame.size.height = CGRectGetHeight(self.bounds) - CGRectGetHeight(_legendView.frame);
-            break;
-        case ISSChartLegendPositionBottom:
-//            frame.size.height = CGRectGetHeight(self.bounds) - CGRectGetHeight(_legendView.frame);
-            break;
-        default:
-            break;
-    }
     return frame;
 }
 
@@ -295,7 +277,6 @@
     CGRect frame;
     CGFloat xPadding = _histogram.coordinateSystem.xAxis.axisProperty.padding;
     CGFloat yPadding = _histogram.coordinateSystem.yAxis.axisProperty.padding;
-    CGFloat xSpcaing = xPadding/2;
     CGFloat ySpcaing = yPadding/2;
     CGFloat width;
     CGFloat height;

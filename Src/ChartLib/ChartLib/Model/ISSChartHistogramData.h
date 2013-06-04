@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Sword Zhou. All rights reserved.
 //
 
-#import "ITTBaseModelObject.h"
+#import "ISSChartBaseModelObject.h"
 
 typedef enum {
     ISSHistogramStyleNone,
@@ -16,7 +16,7 @@ typedef enum {
 
 @class ISSChartHistogramCoordinateSystem;
 
-@interface ISSChartHistogramData : ITTBaseModelObject
+@interface ISSChartHistogramData : ISSChartBaseModelObject
 
 @property (nonatomic, retain) NSArray *bars;
 @property (nonatomic, retain) NSArray *barGroups;

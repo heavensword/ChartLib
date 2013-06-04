@@ -6,12 +6,12 @@
 //  Copyright (c) 2013 Sword Zhou. All rights reserved.
 //
 
-#import "ITTBaseModelObject.h"
+#import "ISSChartBaseModelObject.h"
 
 @class ISSChartBar;
 @class ISSChartBarProperty;
 
-@interface ISSChartBarGroup : ITTBaseModelObject
+@interface ISSChartBarGroup : ISSChartBaseModelObject
 
 @property (nonatomic, assign) NSInteger index;
 @property (nonatomic, assign) CGFloat   width;

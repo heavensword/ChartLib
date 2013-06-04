@@ -4,9 +4,9 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "ITTBaseModelObject.h"
+#import "ISSChartBaseModelObject.h"
 
-@implementation ITTBaseModelObject
+@implementation ISSChartBaseModelObject
 
 -(id)initWithDataDic:(NSDictionary*)data
 {

@@ -57,5 +57,4 @@
     ISSChartAxisProperty *copy = [[ISSChartAxisProperty allocWithZone:zone] initWithAxisProperty:self];
     return copy;
 }
-
 @end

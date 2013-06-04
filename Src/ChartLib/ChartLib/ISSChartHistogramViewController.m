@@ -93,7 +93,7 @@
     [histogram setXAxisItemsWithNames:xNames values:xValues];
     [histogram setYAxisItemsWithNames:yNames values:yValues];
     histogram.legendArray = @[@"流量统计", @"总金额", @"测试名称"];
-    histogram.legendPosition = ISSChartLegendPositionRight;
+    histogram.legendPosition = ISSChartLegendPositionTop;
     histogram.coordinateSystem.xAxis.rotateAngle = 30;
 //    histogram.coordinateSystem.yAxis.baseValue = 200;
     if (changed) {

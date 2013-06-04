@@ -6,11 +6,11 @@
 //  Copyright (c) 2013 Sword Zhou. All rights reserved.
 //
 
-#import "ITTBaseModelObject.h"
+#import "ISSChartBaseModelObject.h"
 
 @class ISSChartBarProperty;
 
-@interface ISSChartBar : ITTBaseModelObject
+@interface ISSChartBar : ISSChartBaseModelObject
 
 @property (nonatomic, retain) NSString *name;
 @property (nonatomic, assign) CGFloat valueX ;

@@ -162,11 +162,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "ChartLib/View/ISSChartHistogramView.m"
-         timestampString = "392017646.561534"
+         timestampString = "392018432.792969"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "263"
-         endingLineNumber = "263"
+         startingLineNumber = "245"
+         endingLineNumber = "245"
          landmarkName = "-caculateDrawableAreaSize"
          landmarkType = "5">
       </FileBreakpoint>
@@ -175,11 +175,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "ChartLib/View/ISSChartHistogramView.m"
-         timestampString = "392017646.561534"
+         timestampString = "392018432.792969"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "228"
-         endingLineNumber = "228"
+         startingLineNumber = "210"
+         endingLineNumber = "210"
          landmarkName = "-caculateDrawableAreaSize"
          landmarkType = "5">
       </FileBreakpoint>
@@ -214,11 +214,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "ChartLib/View/ISSChartHistogramView.m"
-         timestampString = "392017646.561534"
+         timestampString = "392018964.074704"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "376"
-         endingLineNumber = "376"
+         startingLineNumber = "357"
+         endingLineNumber = "357"
          landmarkName = "-caculateBarSizeAndFrame"
          landmarkType = "5">
       </FileBreakpoint>
@@ -227,11 +227,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "ChartLib/View/ISSChartHistogramView.m"
-         timestampString = "392017646.561534"
+         timestampString = "392018432.792969"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "247"
-         endingLineNumber = "247"
+         startingLineNumber = "229"
+         endingLineNumber = "229"
          landmarkName = "-caculateDrawableAreaSize"
          landmarkType = "5">
       </FileBreakpoint>
