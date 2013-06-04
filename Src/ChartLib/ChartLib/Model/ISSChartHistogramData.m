@@ -56,7 +56,9 @@
         _coordinateSystem = [histogram.coordinateSystem copy];
         _barDataArrays = [histogram.barDataArrays copy];
         _barGroups = [[NSArray alloc] initWithArray:histogram.barGroups copyItems:TRUE];
-        _histogramStyle = histogram.histogramStyle;        
+        _histogramStyle = histogram.histogramStyle;
+        _legendArray = [[NSArray alloc] initWithArray:histogram.legendArray copyItems:TRUE];
+        _legendPosition = histogram.legendPosition;
     }
     return self;
 }

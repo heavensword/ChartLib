@@ -34,10 +34,11 @@
     self = [super init];
     if (self) {
         _strokeColor = [axisProperty.strokeColor retain];
-        _labelFont = [axisProperty.labelFont copy];
+        _labelFont = [axisProperty.labelFont retain];
         _strokeWidth = axisProperty.strokeWidth;
         _axisStyle = axisProperty.axisStyle;
         _padding = axisProperty.padding;
+
     }
     return self;
 }

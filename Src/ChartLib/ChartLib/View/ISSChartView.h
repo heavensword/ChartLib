@@ -19,7 +19,7 @@
 @interface ISSChartView : UIView
 {
 @protected
-    CGSize                             _drawAreaSize;
+    CGSize                             _drawableAreaSize;
     ISSChartHistogramAxisView          *_axisView;
     ISSChartHistogramLegendView        *_legendView;
 }
@@ -35,7 +35,6 @@
 - (CGFloat)getAxisMarginYWithValueY:(CGFloat)valueY;
 
 - (CGRect)getYLableFrame:(CGFloat)marginY text:(NSString*)label;
-- (CGRect)getXLableFrame:(CGFloat)marginX text:(NSString*)label;
-
+- (CGRect)getXLableFrame:(NSInteger)index text:(NSString*)label;
 
 @end

@@ -57,16 +57,18 @@
     
     ISSChartAxisProperty *xAxisProperty = xAxis.axisProperty;
     ISSChartAxisProperty *yAxisProperty = yAxis.axisProperty;
+    
     //draw y axis
     CGContextSetStrokeColorWithColor(context, yAxisProperty.strokeColor.CGColor);
     CGContextSetLineWidth(context, yAxisProperty.strokeWidth);
     ISSContextSetLineDash(context, yAxisProperty.axisStyle);
     
-    CGContextMoveToPoint(context, xAxisProperty.padding, yAxisProperty.padding);
-    CGContextAddLineToPoint(context, xAxisProperty.padding, height - yAxisProperty.padding);
+    CGContextMoveToPoint(context, _coordinateSystem.leftMargin, _coordinateSystem.topMargin);
+    CGContextAddLineToPoint(context, _coordinateSystem.leftMargin, height - _coordinateSystem.bottomMargin);
     CGContextStrokePath(context);
 
     NSInteger index = 0;
+    NSInteger count;
     CGFloat marginX;
     CGFloat marginY;
     CGFloat valueFloat;
@@ -77,8 +79,8 @@
         for (id valueY in yAxis.values) {
             CGFloat valueFloat = [valueY floatValue];
             marginY = [_histogramView getAxisMarginYWithValueY:valueFloat];
-            CGContextMoveToPoint(context, xAxisProperty.padding, marginY);
-            CGContextAddLineToPoint(context, width - xAxisProperty.padding, marginY);
+            CGContextMoveToPoint(context, _coordinateSystem.leftMargin, marginY);
+            CGContextAddLineToPoint(context, width - _coordinateSystem.rightMargin, marginY);
         }
         CGContextClosePath(context);
         CGContextStrokePath(context);        
@@ -91,7 +93,7 @@
         marginY = [_histogramView getAxisMarginYWithValueY:valueFloat];
         
         CGContextMoveToPoint(context, xAxisProperty.padding, marginY);
-        CGContextAddLineToPoint(context, width - xAxisProperty.padding, marginY);
+        CGContextAddLineToPoint(context, width - _coordinateSystem.rightMargin, marginY);
         
         NSString *label = [yAxis.names objectAtIndex:index];
         [label drawInRect:[_histogramView getYLableFrame:marginY text:label] withFont:yAxisProperty.labelFont lineBreakMode:NSLineBreakByTruncatingTail alignment:NSTextAlignmentRight];
@@ -103,42 +105,39 @@
     CGContextSetLineWidth(context, xAxisProperty.strokeWidth);
     ISSContextSetLineDash(context, xAxisProperty.axisStyle);
 
-    CGContextMoveToPoint(context, xAxisProperty.padding, height - yAxisProperty.padding);
-    CGContextAddLineToPoint(context, width - xAxisProperty.padding, height - yAxisProperty.padding);
-    CGContextStrokePath(context);
+//    CGContextMoveToPoint(context, _coordinateSystem.leftMargin, height - _coordinateSystem.bottomMargin);
+//    CGContextAddLineToPoint(context, width - _coordinateSystem.leftMargin, height - _coordinateSystem.bottomMargin);
+//    CGContextStrokePath(context);
 
     //draw x grids
-    index = 0;    
+    index = 0;
+    count = [xAxis.values count];    
     if (xAxisProperty.axisStyle != kDashingNone) {
         CGContextBeginPath(context);
-        for (id valueX in xAxis.values) {
+        for (index = 0; index < count; index++) {
             marginX = [_histogramView getAxisXMarginXWithIndex:index];
-            ITTDINFO(@"marginX %f", marginX);            
-            CGContextMoveToPoint(context, marginX, yAxisProperty.padding);
-            CGContextAddLineToPoint(context, marginX, height - yAxisProperty.padding);
-            index++;            
+            CGContextMoveToPoint(context, marginX, _coordinateSystem.topMargin);
+            CGContextAddLineToPoint(context, marginX, height - _coordinateSystem.bottomMargin);
         }
         CGContextClosePath(context);
         CGContextStrokePath(context);
     }    
     //draw x labels
     index = 0;
-    for (id valueX in xAxis.values) {
+    for (index = 0; index < count; index++) {
         marginX = [_histogramView getAxisXMarginXWithIndex:index];
         NSString *label = [xAxis.names objectAtIndex:index];
-        CGRect textFrame = [_histogramView getXLableFrame:marginX text:label];        
+        CGRect textFrame = [_histogramView getXLableFrame:index text:label];
         CGContextSaveGState(context);
-        CGPoint point = CGPointMake(textFrame.origin.x + CGRectGetWidth(textFrame)/2,
-                                    textFrame.origin.y + CGRectGetHeight(textFrame)/2);
+        CGPoint center = CGPointMake(CGRectGetMidX(textFrame), CGRectGetMidY(textFrame));
         if (xAxis.rotateAngle > 0) {
-            CGContextTranslateCTM(context, point.x, point.y);
+            CGContextTranslateCTM(context, center.x, center.y);
             CGAffineTransform textTransform = CGAffineTransformMakeRotation(degreesToRadian(xAxis.rotateAngle));
             CGContextConcatCTM(context, textTransform);
-            CGContextTranslateCTM(context, -point.x, -point.y);            
+            CGContextTranslateCTM(context, -center.x, -center.y);
         }
         [label drawInRect:textFrame withFont:yAxisProperty.labelFont
             lineBreakMode:NSLineBreakByTruncatingTail alignment:NSTextAlignmentCenter];
-        index++;
         CGContextRestoreGState(context);
     }
     

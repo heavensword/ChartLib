@@ -135,13 +135,13 @@
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "ChartLib/View/ISSChartHistogramLegendView.m"
-         timestampString = "391945169.618037"
+         filePath = "ChartLib/View/ISSChartHistogramAxisView.m"
+         timestampString = "392011952.309761"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "89"
-         endingLineNumber = "89"
-         landmarkName = "-setHistogram:"
+         startingLineNumber = "140"
+         endingLineNumber = "140"
+         landmarkName = "-drawRect:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -149,7 +149,46 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "ChartLib/View/ISSChartHistogramAxisView.m"
-         timestampString = "391940280.921498"
+         timestampString = "392011952.309761"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "128"
+         endingLineNumber = "128"
+         landmarkName = "-drawRect:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ChartLib/View/ISSChartHistogramView.m"
+         timestampString = "392017646.561534"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "263"
+         endingLineNumber = "263"
+         landmarkName = "-caculateDrawableAreaSize"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ChartLib/View/ISSChartHistogramView.m"
+         timestampString = "392017646.561534"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "228"
+         endingLineNumber = "228"
+         landmarkName = "-caculateDrawableAreaSize"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ChartLib/View/ISSChartHistogramAxisView.m"
+         timestampString = "392011344.081538"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "52"
@@ -161,26 +200,13 @@
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "ChartLib/View/ISSChartHistogramAxisView.m"
-         timestampString = "391946793.954303"
+         filePath = "ChartLib/View/ISSChartHistogramView.m"
+         timestampString = "392017646.561534"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "141"
-         endingLineNumber = "141"
-         landmarkName = "-drawRect:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "ChartLib/View/ISSChartHistogramLegendView.m"
-         timestampString = "391945169.618037"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "110"
-         endingLineNumber = "110"
-         landmarkName = "-getLegendUnitFrame:"
+         startingLineNumber = "100"
+         endingLineNumber = "100"
+         landmarkName = "-setHistogram:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -188,12 +214,25 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "ChartLib/View/ISSChartHistogramView.m"
-         timestampString = "392002804.530534"
+         timestampString = "392017646.561534"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "236"
-         endingLineNumber = "236"
-         landmarkName = "-caculateDrawAreaSize"
+         startingLineNumber = "376"
+         endingLineNumber = "376"
+         landmarkName = "-caculateBarSizeAndFrame"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ChartLib/View/ISSChartHistogramView.m"
+         timestampString = "392017646.561534"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "247"
+         endingLineNumber = "247"
+         landmarkName = "-caculateDrawableAreaSize"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

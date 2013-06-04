@@ -56,15 +56,13 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        _drawAreaSize = self.bounds.size;
-        
+        _drawableAreaSize = self.bounds.size;
         _histogramContentView = [[ISSChartHistogramContentView alloc] initWithFrame:self.bounds];
         _histogramContentView.histogram = histogram;
         
         _axisView = [[ISSChartHistogramAxisView alloc] initWithFrame:self.bounds];
         _axisView.coordinateSystem = histogram.coordinateSystem;
         _axisView.histogramView = self;
-        //        _axisView.backgroundColor = [UIColor redColor];
         
         _legendView = [[ISSChartHistogramLegendView alloc] initWithFrame:CGRectZero];
         _legendView.direction = ISSChartLegendDirectionVertical;
@@ -92,11 +90,14 @@
     _histogram = [histogram retain];
     
     if (_histogram.legendArray && [_histogram.legendArray count]) {
+        if (ISSChartLegendPositionNone == _histogram.legendPosition) {
+            _histogram.legendPosition = ISSChartLegendPositionRight;
+        }
         _legendView.frame = [self getLegendFrame];
         [self adjustContentViewFrame];
         [self adjustAxisViewFrame];
     }
-    [self caculateDrawAreaSize];
+    [self caculateDrawableAreaSize];
     [_axisView setNeedsDisplay];
     
     [self caculateBarSizeAndFrame];
@@ -188,70 +189,105 @@
 
 #pragma mark - private methods
 
+- (CGRect)getDrawableFrame
+{
+    CGRect frame = self.bounds;
+    switch (_histogram.legendPosition) {
+        case ISSChartLegendPositionLeft:
+//            frame.size.width = CGRectGetWidth(self.bounds) - CGRectGetWidth(_legendView.frame);
+//            frame.origin.x = CGRectGetWidth(_legendView.frame);
+            break;
+        case ISSChartLegendPositionRight:
+//            frame.size.width = CGRectGetWidth(self.bounds) - CGRectGetWidth(_legendView.frame);
+            break;
+        case ISSChartLegendPositionTop:
+//            frame.origin.y = CGRectGetHeight(_legendView.frame);
+//            frame.size.height = CGRectGetHeight(self.bounds) - CGRectGetHeight(_legendView.frame);
+            break;
+        case ISSChartLegendPositionBottom:
+//            frame.size.height = CGRectGetHeight(self.bounds) - CGRectGetHeight(_legendView.frame);
+            break;
+        default:
+            break;
+    }
+    return frame;
+}
+
 - (void)adjustContentViewFrame
 {
-    CGRect frame = _histogramContentView.frame;
-    if (ISSChartLegendPositionLeft == _histogram.legendPosition) {
-        frame.size.width = CGRectGetWidth(self.bounds) - CGRectGetWidth(_legendView.frame);
-        frame.origin.x = CGRectGetWidth(_legendView.frame);
-    }
-    else if (ISSChartLegendPositionRight == _histogram.legendPosition) {
-        frame.size.width = CGRectGetWidth(self.bounds) - CGRectGetWidth(_legendView.frame);
-    }
-    else if(ISSChartLegendPositionTop== _histogram.legendPosition) {
-        frame.origin.y = CGRectGetHeight(_legendView.frame);
-        frame.size.height = CGRectGetHeight(self.bounds) - CGRectGetHeight(_legendView.frame);
-    }
-    else if(ISSChartLegendPositionBottom== _histogram.legendPosition) {
-        frame.size.height = CGRectGetHeight(self.bounds) - CGRectGetHeight(_legendView.frame);
-    }
-    _histogramContentView.frame = frame;
+    _histogramContentView.frame = [self getDrawableFrame];
 }
 
 - (void)adjustAxisViewFrame
 {
-    CGRect frame = _axisView.frame;
-    if (ISSChartLegendPositionLeft == _histogram.legendPosition) {
-        frame.size.width = CGRectGetWidth(self.bounds) - CGRectGetWidth(_legendView.frame);
-        frame.origin.x = CGRectGetWidth(_legendView.frame);
-    }
-    else if (ISSChartLegendPositionRight == _histogram.legendPosition) {
-        frame.size.width = CGRectGetWidth(self.bounds) - CGRectGetWidth(_legendView.frame);
-    }
-    else if(ISSChartLegendPositionTop== _histogram.legendPosition) {
-        frame.origin.y = CGRectGetHeight(_legendView.frame);
-        frame.size.height = CGRectGetHeight(self.bounds) - CGRectGetHeight(_legendView.frame);
-    }
-    else if(ISSChartLegendPositionBottom== _histogram.legendPosition) {
-        frame.size.height = CGRectGetHeight(self.bounds) - CGRectGetHeight(_legendView.frame);
-    }
-    _axisView.frame = frame;
+    _axisView.frame = [self getDrawableFrame];
 }
 
-- (void)caculateDrawAreaSize
+- (void)caculateDrawableAreaSize
 {
     if (!_histogram.legendArray || ![_histogram.legendArray count]) {
         _histogram.legendPosition = ISSChartLegendPositionNone;
     }
+    ISSChartAxisProperty *xAxisProperty = self.histogram.coordinateSystem.xAxis.axisProperty;
+    ISSChartAxisProperty *yAxisProperty = self.histogram.coordinateSystem.yAxis.axisProperty;
+    
+    ISSChartCoordinateSystem *coordinateSystem = _histogram.coordinateSystem;
+    CGFloat leftMargin = xAxisProperty.padding;
+    CGFloat topMargin = yAxisProperty.padding;
+    CGFloat rightMargin = xAxisProperty.padding;
+    CGFloat bottomMargin = yAxisProperty.padding;    
     switch (_histogram.legendPosition) {
         case ISSChartLegendPositionNone:
-            _drawAreaSize = self.bounds.size;
+            _drawableAreaSize = CGSizeMake(CGRectGetWidth(self.bounds) - 2 * self.histogram.coordinateSystem.xAxis.axisProperty.padding, CGRectGetHeight(self.bounds) -  2 * self.histogram.coordinateSystem.yAxis.axisProperty.padding);
             break;
         case ISSChartLegendPositionTop:
-            _drawAreaSize = CGSizeMake(CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds) - DEFAULT_LEGEND_UNIT_HEIGHT);
-            break;            
         case ISSChartLegendPositionBottom:
-            _drawAreaSize = CGSizeMake(CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds) - DEFAULT_LEGEND_UNIT_HEIGHT);
-            break;            
+            if (DEFAULT_LEGEND_UNIT_HEIGHT > yAxisProperty.padding) {
+                _drawableAreaSize = CGSizeMake(CGRectGetWidth(self.bounds) - 2 * xAxisProperty.padding, CGRectGetHeight(self.bounds) - DEFAULT_LEGEND_UNIT_HEIGHT - yAxisProperty.padding);
+                if (ISSChartLegendPositionTop == _histogram.legendPosition) {
+                    topMargin = DEFAULT_LEGEND_UNIT_HEIGHT;
+                    bottomMargin = yAxisProperty.padding;
+                }
+                else {
+                    bottomMargin = DEFAULT_LEGEND_UNIT_HEIGHT;
+                    topMargin = yAxisProperty.padding;
+                }
+            }
+            else {
+                _drawableAreaSize = CGSizeMake(CGRectGetWidth(self.bounds) - 2 * xAxisProperty.padding, CGRectGetHeight(self.bounds) - 2 * yAxisProperty.padding);
+            }
+            break;
         case ISSChartLegendPositionLeft:
-            _drawAreaSize = CGSizeMake(CGRectGetWidth(self.bounds) - DEFAULT_LEGEND_UNIT_WIDTH, CGRectGetHeight(self.bounds));
-            break;            
         case ISSChartLegendPositionRight:
-            _drawAreaSize = CGSizeMake(CGRectGetWidth(self.bounds) - DEFAULT_LEGEND_UNIT_WIDTH, CGRectGetHeight(self.bounds));
-            break;            
+            _drawableAreaSize = CGSizeMake(CGRectGetWidth(self.bounds) - DEFAULT_LEGEND_UNIT_WIDTH, CGRectGetHeight(self.bounds));
+            if (DEFAULT_LEGEND_UNIT_WIDTH > xAxisProperty.padding) {
+                _drawableAreaSize = CGSizeMake(CGRectGetWidth(self.bounds) - xAxisProperty.padding - DEFAULT_LEGEND_UNIT_WIDTH, CGRectGetHeight(self.bounds) - 2 * yAxisProperty.padding);
+                if (ISSChartLegendPositionLeft == _histogram.legendPosition) {
+                    leftMargin = DEFAULT_LEGEND_UNIT_WIDTH;
+                }
+                else {
+                    leftMargin = xAxisProperty.padding;
+                    rightMargin = DEFAULT_LEGEND_UNIT_WIDTH;
+                }
+            }
+            else {
+                _drawableAreaSize = CGSizeMake(CGRectGetWidth(self.bounds) - 2 * xAxisProperty.padding, CGRectGetHeight(self.bounds) -  2 * yAxisProperty.padding);
+            }
+            break;
         default:
             break;
     }
+    coordinateSystem.leftMargin = leftMargin;
+    coordinateSystem.topMargin = topMargin;
+    coordinateSystem.rightMargin = rightMargin;
+    coordinateSystem.bottomMargin = bottomMargin;
+}
+
+- (CGSize)getDrawableAreaSize
+{
+    return _drawableAreaSize;
+    //    CGSize size = CGSizeMake(_drawAreaSize.width - 2 * self.histogram.coordinateSystem.xAxis.axisProperty.padding, _drawAreaSize.height -  2 * self.histogram.coordinateSystem.yAxis.axisProperty.padding);
+    //    return size;
 }
 
 - (CGRect)getLegendFrame
@@ -261,40 +297,39 @@
     CGFloat yPadding = _histogram.coordinateSystem.yAxis.axisProperty.padding;
     CGFloat xSpcaing = xPadding/2;
     CGFloat ySpcaing = yPadding/2;
-    if (ISSChartLegendPositionTop == _histogram.legendPosition)  {
-        CGFloat width = [_histogram.legendArray count] * DEFAULT_LEGEND_UNIT_WIDTH;
-        frame = CGRectMake((CGRectGetWidth(self.bounds) - width)/2, ySpcaing, width, DEFAULT_LEGEND_UNIT_HEIGHT);
-        _drawAreaSize = CGSizeMake(CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds) - DEFAULT_LEGEND_UNIT_HEIGHT);
-    }
-    else if (ISSChartLegendPositionBottom == _histogram.legendPosition) {
-        CGFloat width = [_histogram.legendArray count] * DEFAULT_LEGEND_UNIT_WIDTH;
-        frame = CGRectMake((CGRectGetWidth(self.bounds) - width)/2, CGRectGetHeight(self.bounds) - DEFAULT_LEGEND_UNIT_HEIGHT - ySpcaing, width, DEFAULT_LEGEND_UNIT_HEIGHT);
-        _drawAreaSize = CGSizeMake(CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds) - DEFAULT_LEGEND_UNIT_HEIGHT);
-    }
-    else if (ISSChartLegendPositionLeft == _histogram.legendPosition)  {
-        CGFloat height = [_histogram.legendArray count] * DEFAULT_LEGEND_UNIT_HEIGHT;
-        frame = CGRectMake(xSpcaing/2, (CGRectGetHeight(self.bounds) - height)/2, DEFAULT_LEGEND_UNIT_WIDTH, height);
-        _drawAreaSize = CGSizeMake(CGRectGetWidth(self.bounds) - DEFAULT_LEGEND_UNIT_WIDTH, CGRectGetHeight(self.bounds));
-        
-    }
-    else if (ISSChartLegendPositionRight ==  _histogram.legendPosition) {
-        CGFloat height = [_histogram.legendArray count] * DEFAULT_LEGEND_UNIT_HEIGHT;
-        frame = CGRectMake(CGRectGetWidth(self.bounds) - DEFAULT_LEGEND_UNIT_WIDTH - xSpcaing, (CGRectGetHeight(self.bounds) - height)/2, DEFAULT_LEGEND_UNIT_WIDTH, height);
-        _drawAreaSize = CGSizeMake(CGRectGetWidth(self.bounds) - DEFAULT_LEGEND_UNIT_WIDTH, CGRectGetHeight(self.bounds));
+    CGFloat width;
+    CGFloat height;
+    CGFloat rightMargin = 10;
+    switch (_histogram.legendPosition) {
+        case ISSChartLegendPositionTop: {
+            width = [_histogram.legendArray count] * DEFAULT_LEGEND_UNIT_WIDTH;
+            frame = CGRectMake((CGRectGetWidth(self.bounds) - width)/2, ySpcaing, width, DEFAULT_LEGEND_UNIT_HEIGHT);
+            break;
+        }
+        case ISSChartLegendPositionBottom: {
+            width = [_histogram.legendArray count] * DEFAULT_LEGEND_UNIT_WIDTH;
+            frame = CGRectMake((CGRectGetWidth(self.bounds) - width)/2, CGRectGetHeight(self.bounds) - _histogram.coordinateSystem.bottomMargin + 30, width, DEFAULT_LEGEND_UNIT_HEIGHT);
+            break;
+        }
+        case ISSChartLegendPositionLeft: {
+            height = [_histogram.legendArray count] * DEFAULT_LEGEND_UNIT_HEIGHT;
+            frame = CGRectMake(rightMargin/2, (CGRectGetHeight(self.bounds) - height)/2, DEFAULT_LEGEND_UNIT_WIDTH - rightMargin, height);
+            break;
+        }
+        case ISSChartLegendPositionRight: {
+            height = [_histogram.legendArray count] * DEFAULT_LEGEND_UNIT_HEIGHT;
+            frame = CGRectMake(CGRectGetWidth(self.bounds) - DEFAULT_LEGEND_UNIT_WIDTH, (CGRectGetHeight(self.bounds) - height)/2, DEFAULT_LEGEND_UNIT_WIDTH - rightMargin, height);
+            break;
+        }
+        default:
+            break;
     }
     return frame;
 }
 
-- (CGSize)axisDrawAreaSize
-{
-    CGSize size = CGSizeMake(_drawAreaSize.width - 2 * self.histogram.coordinateSystem.xAxis.axisProperty.padding,
-                             _drawAreaSize.height -  2 * self.histogram.coordinateSystem.yAxis.axisProperty.padding);
-    return size;
-}
-
 - (CGRect)getDrawAreaFrame
 {
-    CGSize drawAreaSize = [self axisDrawAreaSize];
+    CGSize drawAreaSize = [self getDrawableAreaSize];
     ISSChartCoordinateSystem *coordinateSystem = self.histogram.coordinateSystem;
     CGFloat marginX = coordinateSystem.xAxis.axisProperty.padding;
     CGFloat marginY = coordinateSystem.yAxis.axisProperty.padding;
@@ -303,7 +338,7 @@
 
 - (CGFloat)getHeightWithValue:(CGFloat)valueY
 {
-    CGSize drawAreaSize = [self axisDrawAreaSize];
+    CGSize drawAreaSize = [self getDrawableAreaSize];
     ISSChartAxis *yAxis = self.histogram.coordinateSystem.yAxis;
     CGFloat rate =  (valueY - yAxis.baseValue)/yAxis.valueRange;
     CGFloat height = drawAreaSize.height * rate;
@@ -313,13 +348,13 @@
 - (CGFloat)getMarginXWithBar:(ISSChartBar*)bar group:(ISSChartBarGroup*)barGroup
 {
     CGFloat marginX = barGroup.index * barGroup.width + bar.barProperty.index * _barWidth;
-    marginX += self.histogram.coordinateSystem.xAxis.axisProperty.padding + _spacing/2;
+    marginX += self.histogram.coordinateSystem.leftMargin + _spacing/2;
     return marginX;
 }
 
 - (CGFloat)getMarginXWithValueX:(CGFloat)valueX
 {
-    CGSize drawAreaSize = [self axisDrawAreaSize];
+    CGSize drawAreaSize = [self getDrawableAreaSize];
     CGFloat rate =  (valueX - self.histogram.coordinateSystem.xAxis.baseValue)/self.histogram.coordinateSystem.xAxis.valueRange;
     CGFloat marginY = rate*drawAreaSize.width + self.histogram.coordinateSystem.xAxis.axisProperty.padding;
     return marginY;
@@ -327,7 +362,7 @@
 
 - (CGFloat)getMarginYWithValueY:(CGFloat)valueY
 {
-    CGSize drawAreaSize = [self axisDrawAreaSize];
+    CGSize drawAreaSize = [self getDrawableAreaSize];
     ISSChartAxis *yAxis = self.histogram.coordinateSystem.yAxis;
     CGFloat rate =  valueY / yAxis.valueRange;
     CGFloat marginY = drawAreaSize.height + yAxis.axisProperty.padding - rate*drawAreaSize.height;
@@ -338,8 +373,8 @@
 {
     ISSChartBarGroup *barGroup = _histogram.barGroups[0];
     CGFloat barCount = [barGroup.bars count];
-    CGRect drawAreaFrame = [self getDrawAreaFrame];
-    CGFloat groupWidth = drawAreaFrame.size.width / [self.histogram.barGroups count];
+    CGSize drawableAreaSize = [self getDrawableAreaSize];
+    CGFloat groupWidth = drawableAreaSize.width / [self.histogram.barGroups count];
     CGFloat minimumGroupWidth = DEFAULT_BAR_SPACING + DEFAULT_MINIMUM_BAR_WIDTH * barCount;
     CGFloat factor = 0.618;
     if (groupWidth < minimumGroupWidth) {
@@ -371,19 +406,21 @@
 #pragma  mark - axis methods
 - (CGRect)getYLableFrame:(CGFloat)marginY text:(NSString*)label
 {
-    CGFloat width = self.histogram.coordinateSystem.xAxis.axisProperty.padding;
+    CGFloat width = self.histogram.coordinateSystem.leftMargin;
     CGFloat height = [label heightWithFont:self.histogram.coordinateSystem.yAxis.axisProperty.labelFont withLineWidth:width];
     CGRect frame = CGRectMake(0, marginY - height/2, width - 5, height);
     return frame;
 }
 
-- (CGRect)getXLableFrame:(CGFloat)marginX text:(NSString*)label
+- (CGRect)getXLableFrame:(NSInteger)index text:(NSString*)label
 {
-    ISSChartAxis *yAxis = self.histogram.coordinateSystem.yAxis;
-    CGFloat height = yAxis.axisProperty.padding;
-    CGFloat marginY = _drawAreaSize.height - height/1.25;
-    CGFloat width = [label widthWithFont:self.histogram.coordinateSystem.xAxis.axisProperty.labelFont withLineHeight:height];
-    CGRect frame = CGRectMake(marginX - width/2, marginY, width, height);
+    CGFloat marginX = [self getAxisXMarginXWithIndex:index];
+    CGFloat textHeight = CGFLOAT_MAX;
+    UIFont *font = self.histogram.coordinateSystem.xAxis.axisProperty.labelFont;
+    CGFloat width = [label widthWithFont:font withLineHeight:textHeight];
+    textHeight = [label heightWithFont:font withLineWidth:width];
+    CGFloat marginY = [self getDrawableAreaSize].height + _histogram.coordinateSystem.topMargin;
+    CGRect frame = CGRectMake(marginX - width/2, marginY, width, textHeight);
     return frame;
 }
 
@@ -402,10 +439,11 @@
 
 - (CGFloat)getAxisMarginYWithValueY:(CGFloat)valueY
 {
-    CGSize drawAreaSize = [self axisDrawAreaSize];
-    CGFloat rate =  (valueY )/self.histogram.coordinateSystem.yAxis.valueRange;
-    //    CGFloat marginY = drawAreaSize.height + 2*self.coordinateSystem.yAxisData.axisProperty.padding - (rate*drawAreaSize.height + self.coordinateSystem.yAxisData.axisProperty.padding + _baseYMargin);
-    CGFloat marginY = drawAreaSize.height + self.histogram.coordinateSystem.yAxis.axisProperty.padding - rate*drawAreaSize.height;
+    ISSChartCoordinateSystem *coordinateSystem = _histogram.coordinateSystem;
+    ISSChartAxis *yAxis = coordinateSystem.yAxis;
+    CGSize drawAreaSize = [self getDrawableAreaSize];
+    CGFloat rate =  valueY / yAxis.valueRange;
+    CGFloat marginY = drawAreaSize.height + coordinateSystem.topMargin - rate*drawAreaSize.height;
     return marginY;
 }
 

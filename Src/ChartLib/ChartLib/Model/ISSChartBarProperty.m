@@ -26,10 +26,10 @@
 {
     self = [super init];
     if (self) {
-        _strokeColor = [property.strokeColor copy];
-        _fillColor = [property.fillColor copy];
-        _gradientEndColor = [property.gradientEndColor copy];
-        _gradientStartColor = [property.gradientStartColor copy];
+        _strokeColor = [property.strokeColor retain];
+        _fillColor = [property.fillColor retain];
+        _gradientEndColor = [property.gradientEndColor retain];
+        _gradientStartColor = [property.gradientStartColor retain];
         _strokeWidth = property.strokeWidth;
         _frame = property.frame;
         _index = property.index;

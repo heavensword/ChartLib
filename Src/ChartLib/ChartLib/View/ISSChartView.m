@@ -54,8 +54,8 @@
     return CGRectZero;
 }
 
-- (CGRect)getXLableFrame:(CGFloat)marginX text:(NSString*)label
+- (CGRect)getXLableFrame:(NSInteger)index text:(NSString*)label
 {
-    return CGRectZero;    
+    return CGRectZero;
 }
 @end

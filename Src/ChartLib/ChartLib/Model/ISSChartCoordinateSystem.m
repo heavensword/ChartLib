@@ -27,6 +27,10 @@
         _xAxis.axisProperty.padding = DEFAULT_PADDING_AXIS_X;
         _yAxis = [[ISSChartAxis alloc] init];
         _yAxis.axisProperty.padding = DEFAULT_PADDING_AXIS_Y;
+        _leftMargin = DEFAULT_PADDING_AXIS_X;
+        _rightMargin = DEFAULT_PADDING_AXIS_X;
+        _topMargin = DEFAULT_PADDING_AXIS_Y;
+        _bottomMargin = DEFAULT_PADDING_AXIS_Y;
     }
     return self;
 }

@@ -26,6 +26,11 @@
     if (self) {
         _xAxis = [coordinateSystem.xAxis copy];
         _yAxis = [coordinateSystem.yAxis copy];
+        
+        _leftMargin = coordinateSystem.leftMargin;
+        _topMargin = coordinateSystem.topMargin;
+        _rightMargin = coordinateSystem.rightMargin;
+        _bottomMargin = coordinateSystem.bottomMargin;
     }
     return self;
 }
