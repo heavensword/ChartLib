@@ -12,7 +12,8 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import <QuartzCore/QuartzCore.h>
+    #import "Consts.h"
     #import "ITTDebug.h"
     #import "ITTCommonMacros.h"
-    #import "Consts.h"
+    #import "UIView+ITTAdditions.h"
 #endif

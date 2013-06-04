@@ -8,6 +8,11 @@
 
 #import "ISSChartView.h"
 
-@interface ISSChartHistogramLegendView : ISSChartView
+@class ISSChartHistogramData;
+
+@interface ISSChartHistogramLegendView : UIView
+
+@property (nonatomic, assign) ISSChartLegendDirection direction;
+@property (nonatomic, retain) ISSChartHistogramData *histogram;
 
 @end

@@ -16,11 +16,12 @@
 
 @interface ISSChartHistogramData()
 {
-    NSArray     *_barColors;
 }
 @end
 
 @implementation ISSChartHistogramData
+
+@synthesize barColors = _barColors;
 
 - (NSDictionary*)attributeMapDictionary
 {
@@ -115,6 +116,24 @@
 }
 
 #pragma mark - public methods
+- (ISSChartLegendDirection)getLegendDirection
+{
+    ISSChartLegendDirection direction = ISSChartLegendDirectionNone;
+    switch (_legendPosition) {
+        case ISSChartLegendPositionRight:
+        case ISSChartLegendPositionLeft:
+            direction = ISSChartLegendDirectionVertical;
+            break;
+        case ISSChartLegendPositionBottom:
+        case ISSChartLegendPositionTop:
+            direction = ISSChartLegendDirectionHorizontal;
+            break;
+        default:
+            break;
+    }
+    return direction;
+}
+
 - (void)setXAxisItemsWithNames:(NSArray*)names values:(NSArray*)values
 {
     [_coordinateSystem.xAxis setAxisItemsWithNames:names values:values];
@@ -164,11 +183,25 @@
     [self generateBarColorsProperty];
 }
 
-- (void)setBarColors:(NSArray*)colors
+- (void)setBarColors:(NSArray*)barColors
 {
     RELEASE_SAFELY(_barColors);
-    _barColors = [colors retain];
+    _barColors = [barColors retain];
     [self generateBarColorsProperty];
+}
+
+- (NSArray*)barColors
+{
+    if (!_barColors||![_barColors count]) {
+        NSMutableArray *barColors = [[NSMutableArray alloc] init];
+        ISSChartBarGroup *firstGroup = _barGroups[0];
+        for (ISSChartBar *bar in firstGroup.bars) {
+            [barColors addObject:bar.barProperty.fillColor];
+        }
+        _barColors = [barColors retain];
+        [barColors release];
+    }
+    return _barColors;
 }
 
 - (NSArray*)bars

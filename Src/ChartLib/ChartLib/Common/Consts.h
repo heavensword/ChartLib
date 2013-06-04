@@ -10,13 +10,15 @@
 #define ChartLib_Consts_h
 
 #define DEFAULT_PADDING_AXIS_X      60.0
-#define DEFAULT_PADDING_AXIS_Y      35.0
+#define DEFAULT_PADDING_AXIS_Y      100.0
 #define DEFAULT_PADDING_AXIS        30.0
 #define DEFAULT_STROKE_WIDTH_AXIS   1.0
 #define DEFAULT_STROKE_WIDTH_BAR    1.0
 #define DEFAULT_MINIMUM_BAR_SPACING 4.0
 #define DEFAULT_MINIMUM_BAR_WIDTH   10.0
 #define DEFAULT_BAR_SPACING         8.0
+#define DEFAULT_LEGEND_UNIT_WIDTH   120
+#define DEFAULT_LEGEND_UNIT_HEIGHT  40
 
 #define KEY_ORIGIN_VALUE            @"KEY_ORIGIN_VALUE"
 #define KEY_NEW_VALUE               @"KEY_NEW_VALUE"
@@ -42,5 +44,19 @@ typedef enum {
     ISSChartBrownColor,
     ISSChartBlackColor,    
 }ISSChartColor;
+
+typedef enum {
+    ISSChartLegendDirectionNone,
+    ISSChartLegendDirectionHorizontal,
+    ISSChartLegendDirectionVertical,
+}ISSChartLegendDirection;
+
+typedef enum {
+    ISSChartLegendPositionNone,
+    ISSChartLegendPositionRight,
+    ISSChartLegendPositionBottom,
+    ISSChartLegendPositionTop,
+    ISSChartLegendPositionLeft,
+}ISSChartLegendPosition;
 
 #endif

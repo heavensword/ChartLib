@@ -130,11 +130,14 @@
         CGContextSaveGState(context);
         CGPoint point = CGPointMake(textFrame.origin.x + CGRectGetWidth(textFrame)/2,
                                     textFrame.origin.y + CGRectGetHeight(textFrame)/2);
-        CGContextTranslateCTM(context, point.x, point.y);
-        CGAffineTransform textTransform = CGAffineTransformMakeRotation(degreesToRadian(xAxis.rotateAngle));
-        CGContextConcatCTM(context, textTransform);
-        CGContextTranslateCTM(context, -point.x, -point.y);
-        [label drawInRect:textFrame withFont:yAxisProperty.labelFont lineBreakMode:NSLineBreakByTruncatingTail alignment:NSTextAlignmentCenter];
+        if (xAxis.rotateAngle > 0) {
+            CGContextTranslateCTM(context, point.x, point.y);
+            CGAffineTransform textTransform = CGAffineTransformMakeRotation(degreesToRadian(xAxis.rotateAngle));
+            CGContextConcatCTM(context, textTransform);
+            CGContextTranslateCTM(context, -point.x, -point.y);            
+        }
+        [label drawInRect:textFrame withFont:yAxisProperty.labelFont
+            lineBreakMode:NSLineBreakByTruncatingTail alignment:NSTextAlignmentCenter];
         index++;
         CGContextRestoreGState(context);
     }

@@ -84,7 +84,7 @@
 {
     ISSChartHistogramData *histogram = [[ISSChartHistogramData alloc] init];
 //    histogram.histogramStyle = ISSHistogramGradient;
-    histogram.coordinateSystem.xAxis.axisProperty.axisStyle = kDashingNone;
+//    histogram.coordinateSystem.xAxis.axisProperty.axisStyle = kDashingNone;
     static BOOL changed = FALSE;    
     NSArray *yValues = @[@(0), @(100), @(200), @(300), @(400), @(500)];
     NSArray *yNames = @[@"0", @"100", @"200", @"300", @"400", @"500"];
@@ -92,7 +92,9 @@
     NSArray *xNames = @[@"1月", @"2月", @"3月", @"4月", @"5月", @"6月", @"7月", @"8月", @"9月", @"10月", @"11月", @"12月"];
     [histogram setXAxisItemsWithNames:xNames values:xValues];
     [histogram setYAxisItemsWithNames:yNames values:yValues];
-//    histogram.coordinateSystem.xAxis.rotateAngle = 90;
+//    histogram.legendArray = @[@"流量统计", @"总金额", @"测试名称"];
+    histogram.legendPosition = ISSChartLegendPositionRight;
+    histogram.coordinateSystem.xAxis.rotateAngle = 45;
 //    histogram.coordinateSystem.yAxis.baseValue = 200;
     if (changed) {
         [histogram setBarColors:@[[UIColor redColor], [UIColor greenColor], [UIColor yellowColor]]];

@@ -19,12 +19,14 @@
 @interface ISSChartView : UIView
 {
 @protected
-    ISSChartHistogramAxisView *_axisView;
-    ISSChartHistogramLegendView        *_lengendView;
+    CGSize                             _drawAreaSize;
+    ISSChartHistogramAxisView          *_axisView;
+    ISSChartHistogramLegendView        *_legendView;
 }
 
 @property (nonatomic, retain, readonly) ISSChartHistogramAxisView *axisView;
-
+@property (nonatomic, retain, readonly) ISSChartHistogramLegendView *legendView;
+ 
 @property (nonatomic, retain) NSString *title;
 @property (nonatomic, assign) CGFloat baseXMargin;
 @property (nonatomic, assign) CGFloat baseYMargin;

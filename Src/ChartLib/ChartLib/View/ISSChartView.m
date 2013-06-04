@@ -21,7 +21,7 @@
 
 - (void)dealloc
 {
-    [_lengendView release];
+    [_legendView release];
     [_axisView release];
     [_title release];
     [super dealloc];
