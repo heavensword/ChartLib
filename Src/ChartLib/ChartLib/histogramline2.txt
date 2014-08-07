@@ -1,0 +1,157 @@
+{
+    "chart": {
+        "type": "2"
+    },
+    "title": {
+        "text": "总收入",
+        "font_size": "15",
+        "font_color": "#330022"
+    },
+    "subtitle": {
+        "text": "Demo演示",
+        "font_size": "12",
+        "font_color": "#223300"
+    },
+    "xaxis": {
+        "unit": "日期",
+        "labels": [
+            "201301",
+            "201302",
+            "201303",
+            "201304",
+            "201305"
+        ],
+        "stroke_color": "#DDDDDDFF",
+        "line_width": "2",
+        "font_size": "14",
+        "font_color": "#001920"
+    },
+    "yaxis": {
+        "unit": "万元",
+        "line_width": "2",
+        "stroke_color": "#DDDDDDFF",
+        "grid_color": "#DDDDDDFF",
+        "font_size": "10",
+        "font_color": "#001920",
+        "type": "0"
+    },
+    "vice_yaxis": {
+        "unit": "万元",
+        "line_width": "2",
+        "stroke_color": "#DDDDDD",
+        "font_size": "10",
+        "font_color": "#001920",
+        "type": "0"
+    },
+    "legend": {
+        "position": "bottom",
+        "font_size": "14"
+    },
+    "bars": [
+        {
+            "data": [
+                "100",
+                "200",
+                "330",
+                "220",
+                "120"
+            ],
+            "fill_colors": [
+                "#AAFFF",
+                "#FFF00"
+            ],
+            "name": "总行",
+            "stroke_color": "#00000000",
+            "join_type": "0",
+            "line_width": "1"
+        },
+        {
+            "data": [
+                "400",
+                "620",
+                "130",
+                "200",
+                "320"
+            ],
+            "fill_colors": [
+                "#AAFFF",
+                "#FFF00"
+            ],
+            "name": "上海分行",
+            "join_type": "0",
+            "line_width": "1",
+            "stroke_color": "#FFFFFF00"
+        },
+        {
+            "data": [
+                "120",
+                "200",
+                "300",
+                "430",
+                "120"
+            ],
+            "fill_colors": [
+                "#AAFFF",
+                "#FFF00"
+            ],
+            "name": "北京分行",
+            "join_type": "0",
+            "line_width": "1",
+            "stroke_color": "#00000000"
+        }
+    ],
+    "lines": [
+        {
+            "data": [
+                "10",
+                "20",
+                "33",
+                "22",
+                "12"
+            ],
+            "name": "光大",
+            "stroke_color": "#FF00FF",
+            "join_type": "0",
+            "line_width": "1"
+        },
+        {
+            "data": [
+                "200",
+                "220",
+                "330",
+                "100",
+                "120"
+            ],
+            "name": "招商",
+            "join_type": "1",
+            "line_width": "1",
+            "stroke_color": "#FF0000"
+        },
+        {
+            "data": [
+                "220",
+                "100",
+                "200",
+                "330",
+                "220"
+            ],
+            "name": "两家平均",
+            "join_type": "2",
+            "line_width": "1",
+            "stroke_color": "#0A0FFF"
+        },
+        {
+            "data": [
+                "220",
+                "100",
+                "300",
+                "130",
+                "420"
+            ],
+            "name": "两家平均2",
+            "join_type": "2",
+            "line_width": "1",
+            "stroke_color": "#F0AAFF"
+        }
+    ]
+}

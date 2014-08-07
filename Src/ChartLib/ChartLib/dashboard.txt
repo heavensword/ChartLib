@@ -1,0 +1,111 @@
+{
+    "radius": "200",
+    "inner_radius": "150",
+    "origin_x": "512",
+    "origin_y": "500",
+    "minimum_value": "-20",
+    "maximum_value": "100",
+    "start_angle": "180",
+    "end_angle": "360",
+    "graduation_line_width": "1",
+    "graduation_line_length": "6",
+    "graduation_line_color": "#393c0d",
+    "graduation_count": "21",
+    "arc_line_color": "#F3F3F3",
+    "arc_line_width": "1",
+    "values": [
+        {
+            "value": "75",
+            "colors": [
+                "c7524a"
+            ],
+            "name": "存款"
+        },
+        {
+            "value": "25",
+            "colors": [
+                "d38984"
+            ],
+            "name": "贷款余额"
+        }
+    ],
+    "value_label": "50%",
+    "legend": {
+        "position": "bottom",
+        "font_size": "14"
+    },
+    "graduation_intervals": [
+        {
+            "start_value": "-20",
+            "end_value": "20",
+            "colors": [
+                "#c7524a",
+                "#d38984",
+                "#c7524a"
+            ],
+            "name": "含义0"
+        },
+        {
+            "start_value": "20",
+            "end_value": "75",
+            "colors": [
+                "#c7524a",
+                "#d38984",
+                "#c7524a"
+            ],
+            "name": "含义一"
+        },
+        {
+            "start_value": "75",
+            "end_value": "90",
+            "colors": [
+                "#cfab3d",
+                "#e0ca80",
+                "#cfab3d"
+            ],
+            "name": "含义二"
+        },
+        {
+            "start_value": "90",
+            "end_value": "100",
+            "colors": [
+                "#8da734",
+                "#afc26f",
+                "#8da734"
+            ],
+            "name": "含义三"
+        }
+    ],
+    "labels": [
+        {
+            "value": "-20",
+            "label": "Bad",
+            "text_size": "16",
+            "text_color": "#FFFFFF"
+        },
+        {
+            "value": "25",
+            "label": "25%",
+            "text_size": "14",
+            "text_color": "#222222"
+        },
+        {
+            "value": "50",
+            "label": "half",
+            "text_size": "14",
+            "text_color": "#000000"
+        },
+        {
+            "value": "75",
+            "label": "",
+            "text_size": "14",
+            "text_color": "#222222"
+        },
+        {
+            "value": "100",
+            "label": "Good",
+            "text_size": "16",
+            "text_color": "#FFFFFF"
+        }
+    ]
+}

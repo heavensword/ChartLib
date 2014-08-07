@@ -1,0 +1,45 @@
+{
+    "chart": {
+        "type": "1"
+    },
+    "title": {
+        "text": "总收入",
+        "font_size": "15",
+        "font_color": "#330022"
+    },
+    "subtitle": {
+        "text": "Demo演示",
+        "font_size": "12",
+        "font_color": "#223300"
+    },
+    "radius": "200",
+    "inner_radius": "150",
+    "origin_x": "512",
+    "origin_y": "400",
+    "legend": {
+        "position": "bottom",
+        "font_size": "14"
+    },
+    "sections": [
+        {
+            "stroke_color": "#FFFFFF",
+            "fill_colors": [
+                "#AAFFF",
+                "#FFF00"
+            ],
+            "value": "458.61",
+            "name": "贷款外币折人民币",
+            "font_size": "14"
+        },
+        {
+            "stroke_color": "#FFFFFF",
+            "fill_colors": [
+                "#FFFFF",
+                "#FFF00"
+            ],
+            "value": "10426.24",
+            "name": "贷款人民币",
+            "font_size": "14"
+        }
+    ]
+}

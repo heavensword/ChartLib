@@ -1,0 +1,95 @@
+{
+    "chart": {
+        "type": "2"
+    },
+    "title": {
+        "text": "总收入",
+        "font_size": "15",
+        "font_color": "#330022"
+    },
+    "subtitle": {
+        "text": "Demo演示",
+        "font_size": "12",
+        "font_color": "#223300"
+    },
+    "xaxis": {
+        "unit": "月份",
+        "labels": [
+            "201301",
+            "201302",
+            "201303",
+            "201304",
+            "201305"
+        ],
+        "stroke_color": "#DDDDDDFF",
+        "line_width": "2",
+        "font_size": "14",
+        "font_color": "#001920"
+    },
+    "yaxis": {
+        "unit": "万元",
+        "line_width": "2",
+        "stroke_color": "#DDDDDDFF",
+        "grid_color": "#DDDDDDFF",		
+        "font_size": "10",
+        "font_color": "#001920",
+        "type": "0"
+    },
+    "legend": {
+        "position": "bottom",
+        "font_size": "14"
+    },
+    "bars": [
+        {
+            "data": [
+                "120",
+                "200",
+                "300",
+                "430",
+                "120"
+            ],
+			"fill_colors": [
+                "#444444",
+                "#EEEEEE",
+                "#444444"
+            ],
+            "name": "光大",
+            "stroke_color": "#FF0000",
+            "join_type": "0",
+            "line_width": "1"
+        },
+        {
+            "data": [
+                "120",
+                "210",
+                "303",
+                "220",
+                "152"
+            ],
+	 "fill_colors": [
+                "#AAFFF",
+                "#FFF00"
+            ],
+            "name": "招商",
+            "join_type": "0",
+            "line_width": "1",
+            "stroke_color": "#00000000"
+        },
+        {
+            "data": [
+                "140",
+                "140",
+                "330",
+                "122",
+                "300"
+            ],
+			"fill_colors": [
+                "#0000FF"
+            ],
+            "name": "两家平均",
+            "join_type": "0",
+            "line_width": "1",
+            "stroke_color": "#00000000"
+        }
+    ]
+}

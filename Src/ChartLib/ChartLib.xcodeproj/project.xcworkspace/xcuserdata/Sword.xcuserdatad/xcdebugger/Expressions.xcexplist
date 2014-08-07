@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[ISSChartPieView drawLegend:]:ISSChartPieView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "legend">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "+[ISSChartAxisItem axisItemsWithNames:values:]:ISSChartAxisItem.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ISSChartPieView displayFirstShowAnimation]:ISSChartPieView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ISSChartLineLegendView setLineData:]:ISSChartLineLegendView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ISSChartHistogramView getHeightWithValue:]:ISSChartHistogramView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ISSChartPieView getZeroDegreePieData]:ISSChartPieView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ISSChartHistogramData getBarGroupArray]:ISSChartHistogramData.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ISSChartHistogramLineView dataUpdateAnimation:]:ISSChartHistogramLineView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "newHistogramLineData">
+            </PersistentString>
+            <PersistentString
+               value = "originHistogramLineData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ISSChartPieData getLegendArray]:ISSChartPieData.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ISSChartHistogramView getXAxisMarginXWithIndex:]:ISSChartHistogramView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "frame">
+            </PersistentString>
+            <PersistentString
+               value = "bounds">
+            </PersistentString>
+            <PersistentString
+               value = "index">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ISSChartHistogramLineView caculateGraduationWidthAndSpacing]:ISSChartHistogramLineView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ISSChartHistogramLineContentView drawLine:line:]:ISSChartHistogramLineContentView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ISSChartPieView setPieData:]:ISSChartPieView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ISSChartPieData initWithPieData:]:ISSChartPieData.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ISSChartPieView dataUpdateAnimation:]:ISSChartPieView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "destionationPieData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ISSChartHistogramLineContentView drawLines:]:ISSChartHistogramLineContentView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ISSChartLineLegendView getLegendUnitFrame:]:ISSChartLineLegendView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "index">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ISSChartAxis axisItems]:ISSChartAxis.h">
+      </ContextState>
+      <ContextState
+         contextName = "-[ISSChartPieView drawRect:]:ISSChartPieView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "middleDegree">
+            </PersistentString>
+            <PersistentString
+               value = "legend">
+            </PersistentString>
+            <PersistentString
+               value = "textWidth">
+            </PersistentString>
+            <PersistentString
+               value = "index">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ISSChartLineData getLegendLoginSize:index:]:ISSChartLineData.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ISSChartLineLegendView layoutSubviews]:ISSChartLineLegendView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ISSChartLegendUnitView drawLineLegend:]:ISSChartLegendUnitView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

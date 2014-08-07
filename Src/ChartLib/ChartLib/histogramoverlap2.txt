@@ -1,0 +1,92 @@
+{
+    "chart": {
+        "type": "2"
+    },
+    "title": {
+        "text": "总收入",
+        "font_size": "15",
+        "font_color": "#330022"
+    },
+    "subtitle": {
+        "text": "Demo演示",
+        "font_size": "12",
+        "font_color": "#223300"
+    },
+    "xaxis": {
+        "unit": "月份",
+        "labels": [
+            "201301",
+            "201302",
+            "201303",
+            "201304",
+            "201305"
+        ],
+        "stroke_color": "#DDDDDDFF",
+        "line_width": "2",
+        "font_size": "14",
+        "font_color": "#001920"
+    },
+    "yaxis": {
+        "unit": "万元",
+        "line_width": "2",
+        "stroke_color": "#DDDDDDFF",
+        "grid_color": "#DDDDDDFF",		
+        "font_size": "10",
+        "font_color": "#001920",
+        "type": "0"
+    },
+    "legend": {
+        "position": "bottom",
+        "font_size": "14"
+    },
+    "bars": [
+        {
+            "data": [
+                "-100",
+                "150",
+                "-230",
+                "320",
+                "320"
+            ],			
+            "fill_colors": [
+                "#CC00EE"
+            ],
+            "name": "存款外币",
+            "stroke_color": "#00000000",
+            "join_type": "0",
+            "line_width": "1"
+        },
+        {
+            "data": [
+                "200",
+                "120",
+                "130",
+                "300",
+                "520"
+            ],
+            "fill_colors": [
+                "#00BBEE"
+            ],
+            "name": "贷款人民币贷款人民币",
+            "join_type": "0",
+            "line_width": "1",
+            "stroke_color": "#FFFFFF00"
+        },
+        {
+            "data": [
+                "150",
+                "420",
+                "230",
+                "600",
+                "220"
+            ],
+            "fill_colors": [
+                "#00BBEE"
+            ],
+            "name": "贷款占比",
+            "join_type": "0",
+            "line_width": "1",
+            "stroke_color": "#FFFFFF00"
+        }
+    ]
+}
