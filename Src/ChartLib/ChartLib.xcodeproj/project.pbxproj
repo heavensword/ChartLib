@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5013740D175C70F700AF52C4 /* ISSChartLegend.m in Sources */ = {isa = PBXBuildFile; fileRef = 5013740C175C70F700AF52C4 /* ISSChartLegend.m */; };
-		50137410175C726D00AF52C4 /* ISSChartLegendUnitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5013740F175C726D00AF52C4 /* ISSChartLegendUnitView.m */; };
+		5002C8AE1771A760009D7991 /* ISSChartDataGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5002C8AD1771A760009D7991 /* ISSChartDataGenerator.m */; };
+		50088D41184727D7008C795C /* ISSChartPieLegendUnitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50088D40184727D7008C795C /* ISSChartPieLegendUnitView.m */; };
+		5010DA0C17A8BF9C00F43EEF /* ISSChartWaterfallData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5010DA0917A8BF9C00F43EEF /* ISSChartWaterfallData.m */; };
+		5010DA0D17A8BF9C00F43EEF /* ISSChartWaterfallSymbolData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5010DA0B17A8BF9C00F43EEF /* ISSChartWaterfallSymbolData.m */; };
+		50120A581773FA6B000CA216 /* hint_bg_arrow_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 50120A561773FA6B000CA216 /* hint_bg_arrow_down.png */; };
+		50120A591773FA6B000CA216 /* hint_bg_arrow_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 50120A571773FA6B000CA216 /* hint_bg_arrow_left.png */; };
+		50167ADC185817CD00043663 /* ISSChartHistogramLegendUnitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50167ADB185817CD00043663 /* ISSChartHistogramLegendUnitView.m */; };
+		50167ADF1858198700043663 /* ISSChartLineLegendUnitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50167ADE1858198700043663 /* ISSChartLineLegendUnitView.m */; };
+		50167AE11858356D00043663 /* histogramline.txt in Resources */ = {isa = PBXBuildFile; fileRef = 50167AE01858356D00043663 /* histogramline.txt */; };
+		50167AE3185858F400043663 /* histogramline2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 50167AE2185858F400043663 /* histogramline2.txt */; };
 		50215A7D174F13F000157D66 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50215A7C174F13F000157D66 /* UIKit.framework */; };
 		50215A7F174F13F000157D66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50215A7E174F13F000157D66 /* Foundation.framework */; };
 		50215A81174F13F000157D66 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50215A80174F13F000157D66 /* CoreGraphics.framework */; };
@@ -21,26 +29,130 @@
 		50215A96174F13F000157D66 /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50215A95174F13F000157D66 /* GalleryViewController.m */; };
 		50215A99174F13F000157D66 /* GalleryViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50215A97174F13F000157D66 /* GalleryViewController_iPhone.xib */; };
 		50215A9C174F13F000157D66 /* GalleryViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50215A9A174F13F000157D66 /* GalleryViewController_iPad.xib */; };
-		50215AA7174F177E00157D66 /* ISSChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50215AA6174F177E00157D66 /* ISSChartView.m */; };
-		50215AAA174F17B500157D66 /* ISSChartHistogramLegendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50215AA9174F17B500157D66 /* ISSChartHistogramLegendView.m */; };
-		50215AAD174F17D500157D66 /* ISSChartHistogramContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50215AAC174F17D500157D66 /* ISSChartHistogramContentView.m */; };
-		50215AB3174F4DF800157D66 /* ISSChartHistogramAxisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50215AB2174F4DF800157D66 /* ISSChartHistogramAxisView.m */; };
-		50215AB6174F4F2200157D66 /* ISSChartAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 50215AB5174F4F2200157D66 /* ISSChartAxis.m */; };
-		504DDA291754492A00DA75CC /* ISSChartHistogramData.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DDA281754492A00DA75CC /* ISSChartHistogramData.m */; };
-		504DDA2C17544A7100DA75CC /* ISSComponentProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DDA2B17544A7100DA75CC /* ISSComponentProperty.m */; };
-		504DDA2F17544B5300DA75CC /* ISSChartAxisProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DDA2E17544B5300DA75CC /* ISSChartAxisProperty.m */; };
-		504DDA331754517500DA75CC /* ISSChartBarProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DDA321754517500DA75CC /* ISSChartBarProperty.m */; };
-		504DDA361754582D00DA75CC /* ISSChartBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DDA351754582D00DA75CC /* ISSChartBar.m */; };
-		504DDA38175481CC00DA75CC /* histogram.plist in Resources */ = {isa = PBXBuildFile; fileRef = 504DDA37175481CB00DA75CC /* histogram.plist */; };
-		504DDA3B1754864500DA75CC /* ISSChartBaseModelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DDA3A1754864500DA75CC /* ISSChartBaseModelObject.m */; };
-		504DDA4617549D5100DA75CC /* histogram2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 504DDA4517549D5100DA75CC /* histogram2.plist */; };
+		5024ABD2184C41C400C4FE91 /* ISSChartLineDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5024ABD1184C41C400C4FE91 /* ISSChartLineDataParser.m */; };
+		5024ABD5184C42CE00C4FE91 /* ISSChartHistogramDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5024ABD4184C42CE00C4FE91 /* ISSChartHistogramDataParser.m */; };
+		5024ABD8184C432700C4FE91 /* ISSChartPieDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5024ABD7184C432700C4FE91 /* ISSChartPieDataParser.m */; };
+		5024ABDB184C435A00C4FE91 /* ISSChartHistogramLineDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5024ABDA184C435A00C4FE91 /* ISSChartHistogramLineDataParser.m */; };
+		502625B81820B76C00DC251A /* ISSChartDashboardData.m in Sources */ = {isa = PBXBuildFile; fileRef = 502625B71820B76C00DC251A /* ISSChartDashboardData.m */; };
+		502625BC1820BB2100DC251A /* ISSChartDashboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 502625BB1820BB2100DC251A /* ISSChartDashboardView.m */; };
+		502625BF1820BB2D00DC251A /* ISSChartDashboardContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 502625BE1820BB2D00DC251A /* ISSChartDashboardContentView.m */; };
+		502625C21820BDD300DC251A /* ISSChartGraduationInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 502625C11820BDD300DC251A /* ISSChartGraduationInterval.m */; };
+		502625C61820D47300DC251A /* ISSChartParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 502625C51820D47300DC251A /* ISSChartParser.m */; };
+		502625C91820D4F300DC251A /* ISSChartParserDataFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 502625C81820D4F300DC251A /* ISSChartParserDataFactory.m */; };
+		502625CC1820D54400DC251A /* ISSChartDashboardDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 502625CB1820D54400DC251A /* ISSChartDashboardDataParser.m */; };
+		502625CF1820D97F00DC251A /* ISSChartGraduationProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 502625CE1820D97F00DC251A /* ISSChartGraduationProperty.m */; };
+		502625D31820DF2E00DC251A /* ISSChartDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 502625D11820DF2E00DC251A /* ISSChartDashboardViewController.m */; };
+		502625D41820DF2E00DC251A /* ISSChartDashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 502625D21820DF2E00DC251A /* ISSChartDashboardViewController.xib */; };
+		502625D61820EFD900DC251A /* dashboard.txt in Resources */ = {isa = PBXBuildFile; fileRef = 502625D51820EFD900DC251A /* dashboard.txt */; };
+		502625DA1821052700DC251A /* ISSChartCircleUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 502625D91821052700DC251A /* ISSChartCircleUtil.m */; };
+		502625DD1821123600DC251A /* ISSChartGraduation.m in Sources */ = {isa = PBXBuildFile; fileRef = 502625DC1821123600DC251A /* ISSChartGraduation.m */; };
+		50290DB1178FB9700091982A /* ISSChartHintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50290DB0178FB9700091982A /* ISSChartHintView.m */; };
+		50290DB5178FBA140091982A /* ISSChartHistogramHintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50290DB3178FBA130091982A /* ISSChartHistogramHintView.m */; };
+		50290DB6178FBA140091982A /* ISSChartHistogramHintView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50290DB4178FBA130091982A /* ISSChartHistogramHintView.xib */; };
+		502A439718717DB600CC7D5D /* ISSChartHistogramOverlapLineDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 502A439618717DB600CC7D5D /* ISSChartHistogramOverlapLineDataParser.m */; };
+		502A439E1871818900CC7D5D /* histogramoverlapline.txt in Resources */ = {isa = PBXBuildFile; fileRef = 502A439C1871818900CC7D5D /* histogramoverlapline.txt */; };
+		502A439F1871818900CC7D5D /* histogramoverlapline2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 502A439D1871818900CC7D5D /* histogramoverlapline2.txt */; };
+		5035E76917646147003AE996 /* ISSChartPieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5035E76717646147003AE996 /* ISSChartPieViewController.m */; };
+		5035E76A17646147003AE996 /* ISSChartPieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5035E76817646147003AE996 /* ISSChartPieViewController.xib */; };
+		503A181F1855575D00C005A5 /* ISSChartViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 503A181E1855575D00C005A5 /* ISSChartViewGenerator.m */; };
+		503A182218555B4000C005A5 /* ISSChartFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 503A182118555B4000C005A5 /* ISSChartFactory.m */; };
+		503A182518555E6900C005A5 /* ISSChartHistogramFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 503A182418555E6900C005A5 /* ISSChartHistogramFactory.m */; };
+		503A1828185560B600C005A5 /* ISSChartLineFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 503A1827185560B600C005A5 /* ISSChartLineFactory.m */; };
+		503A182B1855618800C005A5 /* ISSChartPieFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 503A182A1855618800C005A5 /* ISSChartPieFactory.m */; };
+		503A182E1855620900C005A5 /* ISSChartDashboardFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 503A182D1855620900C005A5 /* ISSChartDashboardFactory.m */; };
+		503A1832185562C300C005A5 /* ISSChartHistogramLineFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 503A1831185562C300C005A5 /* ISSChartHistogramLineFactory.m */; };
+		503A1835185564DE00C005A5 /* ISSChartHistogramOverlayFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 503A1834185564DE00C005A5 /* ISSChartHistogramOverlayFactory.m */; };
+		503A18381855655F00C005A5 /* ISSChartHistogramOverlayLineFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 503A18371855655F00C005A5 /* ISSChartHistogramOverlayLineFactory.m */; };
+		503A183B185565F700C005A5 /* ISSChartHistogramStackFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 503A183A185565F700C005A5 /* ISSChartHistogramStackFactory.m */; };
+		503A183E1855667C00C005A5 /* ISSChartHistogramStackLineFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 503A183D1855667C00C005A5 /* ISSChartHistogramStackLineFactory.m */; };
+		503A1841185569AF00C005A5 /* ISSChartWaterfallFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 503A1840185569AF00C005A5 /* ISSChartWaterfallFactory.m */; };
+		504C1DA2185EAC880064083E /* ISSChartHistogramOverlapLineLegend.m in Sources */ = {isa = PBXBuildFile; fileRef = 504C1DA1185EAC880064083E /* ISSChartHistogramOverlapLineLegend.m */; };
+		504C1DA5185EB0DD0064083E /* ISSChartLineLegend.m in Sources */ = {isa = PBXBuildFile; fileRef = 504C1DA4185EB0DD0064083E /* ISSChartLineLegend.m */; };
+		504C81921857080E00EF4F86 /* ISSChartHistogramLineHintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 504C81901857080E00EF4F86 /* ISSChartHistogramLineHintView.m */; };
+		504C81931857080E00EF4F86 /* ISSChartHistogramLineHintView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 504C81911857080E00EF4F86 /* ISSChartHistogramLineHintView.xib */; };
+		50537315184EC25800A37E52 /* ISSChartTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 50537314184EC25800A37E52 /* ISSChartTitle.m */; };
+		50537317184EDBA700A37E52 /* linedata2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 50537316184EDBA700A37E52 /* linedata2.txt */; };
+		50537C2C1851CDD4001DFBBD /* ISSChartBaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50537C2B1851CDD4001DFBBD /* ISSChartBaseCollectionViewCell.m */; };
+		50537C2F1851CE8B001DFBBD /* ISSChartViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50537C2E1851CE8B001DFBBD /* ISSChartViewCell.m */; };
+		50537C311851CE9C001DFBBD /* ISSChartViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50537C301851CE9C001DFBBD /* ISSChartViewCell.xib */; };
+		50537C341851D130001DFBBD /* CustomCellBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 50537C331851D130001DFBBD /* CustomCellBackground.m */; };
+		50537C3D1851D244001DFBBD /* ISSChartGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50537C3B1851D244001DFBBD /* ISSChartGalleryViewController.m */; };
+		50537C3E1851D244001DFBBD /* ISSChartGalleryViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50537C3C1851D244001DFBBD /* ISSChartGalleryViewController_iPad.xib */; };
+		5055193E177EB0BF00B4A78E /* ISSChartHistogramLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5055193C177EB0BF00B4A78E /* ISSChartHistogramLineViewController.m */; };
+		5055193F177EB0BF00B4A78E /* ISSChartHistogramLineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5055193D177EB0BF00B4A78E /* ISSChartHistogramLineViewController.xib */; };
+		50551973177EF78300B4A78E /* ISSChartHistogramBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 50551959177EF78300B4A78E /* ISSChartHistogramBar.m */; };
+		50551974177EF78300B4A78E /* ISSChartHistogramBarGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5055195B177EF78300B4A78E /* ISSChartHistogramBarGroup.m */; };
+		50551975177EF78300B4A78E /* ISSChartHistogramBarProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 5055195D177EF78300B4A78E /* ISSChartHistogramBarProperty.m */; };
+		50551976177EF78300B4A78E /* ISSChartHistogramData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5055195F177EF78300B4A78E /* ISSChartHistogramData.m */; };
+		50551977177EF78300B4A78E /* ISSChartHistogramLineData.m in Sources */ = {isa = PBXBuildFile; fileRef = 50551962177EF78300B4A78E /* ISSChartHistogramLineData.m */; };
+		50551979177EF78300B4A78E /* ISSChartLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 50551967177EF78300B4A78E /* ISSChartLine.m */; };
+		5055197A177EF78300B4A78E /* ISSChartLineData.m in Sources */ = {isa = PBXBuildFile; fileRef = 50551969177EF78300B4A78E /* ISSChartLineData.m */; };
+		5055197B177EF78300B4A78E /* ISSChartLineProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 5055196B177EF78300B4A78E /* ISSChartLineProperty.m */; };
+		5055197C177EF78300B4A78E /* ISSChartPieData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5055196E177EF78300B4A78E /* ISSChartPieData.m */; };
+		5055197D177EF78300B4A78E /* ISSChartPieSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 50551970177EF78300B4A78E /* ISSChartPieSection.m */; };
+		5055197E177EF78300B4A78E /* ISSChartPieSectionProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 50551972177EF78300B4A78E /* ISSChartPieSectionProperty.m */; };
+		5055198D177EF83200B4A78E /* ISSChartAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 50551980177EF83200B4A78E /* ISSChartAxis.m */; };
+		5055198E177EF83200B4A78E /* ISSChartAxisItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 50551982177EF83200B4A78E /* ISSChartAxisItem.m */; };
+		5055198F177EF83200B4A78E /* ISSChartAxisProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 50551984177EF83200B4A78E /* ISSChartAxisProperty.m */; };
+		50551990177EF83200B4A78E /* ISSChartBaseData.m in Sources */ = {isa = PBXBuildFile; fileRef = 50551986177EF83200B4A78E /* ISSChartBaseData.m */; };
+		50551991177EF83200B4A78E /* ISSChartBaseModelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 50551988177EF83200B4A78E /* ISSChartBaseModelObject.m */; };
+		50551992177EF83200B4A78E /* ISSChartCoordinateSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5055198A177EF83200B4A78E /* ISSChartCoordinateSystem.m */; };
+		50551993177EF83200B4A78E /* ISSChartLegend.m in Sources */ = {isa = PBXBuildFile; fileRef = 5055198C177EF83200B4A78E /* ISSChartLegend.m */; };
+		505519C4177EF93300B4A78E /* ISSChartAxisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50551996177EF93300B4A78E /* ISSChartAxisView.m */; };
+		505519C5177EF93300B4A78E /* ISSChartLegendUnitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50551998177EF93300B4A78E /* ISSChartLegendUnitView.m */; };
+		505519C6177EF93300B4A78E /* ISSChartLegendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5055199A177EF93300B4A78E /* ISSChartLegendView.m */; };
+		505519C7177EF93300B4A78E /* ISSChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5055199C177EF93300B4A78E /* ISSChartView.m */; };
+		505519C9177EF93300B4A78E /* ISSChartHistogramAxisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 505519A1177EF93300B4A78E /* ISSChartHistogramAxisView.m */; };
+		505519CA177EF93300B4A78E /* ISSChartHistogramContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 505519A3177EF93300B4A78E /* ISSChartHistogramContentView.m */; };
+		505519CB177EF93300B4A78E /* ISSChartHistogramLegendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 505519A5177EF93300B4A78E /* ISSChartHistogramLegendView.m */; };
+		505519CC177EF93300B4A78E /* ISSChartHistogramView.m in Sources */ = {isa = PBXBuildFile; fileRef = 505519A7177EF93300B4A78E /* ISSChartHistogramView.m */; };
+		505519CD177EF93300B4A78E /* ISSChartHistogramLineAxisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 505519AA177EF93300B4A78E /* ISSChartHistogramLineAxisView.m */; };
+		505519CE177EF93300B4A78E /* ISSChartHistogramLineLegendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 505519AC177EF93300B4A78E /* ISSChartHistogramLineLegendView.m */; };
+		505519CF177EF93300B4A78E /* ISSChartHistogramLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 505519AE177EF93300B4A78E /* ISSChartHistogramLineView.m */; };
+		505519D0177EF93300B4A78E /* ISSChartLineAxisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 505519B1177EF93300B4A78E /* ISSChartLineAxisView.m */; };
+		505519D1177EF93300B4A78E /* ISSChartLineContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 505519B3177EF93300B4A78E /* ISSChartLineContentView.m */; };
+		505519D2177EF93300B4A78E /* ISSChartLineHintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 505519B5177EF93300B4A78E /* ISSChartLineHintView.m */; };
+		505519D3177EF93300B4A78E /* ISSChartLineHintView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505519B6177EF93300B4A78E /* ISSChartLineHintView.xib */; };
+		505519D4177EF93300B4A78E /* ISSChartLineLegendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 505519B8177EF93300B4A78E /* ISSChartLineLegendView.m */; };
+		505519D5177EF93300B4A78E /* ISSChartLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 505519BA177EF93300B4A78E /* ISSChartLineView.m */; };
+		505519D6177EF93300B4A78E /* ISSChartPieContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 505519BD177EF93300B4A78E /* ISSChartPieContentView.m */; };
+		505519D7177EF93300B4A78E /* ISSChartPieLegendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 505519BF177EF93300B4A78E /* ISSChartPieLegendView.m */; };
+		505519D9177EF93300B4A78E /* ISSChartPieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 505519C3177EF93300B4A78E /* ISSChartPieView.m */; };
+		505A90B7185AEDF8000E9F4F /* ISSChartHistogramOverlapDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A90B6185AEDF8000E9F4F /* ISSChartHistogramOverlapDataParser.m */; };
+		505A90BA185AF1DF000E9F4F /* histogramoverlap.txt in Resources */ = {isa = PBXBuildFile; fileRef = 505A90B8185AF1DF000E9F4F /* histogramoverlap.txt */; };
+		505A90BB185AF1DF000E9F4F /* histogramoverlap2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 505A90B9185AF1DF000E9F4F /* histogramoverlap2.txt */; };
 		505BE53217587D6D0026F7CF /* ISSChartColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 505BE53117587D6D0026F7CF /* ISSChartColorUtil.m */; };
-		505BE535175884D50026F7CF /* ISSChartHistogramView.m in Sources */ = {isa = PBXBuildFile; fileRef = 505BE534175884D50026F7CF /* ISSChartHistogramView.m */; };
+		505C11821846E5D70016752D /* ISSChartDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505C11811846E5D70016752D /* ISSChartDemoViewController.m */; };
+		5068740118224D7C00D57E96 /* UIColor-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 5068740018224D7C00D57E96 /* UIColor-Expanded.m */; };
+		506F548A178278FF00F1B2FE /* UIDevice+ITTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 506F5489178278FF00F1B2FE /* UIDevice+ITTAdditions.m */; };
 		5071F1DF175C7A2200F5EC73 /* UIView+ITTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5071F1DE175C7A2200F5EC73 /* UIView+ITTAdditions.m */; };
-		507577791758A50D00AF3DB4 /* ISSChartCoordinateSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 507577781758A50D00AF3DB4 /* ISSChartCoordinateSystem.m */; };
-		50D8E7C11756EBDB009FD6E6 /* ISSChartHistogramCoordinateSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D8E7C01756EBDA009FD6E6 /* ISSChartHistogramCoordinateSystem.m */; };
-		50D8E7C41756F64B009FD6E6 /* ISSChartAxisItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D8E7C31756F64B009FD6E6 /* ISSChartAxisItem.m */; };
-		50D8E7C7175752DD009FD6E6 /* ISSChartBarGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D8E7C6175752DC009FD6E6 /* ISSChartBarGroup.m */; };
+		5076B6311829DFFF000EB5F3 /* circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5076B62F1829DFFF000EB5F3 /* circle@2x.png */; };
+		5076B6321829DFFF000EB5F3 /* pointer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5076B6301829DFFF000EB5F3 /* pointer@2x.png */; };
+		5076B6371829E388000EB5F3 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 5076B6331829E388000EB5F3 /* Icon-72.png */; };
+		5076B6381829E388000EB5F3 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 5076B6341829E388000EB5F3 /* Icon-76.png */; };
+		5076B63A1829E388000EB5F3 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5076B6361829E388000EB5F3 /* Icon-76@2x.png */; };
+		5076B63E1829E420000EB5F3 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5076B63B1829E420000EB5F3 /* Icon-72@2x.png */; };
+		5076B63F1829E420000EB5F3 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5076B63C1829E420000EB5F3 /* Icon.png */; };
+		5076B6401829E420000EB5F3 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5076B63D1829E420000EB5F3 /* Icon@2x.png */; };
+		5076B6451829E6D1000EB5F3 /* bad_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5076B6431829E6D1000EB5F3 /* bad_left@2x.png */; };
+		5076B6461829E6D1000EB5F3 /* good_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5076B6441829E6D1000EB5F3 /* good_right@2x.png */; };
+		5076B64B1829E7D6000EB5F3 /* bad_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 5076B6471829E7D6000EB5F3 /* bad_left.png */; };
+		5076B64C1829E7D6000EB5F3 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 5076B6481829E7D6000EB5F3 /* circle.png */; };
+		5076B64D1829E7D6000EB5F3 /* good_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 5076B6491829E7D6000EB5F3 /* good_right.png */; };
+		5076B64E1829E7D6000EB5F3 /* pointer.png in Resources */ = {isa = PBXBuildFile; fileRef = 5076B64A1829E7D6000EB5F3 /* pointer.png */; };
+		509A51F81885268C0012EC82 /* ISSChartWaterfallDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 509A51F71885268C0012EC82 /* ISSChartWaterfallDataParser.m */; };
+		50A0D641182373C700253B39 /* ISSChartPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A0D640182373C700253B39 /* ISSChartPointer.m */; };
+		50A0D6851823B4FB00253B39 /* ISSChartCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A0D6841823B4FB00253B39 /* ISSChartCircle.m */; };
+		50AB1AA2184DEA0200185C06 /* linedata.txt in Resources */ = {isa = PBXBuildFile; fileRef = 50AB1AA1184DEA0200185C06 /* linedata.txt */; };
+		50BD48DB182886D300B57F3F /* ISSChartDashboardLegendUnitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BD48DA182886D300B57F3F /* ISSChartDashboardLegendUnitView.m */; };
+		50BD48DE1828880F00B57F3F /* ISSChartDashboardLegendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BD48DD1828880F00B57F3F /* ISSChartDashboardLegendView.m */; };
+		50BD48E11828926700B57F3F /* ISSChartLengendUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BD48E01828926700B57F3F /* ISSChartLengendUtil.m */; };
+		50C62084175DCCD300ADE95E /* ISSChartLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C62082175DCCD300ADE95E /* ISSChartLineViewController.m */; };
+		50C62085175DCCD300ADE95E /* ISSChartLineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C62083175DCCD300ADE95E /* ISSChartLineViewController.xib */; };
+		50D0687617609028001A454C /* ISSChartUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D0687517609028001A454C /* ISSChartUtil.m */; };
+		50E9994C187F9C26009AFE9E /* dashboard2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 50E9994B187F9C26009AFE9E /* dashboard2.txt */; };
+		50E99950187FA474009AFE9E /* pointer_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E9994E187FA474009AFE9E /* pointer_small.png */; };
+		50E99954187FA4F7009AFE9E /* pointer_small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E99952187FA4F7009AFE9E /* pointer_small@2x.png */; };
 		50EF2DEF17530D7D0014D001 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EF2DEE17530D7D0014D001 /* QuartzCore.framework */; };
 		50EF2DF717533A1A0014D001 /* ISSChatGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EF2DF617533A1A0014D001 /* ISSChatGallery.m */; };
 		50EF2DFA17533AE30014D001 /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EF2DF917533AE30014D001 /* Manager.m */; };
@@ -49,14 +161,70 @@
 		50EF2E031753481C0014D001 /* ISSDashing.c in Sources */ = {isa = PBXBuildFile; fileRef = 50EF2E011753481B0014D001 /* ISSDashing.c */; };
 		50EF2E0A1753561E0014D001 /* NSString+ITTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EF2E091753561E0014D001 /* NSString+ITTAdditions.m */; };
 		50EF2E0D175357960014D001 /* UIFont+ITTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EF2E0C175357960014D001 /* UIFont+ITTAdditions.m */; };
-		50FF3C9F175853BD00B41692 /* ISSChartAxisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF3C9E175853BD00B41692 /* ISSChartAxisView.m */; };
+		50F2528D18517A7E0062566E /* histogramdata.txt in Resources */ = {isa = PBXBuildFile; fileRef = 50F2528B18517A7E0062566E /* histogramdata.txt */; };
+		50F2528E18517A7E0062566E /* histogramdata2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 50F2528C18517A7E0062566E /* histogramdata2.txt */; };
+		50F68B3A18501CBD00A74821 /* piedata.txt in Resources */ = {isa = PBXBuildFile; fileRef = 50F68B3918501CBD00A74821 /* piedata.txt */; };
+		50F68B3C1850857D00A74821 /* piedata2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 50F68B3B1850857D00A74821 /* piedata2.txt */; };
+		9350CC3D17D822F500C481EB /* ISSChartHistogramStackAxisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9350CC3317D822F500C481EB /* ISSChartHistogramStackAxisView.m */; };
+		9350CC3E17D822F500C481EB /* ISSChartHistogramStackContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9350CC3517D822F500C481EB /* ISSChartHistogramStackContentView.m */; };
+		9350CC3F17D822F500C481EB /* ISSChartHistogramStackHintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9350CC3717D822F500C481EB /* ISSChartHistogramStackHintView.m */; };
+		9350CC4017D822F500C481EB /* ISSChartHistogramStackHintView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9350CC3817D822F500C481EB /* ISSChartHistogramStackHintView.xib */; };
+		9350CC4117D822F500C481EB /* ISSChartHistogramStackLegendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9350CC3A17D822F500C481EB /* ISSChartHistogramStackLegendView.m */; };
+		9350CC4217D822F500C481EB /* ISSChartHistogramStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9350CC3C17D822F500C481EB /* ISSChartHistogramStackView.m */; };
+		9350CC4A17D8244100C481EB /* ISSChartHistogramStackData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9350CC4917D8244100C481EB /* ISSChartHistogramStackData.m */; };
+		9350CC4E17D8274900C481EB /* ISSChartHistogramStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9350CC4C17D8274900C481EB /* ISSChartHistogramStackViewController.m */; };
+		9350CC4F17D8274900C481EB /* ISSChartHistogramStackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9350CC4D17D8274900C481EB /* ISSChartHistogramStackViewController.xib */; };
+		9350CC5817D832A600C481EB /* ISSChartHistogramStackLineHintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9350CC5217D832A600C481EB /* ISSChartHistogramStackLineHintView.m */; };
+		9350CC5917D832A600C481EB /* ISSChartHistogramStackLineHintView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9350CC5317D832A600C481EB /* ISSChartHistogramStackLineHintView.xib */; };
+		9350CC5A17D832A600C481EB /* ISSChartHistogramStackLineLegendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9350CC5517D832A600C481EB /* ISSChartHistogramStackLineLegendView.m */; };
+		9350CC5B17D832A600C481EB /* ISSChartHistogramStackLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9350CC5717D832A600C481EB /* ISSChartHistogramStackLineView.m */; };
+		9350CC5F17D8337900C481EB /* ISSChartHistogramStackLineData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9350CC5E17D8337900C481EB /* ISSChartHistogramStackLineData.m */; };
+		9350CC6317D8344500C481EB /* ISSChartHistogramStackLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9350CC6117D8344400C481EB /* ISSChartHistogramStackLineViewController.m */; };
+		9350CC6417D8344500C481EB /* ISSChartHistogramStackLineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9350CC6217D8344500C481EB /* ISSChartHistogramStackLineViewController.xib */; };
+		93A2C0AA1797B802003789C7 /* ISSChartHistogramOverlapAxisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A2C0A01797B802003789C7 /* ISSChartHistogramOverlapAxisView.m */; };
+		93A2C0AB1797B802003789C7 /* ISSChartHistogramOverlapContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A2C0A21797B802003789C7 /* ISSChartHistogramOverlapContentView.m */; };
+		93A2C0AC1797B802003789C7 /* ISSChartHistogramOverlapHintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A2C0A41797B802003789C7 /* ISSChartHistogramOverlapHintView.m */; };
+		93A2C0AD1797B802003789C7 /* ISSChartHistogramOverlapHintView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93A2C0A51797B802003789C7 /* ISSChartHistogramOverlapHintView.xib */; };
+		93A2C0AE1797B802003789C7 /* ISSChartHistogramOverlapLegendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A2C0A71797B802003789C7 /* ISSChartHistogramOverlapLegendView.m */; };
+		93A2C0AF1797B802003789C7 /* ISSChartHistogramOverlapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A2C0A91797B802003789C7 /* ISSChartHistogramOverlapView.m */; };
+		93A2C0B71797B815003789C7 /* ISSChartHistogramOverlapLineHintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A2C0B11797B815003789C7 /* ISSChartHistogramOverlapLineHintView.m */; };
+		93A2C0B81797B815003789C7 /* ISSChartHistogramOverlapLineHintView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93A2C0B21797B815003789C7 /* ISSChartHistogramOverlapLineHintView.xib */; };
+		93A2C0B91797B815003789C7 /* ISSChartHistogramOverlapLineLegendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A2C0B41797B815003789C7 /* ISSChartHistogramOverlapLineLegendView.m */; };
+		93A2C0BA1797B815003789C7 /* ISSChartHistogramOverlapLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A2C0B61797B815003789C7 /* ISSChartHistogramOverlapLineView.m */; };
+		93A2C0C61797B826003789C7 /* ISSChartSymbolGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A2C0BC1797B826003789C7 /* ISSChartSymbolGenerator.m */; };
+		93A2C0C71797B826003789C7 /* ISSChartWaterfallAxisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A2C0BE1797B826003789C7 /* ISSChartWaterfallAxisView.m */; };
+		93A2C0C81797B826003789C7 /* ISSChartWaterfallContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A2C0C01797B826003789C7 /* ISSChartWaterfallContentView.m */; };
+		93A2C0C91797B826003789C7 /* ISSChartWaterfallHintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A2C0C21797B826003789C7 /* ISSChartWaterfallHintView.m */; };
+		93A2C0CA1797B826003789C7 /* ISSChartWaterfallHintView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93A2C0C31797B826003789C7 /* ISSChartWaterfallHintView.xib */; };
+		93A2C0CB1797B826003789C7 /* ISSChartWaterfallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A2C0C51797B826003789C7 /* ISSChartWaterfallView.m */; };
+		93A2C0D51797B855003789C7 /* ISSChartHistogramOverlapLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A2C0CD1797B850003789C7 /* ISSChartHistogramOverlapLineViewController.m */; };
+		93A2C0D61797B855003789C7 /* ISSChartHistogramOverlapLineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93A2C0CE1797B850003789C7 /* ISSChartHistogramOverlapLineViewController.xib */; };
+		93A2C0D71797B855003789C7 /* ISSChartHistogramOverlapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A2C0D01797B851003789C7 /* ISSChartHistogramOverlapViewController.m */; };
+		93A2C0D81797B855003789C7 /* ISSChartHistogramOverlapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93A2C0D11797B852003789C7 /* ISSChartHistogramOverlapViewController.xib */; };
+		93A2C0D91797B855003789C7 /* ISSChartWaterfallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A2C0D31797B854003789C7 /* ISSChartWaterfallViewController.m */; };
+		93A2C0DA1797B855003789C7 /* ISSChartWaterfallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93A2C0D41797B855003789C7 /* ISSChartWaterfallViewController.xib */; };
+		93A2C0DD1797B88B003789C7 /* ISSChartHintTextProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A2C0DC1797B88B003789C7 /* ISSChartHintTextProperty.m */; };
+		93A2C0E01797B8A7003789C7 /* ISSChartHistogramOverlapData.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A2C0DF1797B8A7003789C7 /* ISSChartHistogramOverlapData.m */; };
+		93A2C0E31797B8B0003789C7 /* ISSChartHistogramOverlapLineData.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A2C0E21797B8B0003789C7 /* ISSChartHistogramOverlapLineData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5013740B175C70F600AF52C4 /* ISSChartLegend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartLegend.h; sourceTree = "<group>"; };
-		5013740C175C70F700AF52C4 /* ISSChartLegend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartLegend.m; sourceTree = "<group>"; };
-		5013740E175C726D00AF52C4 /* ISSChartLegendUnitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartLegendUnitView.h; sourceTree = "<group>"; };
-		5013740F175C726D00AF52C4 /* ISSChartLegendUnitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartLegendUnitView.m; sourceTree = "<group>"; };
+		5002C8AC1771A760009D7991 /* ISSChartDataGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartDataGenerator.h; sourceTree = "<group>"; };
+		5002C8AD1771A760009D7991 /* ISSChartDataGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartDataGenerator.m; sourceTree = "<group>"; };
+		50088D3F184727D7008C795C /* ISSChartPieLegendUnitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartPieLegendUnitView.h; sourceTree = "<group>"; };
+		50088D40184727D7008C795C /* ISSChartPieLegendUnitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartPieLegendUnitView.m; sourceTree = "<group>"; };
+		5010DA0817A8BF9C00F43EEF /* ISSChartWaterfallData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartWaterfallData.h; sourceTree = "<group>"; };
+		5010DA0917A8BF9C00F43EEF /* ISSChartWaterfallData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartWaterfallData.m; sourceTree = "<group>"; };
+		5010DA0A17A8BF9C00F43EEF /* ISSChartWaterfallSymbolData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartWaterfallSymbolData.h; sourceTree = "<group>"; };
+		5010DA0B17A8BF9C00F43EEF /* ISSChartWaterfallSymbolData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartWaterfallSymbolData.m; sourceTree = "<group>"; };
+		50120A561773FA6B000CA216 /* hint_bg_arrow_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hint_bg_arrow_down.png; sourceTree = "<group>"; };
+		50120A571773FA6B000CA216 /* hint_bg_arrow_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hint_bg_arrow_left.png; sourceTree = "<group>"; };
+		50167ADA185817CD00043663 /* ISSChartHistogramLegendUnitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramLegendUnitView.h; sourceTree = "<group>"; };
+		50167ADB185817CD00043663 /* ISSChartHistogramLegendUnitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramLegendUnitView.m; sourceTree = "<group>"; };
+		50167ADD1858198700043663 /* ISSChartLineLegendUnitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartLineLegendUnitView.h; sourceTree = "<group>"; };
+		50167ADE1858198700043663 /* ISSChartLineLegendUnitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartLineLegendUnitView.m; sourceTree = "<group>"; };
+		50167AE01858356D00043663 /* histogramline.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = histogramline.txt; sourceTree = "<group>"; };
+		50167AE2185858F400043663 /* histogramline2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = histogramline2.txt; sourceTree = "<group>"; };
 		50215A79174F13F000157D66 /* ChartLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50215A7C174F13F000157D66 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		50215A7E174F13F000157D66 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -74,45 +242,223 @@
 		50215A95174F13F000157D66 /* GalleryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
 		50215A98174F13F000157D66 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GalleryViewController_iPhone.xib; sourceTree = "<group>"; };
 		50215A9B174F13F000157D66 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GalleryViewController_iPad.xib; sourceTree = "<group>"; };
-		50215AA5174F177E00157D66 /* ISSChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartView.h; sourceTree = "<group>"; };
-		50215AA6174F177E00157D66 /* ISSChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartView.m; sourceTree = "<group>"; };
-		50215AA8174F17B500157D66 /* ISSChartHistogramLegendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramLegendView.h; sourceTree = "<group>"; };
-		50215AA9174F17B500157D66 /* ISSChartHistogramLegendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramLegendView.m; sourceTree = "<group>"; };
-		50215AAB174F17D500157D66 /* ISSChartHistogramContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramContentView.h; sourceTree = "<group>"; };
-		50215AAC174F17D500157D66 /* ISSChartHistogramContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramContentView.m; sourceTree = "<group>"; };
-		50215AB1174F4DF700157D66 /* ISSChartHistogramAxisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramAxisView.h; sourceTree = "<group>"; };
-		50215AB2174F4DF800157D66 /* ISSChartHistogramAxisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramAxisView.m; sourceTree = "<group>"; };
-		50215AB4174F4F2200157D66 /* ISSChartAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartAxis.h; sourceTree = "<group>"; };
-		50215AB5174F4F2200157D66 /* ISSChartAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartAxis.m; sourceTree = "<group>"; };
-		504DDA271754492A00DA75CC /* ISSChartHistogramData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramData.h; sourceTree = "<group>"; };
-		504DDA281754492A00DA75CC /* ISSChartHistogramData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramData.m; sourceTree = "<group>"; };
-		504DDA2A17544A7100DA75CC /* ISSComponentProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSComponentProperty.h; sourceTree = "<group>"; };
-		504DDA2B17544A7100DA75CC /* ISSComponentProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSComponentProperty.m; sourceTree = "<group>"; };
-		504DDA2D17544B5300DA75CC /* ISSChartAxisProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartAxisProperty.h; sourceTree = "<group>"; };
-		504DDA2E17544B5300DA75CC /* ISSChartAxisProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartAxisProperty.m; sourceTree = "<group>"; };
-		504DDA311754517500DA75CC /* ISSChartBarProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartBarProperty.h; sourceTree = "<group>"; };
-		504DDA321754517500DA75CC /* ISSChartBarProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartBarProperty.m; sourceTree = "<group>"; };
-		504DDA341754582C00DA75CC /* ISSChartBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartBar.h; sourceTree = "<group>"; };
-		504DDA351754582D00DA75CC /* ISSChartBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartBar.m; sourceTree = "<group>"; };
-		504DDA37175481CB00DA75CC /* histogram.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = histogram.plist; sourceTree = "<group>"; };
-		504DDA391754864400DA75CC /* ISSChartBaseModelObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartBaseModelObject.h; sourceTree = "<group>"; };
-		504DDA3A1754864500DA75CC /* ISSChartBaseModelObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartBaseModelObject.m; sourceTree = "<group>"; };
-		504DDA4517549D5100DA75CC /* histogram2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = histogram2.plist; sourceTree = "<group>"; };
+		5024ABD0184C41C400C4FE91 /* ISSChartLineDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartLineDataParser.h; sourceTree = "<group>"; };
+		5024ABD1184C41C400C4FE91 /* ISSChartLineDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartLineDataParser.m; sourceTree = "<group>"; };
+		5024ABD3184C42CE00C4FE91 /* ISSChartHistogramDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramDataParser.h; sourceTree = "<group>"; };
+		5024ABD4184C42CE00C4FE91 /* ISSChartHistogramDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramDataParser.m; sourceTree = "<group>"; };
+		5024ABD6184C432700C4FE91 /* ISSChartPieDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartPieDataParser.h; sourceTree = "<group>"; };
+		5024ABD7184C432700C4FE91 /* ISSChartPieDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartPieDataParser.m; sourceTree = "<group>"; };
+		5024ABD9184C435A00C4FE91 /* ISSChartHistogramLineDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramLineDataParser.h; sourceTree = "<group>"; };
+		5024ABDA184C435A00C4FE91 /* ISSChartHistogramLineDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramLineDataParser.m; sourceTree = "<group>"; };
+		502625B61820B76C00DC251A /* ISSChartDashboardData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartDashboardData.h; sourceTree = "<group>"; };
+		502625B71820B76C00DC251A /* ISSChartDashboardData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartDashboardData.m; sourceTree = "<group>"; };
+		502625BA1820BB2100DC251A /* ISSChartDashboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartDashboardView.h; sourceTree = "<group>"; };
+		502625BB1820BB2100DC251A /* ISSChartDashboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartDashboardView.m; sourceTree = "<group>"; };
+		502625BD1820BB2D00DC251A /* ISSChartDashboardContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartDashboardContentView.h; sourceTree = "<group>"; };
+		502625BE1820BB2D00DC251A /* ISSChartDashboardContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartDashboardContentView.m; sourceTree = "<group>"; };
+		502625C01820BDD300DC251A /* ISSChartGraduationInterval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartGraduationInterval.h; sourceTree = "<group>"; };
+		502625C11820BDD300DC251A /* ISSChartGraduationInterval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartGraduationInterval.m; sourceTree = "<group>"; };
+		502625C41820D47300DC251A /* ISSChartParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartParser.h; sourceTree = "<group>"; };
+		502625C51820D47300DC251A /* ISSChartParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartParser.m; sourceTree = "<group>"; };
+		502625C71820D4F300DC251A /* ISSChartParserDataFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartParserDataFactory.h; sourceTree = "<group>"; };
+		502625C81820D4F300DC251A /* ISSChartParserDataFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartParserDataFactory.m; sourceTree = "<group>"; };
+		502625CA1820D54400DC251A /* ISSChartDashboardDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartDashboardDataParser.h; sourceTree = "<group>"; };
+		502625CB1820D54400DC251A /* ISSChartDashboardDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartDashboardDataParser.m; sourceTree = "<group>"; };
+		502625CD1820D97F00DC251A /* ISSChartGraduationProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartGraduationProperty.h; sourceTree = "<group>"; };
+		502625CE1820D97F00DC251A /* ISSChartGraduationProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartGraduationProperty.m; sourceTree = "<group>"; };
+		502625D01820DF2E00DC251A /* ISSChartDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartDashboardViewController.h; sourceTree = "<group>"; };
+		502625D11820DF2E00DC251A /* ISSChartDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartDashboardViewController.m; sourceTree = "<group>"; };
+		502625D21820DF2E00DC251A /* ISSChartDashboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ISSChartDashboardViewController.xib; sourceTree = "<group>"; };
+		502625D51820EFD900DC251A /* dashboard.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dashboard.txt; sourceTree = "<group>"; };
+		502625D81821052700DC251A /* ISSChartCircleUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartCircleUtil.h; sourceTree = "<group>"; };
+		502625D91821052700DC251A /* ISSChartCircleUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartCircleUtil.m; sourceTree = "<group>"; };
+		502625DB1821123600DC251A /* ISSChartGraduation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartGraduation.h; sourceTree = "<group>"; };
+		502625DC1821123600DC251A /* ISSChartGraduation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartGraduation.m; sourceTree = "<group>"; };
+		50290DAF178FB9700091982A /* ISSChartHintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHintView.h; sourceTree = "<group>"; };
+		50290DB0178FB9700091982A /* ISSChartHintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHintView.m; sourceTree = "<group>"; };
+		50290DB2178FBA130091982A /* ISSChartHistogramHintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramHintView.h; sourceTree = "<group>"; };
+		50290DB3178FBA130091982A /* ISSChartHistogramHintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramHintView.m; sourceTree = "<group>"; };
+		50290DB4178FBA130091982A /* ISSChartHistogramHintView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ISSChartHistogramHintView.xib; sourceTree = "<group>"; };
+		502A439518717DB600CC7D5D /* ISSChartHistogramOverlapLineDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramOverlapLineDataParser.h; sourceTree = "<group>"; };
+		502A439618717DB600CC7D5D /* ISSChartHistogramOverlapLineDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramOverlapLineDataParser.m; sourceTree = "<group>"; };
+		502A439C1871818900CC7D5D /* histogramoverlapline.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = histogramoverlapline.txt; sourceTree = "<group>"; };
+		502A439D1871818900CC7D5D /* histogramoverlapline2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = histogramoverlapline2.txt; sourceTree = "<group>"; };
+		5035E76617646147003AE996 /* ISSChartPieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartPieViewController.h; sourceTree = "<group>"; };
+		5035E76717646147003AE996 /* ISSChartPieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartPieViewController.m; sourceTree = "<group>"; };
+		5035E76817646147003AE996 /* ISSChartPieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ISSChartPieViewController.xib; sourceTree = "<group>"; };
+		503A181D1855575D00C005A5 /* ISSChartViewGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartViewGenerator.h; sourceTree = "<group>"; };
+		503A181E1855575D00C005A5 /* ISSChartViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartViewGenerator.m; sourceTree = "<group>"; };
+		503A182018555B4000C005A5 /* ISSChartFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartFactory.h; sourceTree = "<group>"; };
+		503A182118555B4000C005A5 /* ISSChartFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartFactory.m; sourceTree = "<group>"; };
+		503A182318555E6900C005A5 /* ISSChartHistogramFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramFactory.h; sourceTree = "<group>"; };
+		503A182418555E6900C005A5 /* ISSChartHistogramFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramFactory.m; sourceTree = "<group>"; };
+		503A1826185560B600C005A5 /* ISSChartLineFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartLineFactory.h; sourceTree = "<group>"; };
+		503A1827185560B600C005A5 /* ISSChartLineFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartLineFactory.m; sourceTree = "<group>"; };
+		503A18291855618800C005A5 /* ISSChartPieFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartPieFactory.h; sourceTree = "<group>"; };
+		503A182A1855618800C005A5 /* ISSChartPieFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartPieFactory.m; sourceTree = "<group>"; };
+		503A182C1855620900C005A5 /* ISSChartDashboardFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartDashboardFactory.h; sourceTree = "<group>"; };
+		503A182D1855620900C005A5 /* ISSChartDashboardFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartDashboardFactory.m; sourceTree = "<group>"; };
+		503A1830185562C300C005A5 /* ISSChartHistogramLineFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramLineFactory.h; sourceTree = "<group>"; };
+		503A1831185562C300C005A5 /* ISSChartHistogramLineFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramLineFactory.m; sourceTree = "<group>"; };
+		503A1833185564DE00C005A5 /* ISSChartHistogramOverlayFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramOverlayFactory.h; sourceTree = "<group>"; };
+		503A1834185564DE00C005A5 /* ISSChartHistogramOverlayFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramOverlayFactory.m; sourceTree = "<group>"; };
+		503A18361855655F00C005A5 /* ISSChartHistogramOverlayLineFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramOverlayLineFactory.h; sourceTree = "<group>"; };
+		503A18371855655F00C005A5 /* ISSChartHistogramOverlayLineFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramOverlayLineFactory.m; sourceTree = "<group>"; };
+		503A1839185565F700C005A5 /* ISSChartHistogramStackFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramStackFactory.h; sourceTree = "<group>"; };
+		503A183A185565F700C005A5 /* ISSChartHistogramStackFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramStackFactory.m; sourceTree = "<group>"; };
+		503A183C1855667C00C005A5 /* ISSChartHistogramStackLineFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramStackLineFactory.h; sourceTree = "<group>"; };
+		503A183D1855667C00C005A5 /* ISSChartHistogramStackLineFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramStackLineFactory.m; sourceTree = "<group>"; };
+		503A183F185569AF00C005A5 /* ISSChartWaterfallFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartWaterfallFactory.h; sourceTree = "<group>"; };
+		503A1840185569AF00C005A5 /* ISSChartWaterfallFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartWaterfallFactory.m; sourceTree = "<group>"; };
+		504C1DA0185EAC880064083E /* ISSChartHistogramOverlapLineLegend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramOverlapLineLegend.h; sourceTree = "<group>"; };
+		504C1DA1185EAC880064083E /* ISSChartHistogramOverlapLineLegend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramOverlapLineLegend.m; sourceTree = "<group>"; };
+		504C1DA3185EB0DD0064083E /* ISSChartLineLegend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartLineLegend.h; sourceTree = "<group>"; };
+		504C1DA4185EB0DD0064083E /* ISSChartLineLegend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartLineLegend.m; sourceTree = "<group>"; };
+		504C818F1857080E00EF4F86 /* ISSChartHistogramLineHintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramLineHintView.h; sourceTree = "<group>"; };
+		504C81901857080E00EF4F86 /* ISSChartHistogramLineHintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramLineHintView.m; sourceTree = "<group>"; };
+		504C81911857080E00EF4F86 /* ISSChartHistogramLineHintView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ISSChartHistogramLineHintView.xib; sourceTree = "<group>"; };
+		50537313184EC25800A37E52 /* ISSChartTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartTitle.h; sourceTree = "<group>"; };
+		50537314184EC25800A37E52 /* ISSChartTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartTitle.m; sourceTree = "<group>"; };
+		50537316184EDBA700A37E52 /* linedata2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linedata2.txt; sourceTree = "<group>"; };
+		50537C2A1851CDD4001DFBBD /* ISSChartBaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartBaseCollectionViewCell.h; sourceTree = "<group>"; };
+		50537C2B1851CDD4001DFBBD /* ISSChartBaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartBaseCollectionViewCell.m; sourceTree = "<group>"; };
+		50537C2D1851CE8B001DFBBD /* ISSChartViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartViewCell.h; sourceTree = "<group>"; };
+		50537C2E1851CE8B001DFBBD /* ISSChartViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartViewCell.m; sourceTree = "<group>"; };
+		50537C301851CE9C001DFBBD /* ISSChartViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ISSChartViewCell.xib; sourceTree = "<group>"; };
+		50537C321851D130001DFBBD /* CustomCellBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellBackground.h; sourceTree = "<group>"; };
+		50537C331851D130001DFBBD /* CustomCellBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellBackground.m; sourceTree = "<group>"; };
+		50537C3A1851D244001DFBBD /* ISSChartGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartGalleryViewController.h; sourceTree = "<group>"; };
+		50537C3B1851D244001DFBBD /* ISSChartGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartGalleryViewController.m; sourceTree = "<group>"; };
+		50537C3C1851D244001DFBBD /* ISSChartGalleryViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ISSChartGalleryViewController_iPad.xib; sourceTree = "<group>"; };
+		5055193B177EB0BF00B4A78E /* ISSChartHistogramLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramLineViewController.h; sourceTree = "<group>"; };
+		5055193C177EB0BF00B4A78E /* ISSChartHistogramLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramLineViewController.m; sourceTree = "<group>"; };
+		5055193D177EB0BF00B4A78E /* ISSChartHistogramLineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ISSChartHistogramLineViewController.xib; sourceTree = "<group>"; };
+		50551958177EF78300B4A78E /* ISSChartHistogramBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramBar.h; sourceTree = "<group>"; };
+		50551959177EF78300B4A78E /* ISSChartHistogramBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramBar.m; sourceTree = "<group>"; };
+		5055195A177EF78300B4A78E /* ISSChartHistogramBarGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramBarGroup.h; sourceTree = "<group>"; };
+		5055195B177EF78300B4A78E /* ISSChartHistogramBarGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramBarGroup.m; sourceTree = "<group>"; };
+		5055195C177EF78300B4A78E /* ISSChartHistogramBarProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramBarProperty.h; sourceTree = "<group>"; };
+		5055195D177EF78300B4A78E /* ISSChartHistogramBarProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramBarProperty.m; sourceTree = "<group>"; };
+		5055195E177EF78300B4A78E /* ISSChartHistogramData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramData.h; sourceTree = "<group>"; };
+		5055195F177EF78300B4A78E /* ISSChartHistogramData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramData.m; sourceTree = "<group>"; };
+		50551961177EF78300B4A78E /* ISSChartHistogramLineData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramLineData.h; sourceTree = "<group>"; };
+		50551962177EF78300B4A78E /* ISSChartHistogramLineData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramLineData.m; sourceTree = "<group>"; };
+		50551966177EF78300B4A78E /* ISSChartLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartLine.h; sourceTree = "<group>"; };
+		50551967177EF78300B4A78E /* ISSChartLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartLine.m; sourceTree = "<group>"; };
+		50551968177EF78300B4A78E /* ISSChartLineData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartLineData.h; sourceTree = "<group>"; };
+		50551969177EF78300B4A78E /* ISSChartLineData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartLineData.m; sourceTree = "<group>"; };
+		5055196A177EF78300B4A78E /* ISSChartLineProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartLineProperty.h; sourceTree = "<group>"; };
+		5055196B177EF78300B4A78E /* ISSChartLineProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartLineProperty.m; sourceTree = "<group>"; };
+		5055196D177EF78300B4A78E /* ISSChartPieData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartPieData.h; sourceTree = "<group>"; };
+		5055196E177EF78300B4A78E /* ISSChartPieData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartPieData.m; sourceTree = "<group>"; };
+		5055196F177EF78300B4A78E /* ISSChartPieSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartPieSection.h; sourceTree = "<group>"; };
+		50551970177EF78300B4A78E /* ISSChartPieSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartPieSection.m; sourceTree = "<group>"; };
+		50551971177EF78300B4A78E /* ISSChartPieSectionProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartPieSectionProperty.h; sourceTree = "<group>"; };
+		50551972177EF78300B4A78E /* ISSChartPieSectionProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartPieSectionProperty.m; sourceTree = "<group>"; };
+		5055197F177EF83200B4A78E /* ISSChartAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartAxis.h; sourceTree = "<group>"; };
+		50551980177EF83200B4A78E /* ISSChartAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartAxis.m; sourceTree = "<group>"; };
+		50551981177EF83200B4A78E /* ISSChartAxisItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartAxisItem.h; sourceTree = "<group>"; };
+		50551982177EF83200B4A78E /* ISSChartAxisItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartAxisItem.m; sourceTree = "<group>"; };
+		50551983177EF83200B4A78E /* ISSChartAxisProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartAxisProperty.h; sourceTree = "<group>"; };
+		50551984177EF83200B4A78E /* ISSChartAxisProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartAxisProperty.m; sourceTree = "<group>"; };
+		50551985177EF83200B4A78E /* ISSChartBaseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartBaseData.h; sourceTree = "<group>"; };
+		50551986177EF83200B4A78E /* ISSChartBaseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartBaseData.m; sourceTree = "<group>"; };
+		50551987177EF83200B4A78E /* ISSChartBaseModelObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartBaseModelObject.h; sourceTree = "<group>"; };
+		50551988177EF83200B4A78E /* ISSChartBaseModelObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartBaseModelObject.m; sourceTree = "<group>"; };
+		50551989177EF83200B4A78E /* ISSChartCoordinateSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartCoordinateSystem.h; sourceTree = "<group>"; };
+		5055198A177EF83200B4A78E /* ISSChartCoordinateSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartCoordinateSystem.m; sourceTree = "<group>"; };
+		5055198B177EF83200B4A78E /* ISSChartLegend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartLegend.h; sourceTree = "<group>"; };
+		5055198C177EF83200B4A78E /* ISSChartLegend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartLegend.m; sourceTree = "<group>"; };
+		50551995177EF93300B4A78E /* ISSChartAxisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartAxisView.h; sourceTree = "<group>"; };
+		50551996177EF93300B4A78E /* ISSChartAxisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartAxisView.m; sourceTree = "<group>"; };
+		50551997177EF93300B4A78E /* ISSChartLegendUnitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartLegendUnitView.h; sourceTree = "<group>"; };
+		50551998177EF93300B4A78E /* ISSChartLegendUnitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartLegendUnitView.m; sourceTree = "<group>"; };
+		50551999177EF93300B4A78E /* ISSChartLegendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartLegendView.h; sourceTree = "<group>"; };
+		5055199A177EF93300B4A78E /* ISSChartLegendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartLegendView.m; sourceTree = "<group>"; };
+		5055199B177EF93300B4A78E /* ISSChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartView.h; sourceTree = "<group>"; };
+		5055199C177EF93300B4A78E /* ISSChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartView.m; sourceTree = "<group>"; };
+		505519A0177EF93300B4A78E /* ISSChartHistogramAxisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramAxisView.h; sourceTree = "<group>"; };
+		505519A1177EF93300B4A78E /* ISSChartHistogramAxisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramAxisView.m; sourceTree = "<group>"; };
+		505519A2177EF93300B4A78E /* ISSChartHistogramContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramContentView.h; sourceTree = "<group>"; };
+		505519A3177EF93300B4A78E /* ISSChartHistogramContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramContentView.m; sourceTree = "<group>"; };
+		505519A4177EF93300B4A78E /* ISSChartHistogramLegendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramLegendView.h; sourceTree = "<group>"; };
+		505519A5177EF93300B4A78E /* ISSChartHistogramLegendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramLegendView.m; sourceTree = "<group>"; };
+		505519A6177EF93300B4A78E /* ISSChartHistogramView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramView.h; sourceTree = "<group>"; };
+		505519A7177EF93300B4A78E /* ISSChartHistogramView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramView.m; sourceTree = "<group>"; };
+		505519A9177EF93300B4A78E /* ISSChartHistogramLineAxisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramLineAxisView.h; sourceTree = "<group>"; };
+		505519AA177EF93300B4A78E /* ISSChartHistogramLineAxisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramLineAxisView.m; sourceTree = "<group>"; };
+		505519AB177EF93300B4A78E /* ISSChartHistogramLineLegendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramLineLegendView.h; sourceTree = "<group>"; };
+		505519AC177EF93300B4A78E /* ISSChartHistogramLineLegendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramLineLegendView.m; sourceTree = "<group>"; };
+		505519AD177EF93300B4A78E /* ISSChartHistogramLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramLineView.h; sourceTree = "<group>"; };
+		505519AE177EF93300B4A78E /* ISSChartHistogramLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramLineView.m; sourceTree = "<group>"; };
+		505519B0177EF93300B4A78E /* ISSChartLineAxisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartLineAxisView.h; sourceTree = "<group>"; };
+		505519B1177EF93300B4A78E /* ISSChartLineAxisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartLineAxisView.m; sourceTree = "<group>"; };
+		505519B2177EF93300B4A78E /* ISSChartLineContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartLineContentView.h; sourceTree = "<group>"; };
+		505519B3177EF93300B4A78E /* ISSChartLineContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartLineContentView.m; sourceTree = "<group>"; };
+		505519B4177EF93300B4A78E /* ISSChartLineHintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartLineHintView.h; sourceTree = "<group>"; };
+		505519B5177EF93300B4A78E /* ISSChartLineHintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartLineHintView.m; sourceTree = "<group>"; };
+		505519B6177EF93300B4A78E /* ISSChartLineHintView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ISSChartLineHintView.xib; sourceTree = "<group>"; };
+		505519B7177EF93300B4A78E /* ISSChartLineLegendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartLineLegendView.h; sourceTree = "<group>"; };
+		505519B8177EF93300B4A78E /* ISSChartLineLegendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartLineLegendView.m; sourceTree = "<group>"; };
+		505519B9177EF93300B4A78E /* ISSChartLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartLineView.h; sourceTree = "<group>"; };
+		505519BA177EF93300B4A78E /* ISSChartLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartLineView.m; sourceTree = "<group>"; };
+		505519BC177EF93300B4A78E /* ISSChartPieContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartPieContentView.h; sourceTree = "<group>"; };
+		505519BD177EF93300B4A78E /* ISSChartPieContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartPieContentView.m; sourceTree = "<group>"; };
+		505519BE177EF93300B4A78E /* ISSChartPieLegendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartPieLegendView.h; sourceTree = "<group>"; };
+		505519BF177EF93300B4A78E /* ISSChartPieLegendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartPieLegendView.m; sourceTree = "<group>"; };
+		505519C2177EF93300B4A78E /* ISSChartPieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartPieView.h; sourceTree = "<group>"; };
+		505519C3177EF93300B4A78E /* ISSChartPieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartPieView.m; sourceTree = "<group>"; };
+		505A90B5185AEDF8000E9F4F /* ISSChartHistogramOverlapDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramOverlapDataParser.h; sourceTree = "<group>"; };
+		505A90B6185AEDF8000E9F4F /* ISSChartHistogramOverlapDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramOverlapDataParser.m; sourceTree = "<group>"; };
+		505A90B8185AF1DF000E9F4F /* histogramoverlap.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = histogramoverlap.txt; sourceTree = "<group>"; };
+		505A90B9185AF1DF000E9F4F /* histogramoverlap2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = histogramoverlap2.txt; sourceTree = "<group>"; };
 		505BE53017587D6D0026F7CF /* ISSChartColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartColorUtil.h; sourceTree = "<group>"; };
 		505BE53117587D6D0026F7CF /* ISSChartColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartColorUtil.m; sourceTree = "<group>"; };
-		505BE533175884D50026F7CF /* ISSChartHistogramView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramView.h; sourceTree = "<group>"; };
-		505BE534175884D50026F7CF /* ISSChartHistogramView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramView.m; sourceTree = "<group>"; };
+		505C11801846E5D70016752D /* ISSChartDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartDemoViewController.h; sourceTree = "<group>"; };
+		505C11811846E5D70016752D /* ISSChartDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartDemoViewController.m; sourceTree = "<group>"; };
+		506873FF18224D7C00D57E96 /* UIColor-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor-Expanded.h"; sourceTree = "<group>"; };
+		5068740018224D7C00D57E96 /* UIColor-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor-Expanded.m"; sourceTree = "<group>"; };
+		506F5488178278FF00F1B2FE /* UIDevice+ITTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ITTAdditions.h"; sourceTree = "<group>"; };
+		506F5489178278FF00F1B2FE /* UIDevice+ITTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+ITTAdditions.m"; sourceTree = "<group>"; };
 		5071F1DD175C7A2200F5EC73 /* UIView+ITTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ITTAdditions.h"; sourceTree = "<group>"; };
 		5071F1DE175C7A2200F5EC73 /* UIView+ITTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ITTAdditions.m"; sourceTree = "<group>"; };
-		507577771758A50B00AF3DB4 /* ISSChartCoordinateSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartCoordinateSystem.h; sourceTree = "<group>"; };
-		507577781758A50D00AF3DB4 /* ISSChartCoordinateSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartCoordinateSystem.m; sourceTree = "<group>"; };
-		508B649A17536BA600BA6510 /* Consts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Consts.h; sourceTree = "<group>"; };
-		50D8E7BF1756EBDA009FD6E6 /* ISSChartHistogramCoordinateSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramCoordinateSystem.h; sourceTree = "<group>"; };
-		50D8E7C01756EBDA009FD6E6 /* ISSChartHistogramCoordinateSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramCoordinateSystem.m; sourceTree = "<group>"; };
-		50D8E7C21756F64B009FD6E6 /* ISSChartAxisItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartAxisItem.h; sourceTree = "<group>"; };
-		50D8E7C31756F64B009FD6E6 /* ISSChartAxisItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartAxisItem.m; sourceTree = "<group>"; };
-		50D8E7C5175752DC009FD6E6 /* ISSChartBarGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartBarGroup.h; sourceTree = "<group>"; };
-		50D8E7C6175752DC009FD6E6 /* ISSChartBarGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartBarGroup.m; sourceTree = "<group>"; };
+		5076B62F1829DFFF000EB5F3 /* circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle@2x.png"; sourceTree = "<group>"; };
+		5076B6301829DFFF000EB5F3 /* pointer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pointer@2x.png"; sourceTree = "<group>"; };
+		5076B6331829E388000EB5F3 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		5076B6341829E388000EB5F3 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		5076B6361829E388000EB5F3 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		5076B63B1829E420000EB5F3 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		5076B63C1829E420000EB5F3 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		5076B63D1829E420000EB5F3 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		5076B6431829E6D1000EB5F3 /* bad_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bad_left@2x.png"; sourceTree = "<group>"; };
+		5076B6441829E6D1000EB5F3 /* good_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "good_right@2x.png"; sourceTree = "<group>"; };
+		5076B6471829E7D6000EB5F3 /* bad_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bad_left.png; sourceTree = "<group>"; };
+		5076B6481829E7D6000EB5F3 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+		5076B6491829E7D6000EB5F3 /* good_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = good_right.png; sourceTree = "<group>"; };
+		5076B64A1829E7D6000EB5F3 /* pointer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer.png; sourceTree = "<group>"; };
+		508B649A17536BA600BA6510 /* ISSChartConsts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISSChartConsts.h; sourceTree = "<group>"; };
+		509A51F61885268C0012EC82 /* ISSChartWaterfallDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartWaterfallDataParser.h; sourceTree = "<group>"; };
+		509A51F71885268C0012EC82 /* ISSChartWaterfallDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartWaterfallDataParser.m; sourceTree = "<group>"; };
+		50A0D63F182373C700253B39 /* ISSChartPointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartPointer.h; sourceTree = "<group>"; };
+		50A0D640182373C700253B39 /* ISSChartPointer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartPointer.m; sourceTree = "<group>"; };
+		50A0D6831823B4FB00253B39 /* ISSChartCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartCircle.h; sourceTree = "<group>"; };
+		50A0D6841823B4FB00253B39 /* ISSChartCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartCircle.m; sourceTree = "<group>"; };
+		50AB1AA1184DEA0200185C06 /* linedata.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linedata.txt; sourceTree = "<group>"; };
+		50BD48D9182886D300B57F3F /* ISSChartDashboardLegendUnitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartDashboardLegendUnitView.h; sourceTree = "<group>"; };
+		50BD48DA182886D300B57F3F /* ISSChartDashboardLegendUnitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartDashboardLegendUnitView.m; sourceTree = "<group>"; };
+		50BD48DC1828880F00B57F3F /* ISSChartDashboardLegendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartDashboardLegendView.h; sourceTree = "<group>"; };
+		50BD48DD1828880F00B57F3F /* ISSChartDashboardLegendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartDashboardLegendView.m; sourceTree = "<group>"; };
+		50BD48DF1828926700B57F3F /* ISSChartLengendUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartLengendUtil.h; sourceTree = "<group>"; };
+		50BD48E01828926700B57F3F /* ISSChartLengendUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartLengendUtil.m; sourceTree = "<group>"; };
+		50C62081175DCCD300ADE95E /* ISSChartLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartLineViewController.h; sourceTree = "<group>"; };
+		50C62082175DCCD300ADE95E /* ISSChartLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartLineViewController.m; sourceTree = "<group>"; };
+		50C62083175DCCD300ADE95E /* ISSChartLineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ISSChartLineViewController.xib; sourceTree = "<group>"; };
+		50D0687417609027001A454C /* ISSChartUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartUtil.h; sourceTree = "<group>"; };
+		50D0687517609028001A454C /* ISSChartUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartUtil.m; sourceTree = "<group>"; };
+		50E9994B187F9C26009AFE9E /* dashboard2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dashboard2.txt; sourceTree = "<group>"; };
+		50E9994E187FA474009AFE9E /* pointer_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer_small.png; sourceTree = "<group>"; };
+		50E99952187FA4F7009AFE9E /* pointer_small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pointer_small@2x.png"; sourceTree = "<group>"; };
+		50E9CE5117700002009CF2D5 /* CommonFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonFunction.h; sourceTree = "<group>"; };
 		50EF2DEE17530D7D0014D001 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		50EF2DF0175338400014D001 /* ITTCommonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITTCommonMacros.h; sourceTree = "<group>"; };
 		50EF2DF1175338400014D001 /* ITTDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITTDebug.h; sourceTree = "<group>"; };
@@ -129,8 +475,82 @@
 		50EF2E091753561E0014D001 /* NSString+ITTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ITTAdditions.m"; sourceTree = "<group>"; };
 		50EF2E0B175357960014D001 /* UIFont+ITTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+ITTAdditions.h"; sourceTree = "<group>"; };
 		50EF2E0C175357960014D001 /* UIFont+ITTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+ITTAdditions.m"; sourceTree = "<group>"; };
-		50FF3C9D175853BD00B41692 /* ISSChartAxisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartAxisView.h; sourceTree = "<group>"; };
-		50FF3C9E175853BD00B41692 /* ISSChartAxisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartAxisView.m; sourceTree = "<group>"; };
+		50F2528B18517A7E0062566E /* histogramdata.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = histogramdata.txt; sourceTree = "<group>"; };
+		50F2528C18517A7E0062566E /* histogramdata2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = histogramdata2.txt; sourceTree = "<group>"; };
+		50F68B3918501CBD00A74821 /* piedata.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = piedata.txt; sourceTree = "<group>"; };
+		50F68B3B1850857D00A74821 /* piedata2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = piedata2.txt; sourceTree = "<group>"; };
+		9350CC3217D822F500C481EB /* ISSChartHistogramStackAxisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramStackAxisView.h; sourceTree = "<group>"; };
+		9350CC3317D822F500C481EB /* ISSChartHistogramStackAxisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramStackAxisView.m; sourceTree = "<group>"; };
+		9350CC3417D822F500C481EB /* ISSChartHistogramStackContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramStackContentView.h; sourceTree = "<group>"; };
+		9350CC3517D822F500C481EB /* ISSChartHistogramStackContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramStackContentView.m; sourceTree = "<group>"; };
+		9350CC3617D822F500C481EB /* ISSChartHistogramStackHintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramStackHintView.h; sourceTree = "<group>"; };
+		9350CC3717D822F500C481EB /* ISSChartHistogramStackHintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramStackHintView.m; sourceTree = "<group>"; };
+		9350CC3817D822F500C481EB /* ISSChartHistogramStackHintView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ISSChartHistogramStackHintView.xib; sourceTree = "<group>"; };
+		9350CC3917D822F500C481EB /* ISSChartHistogramStackLegendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramStackLegendView.h; sourceTree = "<group>"; };
+		9350CC3A17D822F500C481EB /* ISSChartHistogramStackLegendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramStackLegendView.m; sourceTree = "<group>"; };
+		9350CC3B17D822F500C481EB /* ISSChartHistogramStackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramStackView.h; sourceTree = "<group>"; };
+		9350CC3C17D822F500C481EB /* ISSChartHistogramStackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramStackView.m; sourceTree = "<group>"; };
+		9350CC4817D8244100C481EB /* ISSChartHistogramStackData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramStackData.h; sourceTree = "<group>"; };
+		9350CC4917D8244100C481EB /* ISSChartHistogramStackData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramStackData.m; sourceTree = "<group>"; };
+		9350CC4B17D8274900C481EB /* ISSChartHistogramStackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramStackViewController.h; sourceTree = "<group>"; };
+		9350CC4C17D8274900C481EB /* ISSChartHistogramStackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramStackViewController.m; sourceTree = "<group>"; };
+		9350CC4D17D8274900C481EB /* ISSChartHistogramStackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ISSChartHistogramStackViewController.xib; sourceTree = "<group>"; };
+		9350CC5117D832A600C481EB /* ISSChartHistogramStackLineHintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramStackLineHintView.h; sourceTree = "<group>"; };
+		9350CC5217D832A600C481EB /* ISSChartHistogramStackLineHintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISSChartHistogramStackLineHintView.m; path = ChartLib/View/HistogramStackLine/ISSChartHistogramStackLineHintView.m; sourceTree = SOURCE_ROOT; };
+		9350CC5317D832A600C481EB /* ISSChartHistogramStackLineHintView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ISSChartHistogramStackLineHintView.xib; sourceTree = "<group>"; };
+		9350CC5417D832A600C481EB /* ISSChartHistogramStackLineLegendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramStackLineLegendView.h; sourceTree = "<group>"; };
+		9350CC5517D832A600C481EB /* ISSChartHistogramStackLineLegendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramStackLineLegendView.m; sourceTree = "<group>"; };
+		9350CC5617D832A600C481EB /* ISSChartHistogramStackLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramStackLineView.h; sourceTree = "<group>"; };
+		9350CC5717D832A600C481EB /* ISSChartHistogramStackLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramStackLineView.m; sourceTree = "<group>"; };
+		9350CC5D17D8337900C481EB /* ISSChartHistogramStackLineData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramStackLineData.h; sourceTree = "<group>"; };
+		9350CC5E17D8337900C481EB /* ISSChartHistogramStackLineData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramStackLineData.m; sourceTree = "<group>"; };
+		9350CC6017D8344400C481EB /* ISSChartHistogramStackLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramStackLineViewController.h; sourceTree = "<group>"; };
+		9350CC6117D8344400C481EB /* ISSChartHistogramStackLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramStackLineViewController.m; sourceTree = "<group>"; };
+		9350CC6217D8344500C481EB /* ISSChartHistogramStackLineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ISSChartHistogramStackLineViewController.xib; sourceTree = "<group>"; };
+		93A2C09F1797B802003789C7 /* ISSChartHistogramOverlapAxisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramOverlapAxisView.h; sourceTree = "<group>"; };
+		93A2C0A01797B802003789C7 /* ISSChartHistogramOverlapAxisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramOverlapAxisView.m; sourceTree = "<group>"; };
+		93A2C0A11797B802003789C7 /* ISSChartHistogramOverlapContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramOverlapContentView.h; sourceTree = "<group>"; };
+		93A2C0A21797B802003789C7 /* ISSChartHistogramOverlapContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramOverlapContentView.m; sourceTree = "<group>"; };
+		93A2C0A31797B802003789C7 /* ISSChartHistogramOverlapHintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramOverlapHintView.h; sourceTree = "<group>"; };
+		93A2C0A41797B802003789C7 /* ISSChartHistogramOverlapHintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramOverlapHintView.m; sourceTree = "<group>"; };
+		93A2C0A51797B802003789C7 /* ISSChartHistogramOverlapHintView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ISSChartHistogramOverlapHintView.xib; sourceTree = "<group>"; };
+		93A2C0A61797B802003789C7 /* ISSChartHistogramOverlapLegendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramOverlapLegendView.h; sourceTree = "<group>"; };
+		93A2C0A71797B802003789C7 /* ISSChartHistogramOverlapLegendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramOverlapLegendView.m; sourceTree = "<group>"; };
+		93A2C0A81797B802003789C7 /* ISSChartHistogramOverlapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramOverlapView.h; sourceTree = "<group>"; };
+		93A2C0A91797B802003789C7 /* ISSChartHistogramOverlapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramOverlapView.m; sourceTree = "<group>"; };
+		93A2C0B01797B815003789C7 /* ISSChartHistogramOverlapLineHintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramOverlapLineHintView.h; sourceTree = "<group>"; };
+		93A2C0B11797B815003789C7 /* ISSChartHistogramOverlapLineHintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramOverlapLineHintView.m; sourceTree = "<group>"; };
+		93A2C0B21797B815003789C7 /* ISSChartHistogramOverlapLineHintView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ISSChartHistogramOverlapLineHintView.xib; sourceTree = "<group>"; };
+		93A2C0B31797B815003789C7 /* ISSChartHistogramOverlapLineLegendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramOverlapLineLegendView.h; sourceTree = "<group>"; };
+		93A2C0B41797B815003789C7 /* ISSChartHistogramOverlapLineLegendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramOverlapLineLegendView.m; sourceTree = "<group>"; };
+		93A2C0B51797B815003789C7 /* ISSChartHistogramOverlapLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramOverlapLineView.h; sourceTree = "<group>"; };
+		93A2C0B61797B815003789C7 /* ISSChartHistogramOverlapLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramOverlapLineView.m; sourceTree = "<group>"; };
+		93A2C0BB1797B826003789C7 /* ISSChartSymbolGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartSymbolGenerator.h; sourceTree = "<group>"; };
+		93A2C0BC1797B826003789C7 /* ISSChartSymbolGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartSymbolGenerator.m; sourceTree = "<group>"; };
+		93A2C0BD1797B826003789C7 /* ISSChartWaterfallAxisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartWaterfallAxisView.h; sourceTree = "<group>"; };
+		93A2C0BE1797B826003789C7 /* ISSChartWaterfallAxisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartWaterfallAxisView.m; sourceTree = "<group>"; };
+		93A2C0BF1797B826003789C7 /* ISSChartWaterfallContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartWaterfallContentView.h; sourceTree = "<group>"; };
+		93A2C0C01797B826003789C7 /* ISSChartWaterfallContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartWaterfallContentView.m; sourceTree = "<group>"; };
+		93A2C0C11797B826003789C7 /* ISSChartWaterfallHintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartWaterfallHintView.h; sourceTree = "<group>"; };
+		93A2C0C21797B826003789C7 /* ISSChartWaterfallHintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartWaterfallHintView.m; sourceTree = "<group>"; };
+		93A2C0C31797B826003789C7 /* ISSChartWaterfallHintView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ISSChartWaterfallHintView.xib; sourceTree = "<group>"; };
+		93A2C0C41797B826003789C7 /* ISSChartWaterfallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartWaterfallView.h; sourceTree = "<group>"; };
+		93A2C0C51797B826003789C7 /* ISSChartWaterfallView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartWaterfallView.m; sourceTree = "<group>"; };
+		93A2C0CC1797B850003789C7 /* ISSChartHistogramOverlapLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramOverlapLineViewController.h; sourceTree = "<group>"; };
+		93A2C0CD1797B850003789C7 /* ISSChartHistogramOverlapLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramOverlapLineViewController.m; sourceTree = "<group>"; };
+		93A2C0CE1797B850003789C7 /* ISSChartHistogramOverlapLineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ISSChartHistogramOverlapLineViewController.xib; sourceTree = "<group>"; };
+		93A2C0CF1797B851003789C7 /* ISSChartHistogramOverlapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramOverlapViewController.h; sourceTree = "<group>"; };
+		93A2C0D01797B851003789C7 /* ISSChartHistogramOverlapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramOverlapViewController.m; sourceTree = "<group>"; };
+		93A2C0D11797B852003789C7 /* ISSChartHistogramOverlapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ISSChartHistogramOverlapViewController.xib; sourceTree = "<group>"; };
+		93A2C0D21797B852003789C7 /* ISSChartWaterfallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartWaterfallViewController.h; sourceTree = "<group>"; };
+		93A2C0D31797B854003789C7 /* ISSChartWaterfallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartWaterfallViewController.m; sourceTree = "<group>"; };
+		93A2C0D41797B855003789C7 /* ISSChartWaterfallViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ISSChartWaterfallViewController.xib; sourceTree = "<group>"; };
+		93A2C0DB1797B88B003789C7 /* ISSChartHintTextProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHintTextProperty.h; sourceTree = "<group>"; };
+		93A2C0DC1797B88B003789C7 /* ISSChartHintTextProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHintTextProperty.m; sourceTree = "<group>"; };
+		93A2C0DE1797B8A7003789C7 /* ISSChartHistogramOverlapData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramOverlapData.h; sourceTree = "<group>"; };
+		93A2C0DF1797B8A7003789C7 /* ISSChartHistogramOverlapData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramOverlapData.m; sourceTree = "<group>"; };
+		93A2C0E11797B8B0003789C7 /* ISSChartHistogramOverlapLineData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSChartHistogramOverlapLineData.h; sourceTree = "<group>"; };
+		93A2C0E21797B8B0003789C7 /* ISSChartHistogramOverlapLineData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSChartHistogramOverlapLineData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,17 +568,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		501373D8175C437600AF52C4 /* Base */ = {
+		5002C8AB1771A73D009D7991 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				50215AA5174F177E00157D66 /* ISSChartView.h */,
-				50215AA6174F177E00157D66 /* ISSChartView.m */,
-				50FF3C9D175853BD00B41692 /* ISSChartAxisView.h */,
-				50FF3C9E175853BD00B41692 /* ISSChartAxisView.m */,
-				5013740E175C726D00AF52C4 /* ISSChartLegendUnitView.h */,
-				5013740F175C726D00AF52C4 /* ISSChartLegendUnitView.m */,
+				503A182F185562A700C005A5 /* Factory */,
+				5002C8AC1771A760009D7991 /* ISSChartDataGenerator.h */,
+				5002C8AD1771A760009D7991 /* ISSChartDataGenerator.m */,
+				503A181D1855575D00C005A5 /* ISSChartViewGenerator.h */,
+				503A181E1855575D00C005A5 /* ISSChartViewGenerator.m */,
 			);
-			name = Base;
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5010DA0717A8BF9C00F43EEF /* Waterfall */ = {
+			isa = PBXGroup;
+			children = (
+				5010DA0817A8BF9C00F43EEF /* ISSChartWaterfallData.h */,
+				5010DA0917A8BF9C00F43EEF /* ISSChartWaterfallData.m */,
+				5010DA0A17A8BF9C00F43EEF /* ISSChartWaterfallSymbolData.h */,
+				5010DA0B17A8BF9C00F43EEF /* ISSChartWaterfallSymbolData.m */,
+			);
+			path = Waterfall;
+			sourceTree = "<group>";
+		};
+		50120A551773FA6B000CA216 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5076B6471829E7D6000EB5F3 /* bad_left.png */,
+				5076B6431829E6D1000EB5F3 /* bad_left@2x.png */,
+				5076B6481829E7D6000EB5F3 /* circle.png */,
+				5076B62F1829DFFF000EB5F3 /* circle@2x.png */,
+				5076B6491829E7D6000EB5F3 /* good_right.png */,
+				5076B6441829E6D1000EB5F3 /* good_right@2x.png */,
+				50120A561773FA6B000CA216 /* hint_bg_arrow_down.png */,
+				50120A571773FA6B000CA216 /* hint_bg_arrow_left.png */,
+				5076B6331829E388000EB5F3 /* Icon-72.png */,
+				5076B63B1829E420000EB5F3 /* Icon-72@2x.png */,
+				5076B6341829E388000EB5F3 /* Icon-76.png */,
+				5076B6361829E388000EB5F3 /* Icon-76@2x.png */,
+				5076B63C1829E420000EB5F3 /* Icon.png */,
+				5076B63D1829E420000EB5F3 /* Icon@2x.png */,
+				5076B64A1829E7D6000EB5F3 /* pointer.png */,
+				5076B6301829DFFF000EB5F3 /* pointer@2x.png */,
+				50E9994E187FA474009AFE9E /* pointer_small.png */,
+				50E99952187FA4F7009AFE9E /* pointer_small@2x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		50215A70174F13F000157D66 = {
@@ -192,19 +647,12 @@
 		50215A82174F13F000157D66 /* ChartLib */ = {
 			isa = PBXGroup;
 			children = (
+				502625D71821050E00DC251A /* Util */,
 				50EF2E071753561D0014D001 /* Addition */,
 				50215AA2174F14C700157D66 /* Common */,
 				50215AA3174F14C700157D66 /* Model */,
 				50215AA4174F14C700157D66 /* View */,
-				50215A8B174F13F000157D66 /* AppDelegate.h */,
-				50215A8C174F13F000157D66 /* AppDelegate.m */,
-				50215A94174F13F000157D66 /* GalleryViewController.h */,
-				50215A95174F13F000157D66 /* GalleryViewController.m */,
-				50215A97174F13F000157D66 /* GalleryViewController_iPhone.xib */,
-				50215A9A174F13F000157D66 /* GalleryViewController_iPad.xib */,
-				50EF2DFC1753401D0014D001 /* ISSChartHistogramViewController.h */,
-				50EF2DFD1753401D0014D001 /* ISSChartHistogramViewController.m */,
-				50EF2DFE1753401E0014D001 /* ISSChartHistogramViewController.xib */,
+				5035E76517646112003AE996 /* Demo */,
 				50215A83174F13F000157D66 /* Supporting Files */,
 			);
 			path = ChartLib;
@@ -213,8 +661,8 @@
 		50215A83174F13F000157D66 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				504DDA37175481CB00DA75CC /* histogram.plist */,
-				504DDA4517549D5100DA75CC /* histogram2.plist */,
+				50F2528F18517AF80062566E /* data */,
+				50120A551773FA6B000CA216 /* Images */,
 				50215A84174F13F000157D66 /* ChartLib-Info.plist */,
 				50215A85174F13F000157D66 /* InfoPlist.strings */,
 				50215A88174F13F000157D66 /* main.m */,
@@ -237,9 +685,12 @@
 				50EF2DF1175338400014D001 /* ITTDebug.h */,
 				50EF2E021753481C0014D001 /* ISSDashing.h */,
 				50EF2E011753481B0014D001 /* ISSDashing.c */,
-				508B649A17536BA600BA6510 /* Consts.h */,
+				508B649A17536BA600BA6510 /* ISSChartConsts.h */,
 				505BE53017587D6D0026F7CF /* ISSChartColorUtil.h */,
 				505BE53117587D6D0026F7CF /* ISSChartColorUtil.m */,
+				50D0687417609027001A454C /* ISSChartUtil.h */,
+				50D0687517609028001A454C /* ISSChartUtil.m */,
+				50E9CE5117700002009CF2D5 /* CommonFunction.h */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -247,30 +698,18 @@
 		50215AA3174F14C700157D66 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				504DDA391754864400DA75CC /* ISSChartBaseModelObject.h */,
-				504DDA3A1754864500DA75CC /* ISSChartBaseModelObject.m */,
-				50215AB4174F4F2200157D66 /* ISSChartAxis.h */,
-				50215AB5174F4F2200157D66 /* ISSChartAxis.m */,
-				504DDA2D17544B5300DA75CC /* ISSChartAxisProperty.h */,
-				504DDA2E17544B5300DA75CC /* ISSChartAxisProperty.m */,
-				504DDA341754582C00DA75CC /* ISSChartBar.h */,
-				504DDA351754582D00DA75CC /* ISSChartBar.m */,
-				504DDA311754517500DA75CC /* ISSChartBarProperty.h */,
-				504DDA321754517500DA75CC /* ISSChartBarProperty.m */,
-				504DDA2A17544A7100DA75CC /* ISSComponentProperty.h */,
-				504DDA2B17544A7100DA75CC /* ISSComponentProperty.m */,
-				50D8E7C5175752DC009FD6E6 /* ISSChartBarGroup.h */,
-				50D8E7C6175752DC009FD6E6 /* ISSChartBarGroup.m */,
-				504DDA271754492A00DA75CC /* ISSChartHistogramData.h */,
-				504DDA281754492A00DA75CC /* ISSChartHistogramData.m */,
-				507577771758A50B00AF3DB4 /* ISSChartCoordinateSystem.h */,
-				507577781758A50D00AF3DB4 /* ISSChartCoordinateSystem.m */,
-				50D8E7BF1756EBDA009FD6E6 /* ISSChartHistogramCoordinateSystem.h */,
-				50D8E7C01756EBDA009FD6E6 /* ISSChartHistogramCoordinateSystem.m */,
-				50D8E7C21756F64B009FD6E6 /* ISSChartAxisItem.h */,
-				50D8E7C31756F64B009FD6E6 /* ISSChartAxisItem.m */,
-				5013740B175C70F600AF52C4 /* ISSChartLegend.h */,
-				5013740C175C70F700AF52C4 /* ISSChartLegend.m */,
+				50551956177EF78300B4A78E /* Base */,
+				502625B51820B75A00DC251A /* Dashboard */,
+				50551957177EF78300B4A78E /* Histogram */,
+				50551960177EF78300B4A78E /* HistogramLine */,
+				939F94F61796D93900FEB3EF /* HistogramOverlap */,
+				939F94F91796D93900FEB3EF /* HistogramOverlapLine */,
+				9350CC4717D8244100C481EB /* HistogramStack */,
+				9350CC5C17D8337900C481EB /* HistogramStackLine */,
+				50551965177EF78300B4A78E /* Line */,
+				502625C31820D45600DC251A /* Parser */,
+				5055196C177EF78300B4A78E /* Pie */,
+				5010DA0717A8BF9C00F43EEF /* Waterfall */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,22 +717,358 @@
 		50215AA4174F14C700157D66 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				501373D8175C437600AF52C4 /* Base */,
-				50215AAB174F17D500157D66 /* ISSChartHistogramContentView.h */,
-				50215AAC174F17D500157D66 /* ISSChartHistogramContentView.m */,
-				50215AA8174F17B500157D66 /* ISSChartHistogramLegendView.h */,
-				50215AA9174F17B500157D66 /* ISSChartHistogramLegendView.m */,
-				505BE533175884D50026F7CF /* ISSChartHistogramView.h */,
-				505BE534175884D50026F7CF /* ISSChartHistogramView.m */,
-				50215AB1174F4DF700157D66 /* ISSChartHistogramAxisView.h */,
-				50215AB2174F4DF800157D66 /* ISSChartHistogramAxisView.m */,
+				50551994177EF93300B4A78E /* Base */,
+				502625B91820BAE900DC251A /* Dashboard */,
+				5055199D177EF93300B4A78E /* Histogram */,
+				505519A8177EF93300B4A78E /* HistogramLine */,
+				939F94C61796D92A00FEB3EF /* HistogramOverlap */,
+				939F94D21796D92A00FEB3EF /* HistogramOverlapLine */,
+				9350CC3117D822F500C481EB /* HistogramStack */,
+				9350CC5017D832A500C481EB /* HistogramStackLine */,
+				505519AF177EF93300B4A78E /* Line */,
+				505519BB177EF93300B4A78E /* Pie */,
+				939F94DA1796D92A00FEB3EF /* Waterfall */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		502625B51820B75A00DC251A /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				502625B61820B76C00DC251A /* ISSChartDashboardData.h */,
+				502625B71820B76C00DC251A /* ISSChartDashboardData.m */,
+				502625C01820BDD300DC251A /* ISSChartGraduationInterval.h */,
+				502625C11820BDD300DC251A /* ISSChartGraduationInterval.m */,
+				502625CD1820D97F00DC251A /* ISSChartGraduationProperty.h */,
+				502625CE1820D97F00DC251A /* ISSChartGraduationProperty.m */,
+				502625DB1821123600DC251A /* ISSChartGraduation.h */,
+				502625DC1821123600DC251A /* ISSChartGraduation.m */,
+				50A0D63F182373C700253B39 /* ISSChartPointer.h */,
+				50A0D640182373C700253B39 /* ISSChartPointer.m */,
+				50A0D6831823B4FB00253B39 /* ISSChartCircle.h */,
+				50A0D6841823B4FB00253B39 /* ISSChartCircle.m */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		502625B91820BAE900DC251A /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				502625BA1820BB2100DC251A /* ISSChartDashboardView.h */,
+				502625BB1820BB2100DC251A /* ISSChartDashboardView.m */,
+				502625BD1820BB2D00DC251A /* ISSChartDashboardContentView.h */,
+				502625BE1820BB2D00DC251A /* ISSChartDashboardContentView.m */,
+				50BD48D9182886D300B57F3F /* ISSChartDashboardLegendUnitView.h */,
+				50BD48DA182886D300B57F3F /* ISSChartDashboardLegendUnitView.m */,
+				50BD48DC1828880F00B57F3F /* ISSChartDashboardLegendView.h */,
+				50BD48DD1828880F00B57F3F /* ISSChartDashboardLegendView.m */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		502625C31820D45600DC251A /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				502625CA1820D54400DC251A /* ISSChartDashboardDataParser.h */,
+				502625CB1820D54400DC251A /* ISSChartDashboardDataParser.m */,
+				5024ABD3184C42CE00C4FE91 /* ISSChartHistogramDataParser.h */,
+				5024ABD4184C42CE00C4FE91 /* ISSChartHistogramDataParser.m */,
+				5024ABD9184C435A00C4FE91 /* ISSChartHistogramLineDataParser.h */,
+				5024ABDA184C435A00C4FE91 /* ISSChartHistogramLineDataParser.m */,
+				505A90B5185AEDF8000E9F4F /* ISSChartHistogramOverlapDataParser.h */,
+				505A90B6185AEDF8000E9F4F /* ISSChartHistogramOverlapDataParser.m */,
+				502A439518717DB600CC7D5D /* ISSChartHistogramOverlapLineDataParser.h */,
+				502A439618717DB600CC7D5D /* ISSChartHistogramOverlapLineDataParser.m */,
+				5024ABD0184C41C400C4FE91 /* ISSChartLineDataParser.h */,
+				5024ABD1184C41C400C4FE91 /* ISSChartLineDataParser.m */,
+				502625C41820D47300DC251A /* ISSChartParser.h */,
+				502625C51820D47300DC251A /* ISSChartParser.m */,
+				502625C71820D4F300DC251A /* ISSChartParserDataFactory.h */,
+				502625C81820D4F300DC251A /* ISSChartParserDataFactory.m */,
+				5024ABD6184C432700C4FE91 /* ISSChartPieDataParser.h */,
+				5024ABD7184C432700C4FE91 /* ISSChartPieDataParser.m */,
+				509A51F61885268C0012EC82 /* ISSChartWaterfallDataParser.h */,
+				509A51F71885268C0012EC82 /* ISSChartWaterfallDataParser.m */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		502625D71821050E00DC251A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				502625D81821052700DC251A /* ISSChartCircleUtil.h */,
+				502625D91821052700DC251A /* ISSChartCircleUtil.m */,
+				50BD48DF1828926700B57F3F /* ISSChartLengendUtil.h */,
+				50BD48E01828926700B57F3F /* ISSChartLengendUtil.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		5035E76517646112003AE996 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				50537C291851CC49001DFBBD /* Cell */,
+				5002C8AB1771A73D009D7991 /* Model */,
+				50215A8B174F13F000157D66 /* AppDelegate.h */,
+				50215A8C174F13F000157D66 /* AppDelegate.m */,
+				50215A94174F13F000157D66 /* GalleryViewController.h */,
+				50215A95174F13F000157D66 /* GalleryViewController.m */,
+				50537C3A1851D244001DFBBD /* ISSChartGalleryViewController.h */,
+				50537C3B1851D244001DFBBD /* ISSChartGalleryViewController.m */,
+				50537C3C1851D244001DFBBD /* ISSChartGalleryViewController_iPad.xib */,
+				50215A9A174F13F000157D66 /* GalleryViewController_iPad.xib */,
+				50215A97174F13F000157D66 /* GalleryViewController_iPhone.xib */,
+				502625D01820DF2E00DC251A /* ISSChartDashboardViewController.h */,
+				502625D11820DF2E00DC251A /* ISSChartDashboardViewController.m */,
+				502625D21820DF2E00DC251A /* ISSChartDashboardViewController.xib */,
+				5055193B177EB0BF00B4A78E /* ISSChartHistogramLineViewController.h */,
+				5055193C177EB0BF00B4A78E /* ISSChartHistogramLineViewController.m */,
+				5055193D177EB0BF00B4A78E /* ISSChartHistogramLineViewController.xib */,
+				93A2C0CC1797B850003789C7 /* ISSChartHistogramOverlapLineViewController.h */,
+				93A2C0CD1797B850003789C7 /* ISSChartHistogramOverlapLineViewController.m */,
+				93A2C0CE1797B850003789C7 /* ISSChartHistogramOverlapLineViewController.xib */,
+				93A2C0CF1797B851003789C7 /* ISSChartHistogramOverlapViewController.h */,
+				93A2C0D01797B851003789C7 /* ISSChartHistogramOverlapViewController.m */,
+				93A2C0D11797B852003789C7 /* ISSChartHistogramOverlapViewController.xib */,
+				9350CC6017D8344400C481EB /* ISSChartHistogramStackLineViewController.h */,
+				9350CC6117D8344400C481EB /* ISSChartHistogramStackLineViewController.m */,
+				9350CC6217D8344500C481EB /* ISSChartHistogramStackLineViewController.xib */,
+				9350CC4B17D8274900C481EB /* ISSChartHistogramStackViewController.h */,
+				9350CC4C17D8274900C481EB /* ISSChartHistogramStackViewController.m */,
+				9350CC4D17D8274900C481EB /* ISSChartHistogramStackViewController.xib */,
+				50EF2DFC1753401D0014D001 /* ISSChartHistogramViewController.h */,
+				50EF2DFD1753401D0014D001 /* ISSChartHistogramViewController.m */,
+				50EF2DFE1753401E0014D001 /* ISSChartHistogramViewController.xib */,
+				50C62081175DCCD300ADE95E /* ISSChartLineViewController.h */,
+				50C62082175DCCD300ADE95E /* ISSChartLineViewController.m */,
+				50C62083175DCCD300ADE95E /* ISSChartLineViewController.xib */,
+				505C11801846E5D70016752D /* ISSChartDemoViewController.h */,
+				505C11811846E5D70016752D /* ISSChartDemoViewController.m */,
+				5035E76617646147003AE996 /* ISSChartPieViewController.h */,
+				5035E76717646147003AE996 /* ISSChartPieViewController.m */,
+				5035E76817646147003AE996 /* ISSChartPieViewController.xib */,
+				93A2C0D21797B852003789C7 /* ISSChartWaterfallViewController.h */,
+				93A2C0D31797B854003789C7 /* ISSChartWaterfallViewController.m */,
+				93A2C0D41797B855003789C7 /* ISSChartWaterfallViewController.xib */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
+		503A182F185562A700C005A5 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				503A182018555B4000C005A5 /* ISSChartFactory.h */,
+				503A182118555B4000C005A5 /* ISSChartFactory.m */,
+				503A182318555E6900C005A5 /* ISSChartHistogramFactory.h */,
+				503A182418555E6900C005A5 /* ISSChartHistogramFactory.m */,
+				503A1826185560B600C005A5 /* ISSChartLineFactory.h */,
+				503A1827185560B600C005A5 /* ISSChartLineFactory.m */,
+				503A18291855618800C005A5 /* ISSChartPieFactory.h */,
+				503A182A1855618800C005A5 /* ISSChartPieFactory.m */,
+				503A182C1855620900C005A5 /* ISSChartDashboardFactory.h */,
+				503A182D1855620900C005A5 /* ISSChartDashboardFactory.m */,
+				503A1830185562C300C005A5 /* ISSChartHistogramLineFactory.h */,
+				503A1831185562C300C005A5 /* ISSChartHistogramLineFactory.m */,
+				503A1833185564DE00C005A5 /* ISSChartHistogramOverlayFactory.h */,
+				503A1834185564DE00C005A5 /* ISSChartHistogramOverlayFactory.m */,
+				503A18361855655F00C005A5 /* ISSChartHistogramOverlayLineFactory.h */,
+				503A18371855655F00C005A5 /* ISSChartHistogramOverlayLineFactory.m */,
+				503A1839185565F700C005A5 /* ISSChartHistogramStackFactory.h */,
+				503A183A185565F700C005A5 /* ISSChartHistogramStackFactory.m */,
+				503A183C1855667C00C005A5 /* ISSChartHistogramStackLineFactory.h */,
+				503A183D1855667C00C005A5 /* ISSChartHistogramStackLineFactory.m */,
+				503A183F185569AF00C005A5 /* ISSChartWaterfallFactory.h */,
+				503A1840185569AF00C005A5 /* ISSChartWaterfallFactory.m */,
+			);
+			name = Factory;
+			sourceTree = "<group>";
+		};
+		50537C291851CC49001DFBBD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				50537C321851D130001DFBBD /* CustomCellBackground.h */,
+				50537C331851D130001DFBBD /* CustomCellBackground.m */,
+				50537C2A1851CDD4001DFBBD /* ISSChartBaseCollectionViewCell.h */,
+				50537C2B1851CDD4001DFBBD /* ISSChartBaseCollectionViewCell.m */,
+				50537C2D1851CE8B001DFBBD /* ISSChartViewCell.h */,
+				50537C2E1851CE8B001DFBBD /* ISSChartViewCell.m */,
+				50537C301851CE9C001DFBBD /* ISSChartViewCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		50551956177EF78300B4A78E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5055197F177EF83200B4A78E /* ISSChartAxis.h */,
+				50551980177EF83200B4A78E /* ISSChartAxis.m */,
+				50551981177EF83200B4A78E /* ISSChartAxisItem.h */,
+				50551982177EF83200B4A78E /* ISSChartAxisItem.m */,
+				50551983177EF83200B4A78E /* ISSChartAxisProperty.h */,
+				50551984177EF83200B4A78E /* ISSChartAxisProperty.m */,
+				50551985177EF83200B4A78E /* ISSChartBaseData.h */,
+				50551986177EF83200B4A78E /* ISSChartBaseData.m */,
+				50551987177EF83200B4A78E /* ISSChartBaseModelObject.h */,
+				50551988177EF83200B4A78E /* ISSChartBaseModelObject.m */,
+				50551989177EF83200B4A78E /* ISSChartCoordinateSystem.h */,
+				5055198A177EF83200B4A78E /* ISSChartCoordinateSystem.m */,
+				5055198B177EF83200B4A78E /* ISSChartLegend.h */,
+				5055198C177EF83200B4A78E /* ISSChartLegend.m */,
+				93A2C0DB1797B88B003789C7 /* ISSChartHintTextProperty.h */,
+				93A2C0DC1797B88B003789C7 /* ISSChartHintTextProperty.m */,
+				50537313184EC25800A37E52 /* ISSChartTitle.h */,
+				50537314184EC25800A37E52 /* ISSChartTitle.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		50551957177EF78300B4A78E /* Histogram */ = {
+			isa = PBXGroup;
+			children = (
+				50551958177EF78300B4A78E /* ISSChartHistogramBar.h */,
+				50551959177EF78300B4A78E /* ISSChartHistogramBar.m */,
+				5055195A177EF78300B4A78E /* ISSChartHistogramBarGroup.h */,
+				5055195B177EF78300B4A78E /* ISSChartHistogramBarGroup.m */,
+				5055195C177EF78300B4A78E /* ISSChartHistogramBarProperty.h */,
+				5055195D177EF78300B4A78E /* ISSChartHistogramBarProperty.m */,
+				5055195E177EF78300B4A78E /* ISSChartHistogramData.h */,
+				5055195F177EF78300B4A78E /* ISSChartHistogramData.m */,
+			);
+			path = Histogram;
+			sourceTree = "<group>";
+		};
+		50551960177EF78300B4A78E /* HistogramLine */ = {
+			isa = PBXGroup;
+			children = (
+				50551961177EF78300B4A78E /* ISSChartHistogramLineData.h */,
+				50551962177EF78300B4A78E /* ISSChartHistogramLineData.m */,
+			);
+			path = HistogramLine;
+			sourceTree = "<group>";
+		};
+		50551965177EF78300B4A78E /* Line */ = {
+			isa = PBXGroup;
+			children = (
+				50551966177EF78300B4A78E /* ISSChartLine.h */,
+				50551967177EF78300B4A78E /* ISSChartLine.m */,
+				50551968177EF78300B4A78E /* ISSChartLineData.h */,
+				50551969177EF78300B4A78E /* ISSChartLineData.m */,
+				5055196A177EF78300B4A78E /* ISSChartLineProperty.h */,
+				5055196B177EF78300B4A78E /* ISSChartLineProperty.m */,
+				504C1DA3185EB0DD0064083E /* ISSChartLineLegend.h */,
+				504C1DA4185EB0DD0064083E /* ISSChartLineLegend.m */,
+			);
+			path = Line;
+			sourceTree = "<group>";
+		};
+		5055196C177EF78300B4A78E /* Pie */ = {
+			isa = PBXGroup;
+			children = (
+				5055196D177EF78300B4A78E /* ISSChartPieData.h */,
+				5055196E177EF78300B4A78E /* ISSChartPieData.m */,
+				5055196F177EF78300B4A78E /* ISSChartPieSection.h */,
+				50551970177EF78300B4A78E /* ISSChartPieSection.m */,
+				50551971177EF78300B4A78E /* ISSChartPieSectionProperty.h */,
+				50551972177EF78300B4A78E /* ISSChartPieSectionProperty.m */,
+			);
+			path = Pie;
+			sourceTree = "<group>";
+		};
+		50551994177EF93300B4A78E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				50290DAF178FB9700091982A /* ISSChartHintView.h */,
+				50290DB0178FB9700091982A /* ISSChartHintView.m */,
+				50551995177EF93300B4A78E /* ISSChartAxisView.h */,
+				50551996177EF93300B4A78E /* ISSChartAxisView.m */,
+				50551997177EF93300B4A78E /* ISSChartLegendUnitView.h */,
+				50551998177EF93300B4A78E /* ISSChartLegendUnitView.m */,
+				50551999177EF93300B4A78E /* ISSChartLegendView.h */,
+				5055199A177EF93300B4A78E /* ISSChartLegendView.m */,
+				5055199B177EF93300B4A78E /* ISSChartView.h */,
+				5055199C177EF93300B4A78E /* ISSChartView.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5055199D177EF93300B4A78E /* Histogram */ = {
+			isa = PBXGroup;
+			children = (
+				50290DB2178FBA130091982A /* ISSChartHistogramHintView.h */,
+				50290DB3178FBA130091982A /* ISSChartHistogramHintView.m */,
+				50290DB4178FBA130091982A /* ISSChartHistogramHintView.xib */,
+				505519A0177EF93300B4A78E /* ISSChartHistogramAxisView.h */,
+				505519A1177EF93300B4A78E /* ISSChartHistogramAxisView.m */,
+				505519A2177EF93300B4A78E /* ISSChartHistogramContentView.h */,
+				505519A3177EF93300B4A78E /* ISSChartHistogramContentView.m */,
+				505519A4177EF93300B4A78E /* ISSChartHistogramLegendView.h */,
+				505519A5177EF93300B4A78E /* ISSChartHistogramLegendView.m */,
+				505519A6177EF93300B4A78E /* ISSChartHistogramView.h */,
+				505519A7177EF93300B4A78E /* ISSChartHistogramView.m */,
+				50167ADA185817CD00043663 /* ISSChartHistogramLegendUnitView.h */,
+				50167ADB185817CD00043663 /* ISSChartHistogramLegendUnitView.m */,
+			);
+			path = Histogram;
+			sourceTree = "<group>";
+		};
+		505519A8177EF93300B4A78E /* HistogramLine */ = {
+			isa = PBXGroup;
+			children = (
+				504C818F1857080E00EF4F86 /* ISSChartHistogramLineHintView.h */,
+				504C81901857080E00EF4F86 /* ISSChartHistogramLineHintView.m */,
+				504C81911857080E00EF4F86 /* ISSChartHistogramLineHintView.xib */,
+				505519A9177EF93300B4A78E /* ISSChartHistogramLineAxisView.h */,
+				505519AA177EF93300B4A78E /* ISSChartHistogramLineAxisView.m */,
+				505519AB177EF93300B4A78E /* ISSChartHistogramLineLegendView.h */,
+				505519AC177EF93300B4A78E /* ISSChartHistogramLineLegendView.m */,
+				505519AD177EF93300B4A78E /* ISSChartHistogramLineView.h */,
+				505519AE177EF93300B4A78E /* ISSChartHistogramLineView.m */,
+			);
+			path = HistogramLine;
+			sourceTree = "<group>";
+		};
+		505519AF177EF93300B4A78E /* Line */ = {
+			isa = PBXGroup;
+			children = (
+				505519B0177EF93300B4A78E /* ISSChartLineAxisView.h */,
+				505519B1177EF93300B4A78E /* ISSChartLineAxisView.m */,
+				505519B2177EF93300B4A78E /* ISSChartLineContentView.h */,
+				505519B3177EF93300B4A78E /* ISSChartLineContentView.m */,
+				505519B4177EF93300B4A78E /* ISSChartLineHintView.h */,
+				505519B5177EF93300B4A78E /* ISSChartLineHintView.m */,
+				505519B6177EF93300B4A78E /* ISSChartLineHintView.xib */,
+				505519B7177EF93300B4A78E /* ISSChartLineLegendView.h */,
+				505519B8177EF93300B4A78E /* ISSChartLineLegendView.m */,
+				505519B9177EF93300B4A78E /* ISSChartLineView.h */,
+				505519BA177EF93300B4A78E /* ISSChartLineView.m */,
+				50167ADD1858198700043663 /* ISSChartLineLegendUnitView.h */,
+				50167ADE1858198700043663 /* ISSChartLineLegendUnitView.m */,
+			);
+			path = Line;
+			sourceTree = "<group>";
+		};
+		505519BB177EF93300B4A78E /* Pie */ = {
+			isa = PBXGroup;
+			children = (
+				505519BC177EF93300B4A78E /* ISSChartPieContentView.h */,
+				505519BD177EF93300B4A78E /* ISSChartPieContentView.m */,
+				505519BE177EF93300B4A78E /* ISSChartPieLegendView.h */,
+				505519BF177EF93300B4A78E /* ISSChartPieLegendView.m */,
+				505519C2177EF93300B4A78E /* ISSChartPieView.h */,
+				505519C3177EF93300B4A78E /* ISSChartPieView.m */,
+				50088D3F184727D7008C795C /* ISSChartPieLegendUnitView.h */,
+				50088D40184727D7008C795C /* ISSChartPieLegendUnitView.m */,
+			);
+			path = Pie;
 			sourceTree = "<group>";
 		};
 		50EF2E071753561D0014D001 /* Addition */ = {
 			isa = PBXGroup;
 			children = (
+				506873FF18224D7C00D57E96 /* UIColor-Expanded.h */,
+				5068740018224D7C00D57E96 /* UIColor-Expanded.m */,
+				506F5488178278FF00F1B2FE /* UIDevice+ITTAdditions.h */,
+				506F5489178278FF00F1B2FE /* UIDevice+ITTAdditions.m */,
 				5071F1DD175C7A2200F5EC73 /* UIView+ITTAdditions.h */,
 				5071F1DE175C7A2200F5EC73 /* UIView+ITTAdditions.m */,
 				50EF2E0B175357960014D001 /* UIFont+ITTAdditions.h */,
@@ -302,6 +1077,148 @@
 				50EF2E091753561E0014D001 /* NSString+ITTAdditions.m */,
 			);
 			path = Addition;
+			sourceTree = "<group>";
+		};
+		50F2528F18517AF80062566E /* data */ = {
+			isa = PBXGroup;
+			children = (
+				502625D51820EFD900DC251A /* dashboard.txt */,
+				50E9994B187F9C26009AFE9E /* dashboard2.txt */,
+				50F2528B18517A7E0062566E /* histogramdata.txt */,
+				50F2528C18517A7E0062566E /* histogramdata2.txt */,
+				50167AE01858356D00043663 /* histogramline.txt */,
+				50167AE2185858F400043663 /* histogramline2.txt */,
+				505A90B8185AF1DF000E9F4F /* histogramoverlap.txt */,
+				505A90B9185AF1DF000E9F4F /* histogramoverlap2.txt */,
+				502A439C1871818900CC7D5D /* histogramoverlapline.txt */,
+				502A439D1871818900CC7D5D /* histogramoverlapline2.txt */,
+				50AB1AA1184DEA0200185C06 /* linedata.txt */,
+				50537316184EDBA700A37E52 /* linedata2.txt */,
+				50F68B3918501CBD00A74821 /* piedata.txt */,
+				50F68B3B1850857D00A74821 /* piedata2.txt */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+		9350CC3117D822F500C481EB /* HistogramStack */ = {
+			isa = PBXGroup;
+			children = (
+				9350CC3217D822F500C481EB /* ISSChartHistogramStackAxisView.h */,
+				9350CC3317D822F500C481EB /* ISSChartHistogramStackAxisView.m */,
+				9350CC3417D822F500C481EB /* ISSChartHistogramStackContentView.h */,
+				9350CC3517D822F500C481EB /* ISSChartHistogramStackContentView.m */,
+				9350CC3617D822F500C481EB /* ISSChartHistogramStackHintView.h */,
+				9350CC3717D822F500C481EB /* ISSChartHistogramStackHintView.m */,
+				9350CC3817D822F500C481EB /* ISSChartHistogramStackHintView.xib */,
+				9350CC3917D822F500C481EB /* ISSChartHistogramStackLegendView.h */,
+				9350CC3A17D822F500C481EB /* ISSChartHistogramStackLegendView.m */,
+				9350CC3B17D822F500C481EB /* ISSChartHistogramStackView.h */,
+				9350CC3C17D822F500C481EB /* ISSChartHistogramStackView.m */,
+			);
+			path = HistogramStack;
+			sourceTree = "<group>";
+		};
+		9350CC4717D8244100C481EB /* HistogramStack */ = {
+			isa = PBXGroup;
+			children = (
+				9350CC4817D8244100C481EB /* ISSChartHistogramStackData.h */,
+				9350CC4917D8244100C481EB /* ISSChartHistogramStackData.m */,
+			);
+			path = HistogramStack;
+			sourceTree = "<group>";
+		};
+		9350CC5017D832A500C481EB /* HistogramStackLine */ = {
+			isa = PBXGroup;
+			children = (
+				9350CC5117D832A600C481EB /* ISSChartHistogramStackLineHintView.h */,
+				9350CC5217D832A600C481EB /* ISSChartHistogramStackLineHintView.m */,
+				9350CC5317D832A600C481EB /* ISSChartHistogramStackLineHintView.xib */,
+				9350CC5417D832A600C481EB /* ISSChartHistogramStackLineLegendView.h */,
+				9350CC5517D832A600C481EB /* ISSChartHistogramStackLineLegendView.m */,
+				9350CC5617D832A600C481EB /* ISSChartHistogramStackLineView.h */,
+				9350CC5717D832A600C481EB /* ISSChartHistogramStackLineView.m */,
+			);
+			path = HistogramStackLine;
+			sourceTree = "<group>";
+		};
+		9350CC5C17D8337900C481EB /* HistogramStackLine */ = {
+			isa = PBXGroup;
+			children = (
+				9350CC5D17D8337900C481EB /* ISSChartHistogramStackLineData.h */,
+				9350CC5E17D8337900C481EB /* ISSChartHistogramStackLineData.m */,
+			);
+			path = HistogramStackLine;
+			sourceTree = "<group>";
+		};
+		939F94C61796D92A00FEB3EF /* HistogramOverlap */ = {
+			isa = PBXGroup;
+			children = (
+				93A2C09F1797B802003789C7 /* ISSChartHistogramOverlapAxisView.h */,
+				93A2C0A01797B802003789C7 /* ISSChartHistogramOverlapAxisView.m */,
+				93A2C0A11797B802003789C7 /* ISSChartHistogramOverlapContentView.h */,
+				93A2C0A21797B802003789C7 /* ISSChartHistogramOverlapContentView.m */,
+				93A2C0A31797B802003789C7 /* ISSChartHistogramOverlapHintView.h */,
+				93A2C0A41797B802003789C7 /* ISSChartHistogramOverlapHintView.m */,
+				93A2C0A51797B802003789C7 /* ISSChartHistogramOverlapHintView.xib */,
+				93A2C0A61797B802003789C7 /* ISSChartHistogramOverlapLegendView.h */,
+				93A2C0A71797B802003789C7 /* ISSChartHistogramOverlapLegendView.m */,
+				93A2C0A81797B802003789C7 /* ISSChartHistogramOverlapView.h */,
+				93A2C0A91797B802003789C7 /* ISSChartHistogramOverlapView.m */,
+			);
+			path = HistogramOverlap;
+			sourceTree = "<group>";
+		};
+		939F94D21796D92A00FEB3EF /* HistogramOverlapLine */ = {
+			isa = PBXGroup;
+			children = (
+				93A2C0B01797B815003789C7 /* ISSChartHistogramOverlapLineHintView.h */,
+				93A2C0B11797B815003789C7 /* ISSChartHistogramOverlapLineHintView.m */,
+				93A2C0B21797B815003789C7 /* ISSChartHistogramOverlapLineHintView.xib */,
+				93A2C0B31797B815003789C7 /* ISSChartHistogramOverlapLineLegendView.h */,
+				93A2C0B41797B815003789C7 /* ISSChartHistogramOverlapLineLegendView.m */,
+				93A2C0B51797B815003789C7 /* ISSChartHistogramOverlapLineView.h */,
+				93A2C0B61797B815003789C7 /* ISSChartHistogramOverlapLineView.m */,
+			);
+			path = HistogramOverlapLine;
+			sourceTree = "<group>";
+		};
+		939F94DA1796D92A00FEB3EF /* Waterfall */ = {
+			isa = PBXGroup;
+			children = (
+				93A2C0BB1797B826003789C7 /* ISSChartSymbolGenerator.h */,
+				93A2C0BC1797B826003789C7 /* ISSChartSymbolGenerator.m */,
+				93A2C0BD1797B826003789C7 /* ISSChartWaterfallAxisView.h */,
+				93A2C0BE1797B826003789C7 /* ISSChartWaterfallAxisView.m */,
+				93A2C0BF1797B826003789C7 /* ISSChartWaterfallContentView.h */,
+				93A2C0C01797B826003789C7 /* ISSChartWaterfallContentView.m */,
+				93A2C0C11797B826003789C7 /* ISSChartWaterfallHintView.h */,
+				93A2C0C21797B826003789C7 /* ISSChartWaterfallHintView.m */,
+				93A2C0C31797B826003789C7 /* ISSChartWaterfallHintView.xib */,
+				93A2C0C41797B826003789C7 /* ISSChartWaterfallView.h */,
+				93A2C0C51797B826003789C7 /* ISSChartWaterfallView.m */,
+			);
+			name = Waterfall;
+			path = waterfall;
+			sourceTree = "<group>";
+		};
+		939F94F61796D93900FEB3EF /* HistogramOverlap */ = {
+			isa = PBXGroup;
+			children = (
+				93A2C0DE1797B8A7003789C7 /* ISSChartHistogramOverlapData.h */,
+				93A2C0DF1797B8A7003789C7 /* ISSChartHistogramOverlapData.m */,
+			);
+			path = HistogramOverlap;
+			sourceTree = "<group>";
+		};
+		939F94F91796D93900FEB3EF /* HistogramOverlapLine */ = {
+			isa = PBXGroup;
+			children = (
+				93A2C0E11797B8B0003789C7 /* ISSChartHistogramOverlapLineData.h */,
+				93A2C0E21797B8B0003789C7 /* ISSChartHistogramOverlapLineData.m */,
+				504C1DA0185EAC880064083E /* ISSChartHistogramOverlapLineLegend.h */,
+				504C1DA1185EAC880064083E /* ISSChartHistogramOverlapLineLegend.m */,
+			);
+			path = HistogramOverlapLine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,14 +1273,63 @@
 			buildActionMask = 2147483647;
 			files = (
 				50215A87174F13F000157D66 /* InfoPlist.strings in Resources */,
+				50167AE11858356D00043663 /* histogramline.txt in Resources */,
+				502A439E1871818900CC7D5D /* histogramoverlapline.txt in Resources */,
+				5076B6451829E6D1000EB5F3 /* bad_left@2x.png in Resources */,
+				5076B64E1829E7D6000EB5F3 /* pointer.png in Resources */,
 				50215A8F174F13F000157D66 /* Default.png in Resources */,
+				502625D41820DF2E00DC251A /* ISSChartDashboardViewController.xib in Resources */,
 				50215A91174F13F000157D66 /* Default@2x.png in Resources */,
 				50215A93174F13F000157D66 /* Default-568h@2x.png in Resources */,
 				50215A99174F13F000157D66 /* GalleryViewController_iPhone.xib in Resources */,
+				505A90BB185AF1DF000E9F4F /* histogramoverlap2.txt in Resources */,
+				502A439F1871818900CC7D5D /* histogramoverlapline2.txt in Resources */,
 				50215A9C174F13F000157D66 /* GalleryViewController_iPad.xib in Resources */,
+				50537C3E1851D244001DFBBD /* ISSChartGalleryViewController_iPad.xib in Resources */,
+				5076B63F1829E420000EB5F3 /* Icon.png in Resources */,
 				50EF2E001753401E0014D001 /* ISSChartHistogramViewController.xib in Resources */,
-				504DDA38175481CC00DA75CC /* histogram.plist in Resources */,
-				504DDA4617549D5100DA75CC /* histogram2.plist in Resources */,
+				50E99950187FA474009AFE9E /* pointer_small.png in Resources */,
+				5076B64B1829E7D6000EB5F3 /* bad_left.png in Resources */,
+				5076B64C1829E7D6000EB5F3 /* circle.png in Resources */,
+				50C62085175DCCD300ADE95E /* ISSChartLineViewController.xib in Resources */,
+				5035E76A17646147003AE996 /* ISSChartPieViewController.xib in Resources */,
+				50537C311851CE9C001DFBBD /* ISSChartViewCell.xib in Resources */,
+				50120A581773FA6B000CA216 /* hint_bg_arrow_down.png in Resources */,
+				50120A591773FA6B000CA216 /* hint_bg_arrow_left.png in Resources */,
+				5076B6461829E6D1000EB5F3 /* good_right@2x.png in Resources */,
+				5055193F177EB0BF00B4A78E /* ISSChartHistogramLineViewController.xib in Resources */,
+				504C81931857080E00EF4F86 /* ISSChartHistogramLineHintView.xib in Resources */,
+				5076B6401829E420000EB5F3 /* Icon@2x.png in Resources */,
+				505519D3177EF93300B4A78E /* ISSChartLineHintView.xib in Resources */,
+				50F68B3A18501CBD00A74821 /* piedata.txt in Resources */,
+				50290DB6178FBA140091982A /* ISSChartHistogramHintView.xib in Resources */,
+				50F2528E18517A7E0062566E /* histogramdata2.txt in Resources */,
+				5076B6381829E388000EB5F3 /* Icon-76.png in Resources */,
+				93A2C0AD1797B802003789C7 /* ISSChartHistogramOverlapHintView.xib in Resources */,
+				5076B6371829E388000EB5F3 /* Icon-72.png in Resources */,
+				93A2C0B81797B815003789C7 /* ISSChartHistogramOverlapLineHintView.xib in Resources */,
+				93A2C0CA1797B826003789C7 /* ISSChartWaterfallHintView.xib in Resources */,
+				50537317184EDBA700A37E52 /* linedata2.txt in Resources */,
+				93A2C0D61797B855003789C7 /* ISSChartHistogramOverlapLineViewController.xib in Resources */,
+				93A2C0D81797B855003789C7 /* ISSChartHistogramOverlapViewController.xib in Resources */,
+				93A2C0DA1797B855003789C7 /* ISSChartWaterfallViewController.xib in Resources */,
+				50E9994C187F9C26009AFE9E /* dashboard2.txt in Resources */,
+				505A90BA185AF1DF000E9F4F /* histogramoverlap.txt in Resources */,
+				50F68B3C1850857D00A74821 /* piedata2.txt in Resources */,
+				50167AE3185858F400043663 /* histogramline2.txt in Resources */,
+				5076B6311829DFFF000EB5F3 /* circle@2x.png in Resources */,
+				9350CC4017D822F500C481EB /* ISSChartHistogramStackHintView.xib in Resources */,
+				5076B6321829DFFF000EB5F3 /* pointer@2x.png in Resources */,
+				9350CC4F17D8274900C481EB /* ISSChartHistogramStackViewController.xib in Resources */,
+				5076B64D1829E7D6000EB5F3 /* good_right.png in Resources */,
+				9350CC5917D832A600C481EB /* ISSChartHistogramStackLineHintView.xib in Resources */,
+				5076B63E1829E420000EB5F3 /* Icon-72@2x.png in Resources */,
+				5076B63A1829E388000EB5F3 /* Icon-76@2x.png in Resources */,
+				50F2528D18517A7E0062566E /* histogramdata.txt in Resources */,
+				9350CC6417D8344500C481EB /* ISSChartHistogramStackLineViewController.xib in Resources */,
+				50E99954187FA4F7009AFE9E /* pointer_small@2x.png in Resources */,
+				50AB1AA2184DEA0200185C06 /* linedata.txt in Resources */,
+				502625D61820EFD900DC251A /* dashboard.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,36 +1340,143 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				502625CC1820D54400DC251A /* ISSChartDashboardDataParser.m in Sources */,
 				50215A89174F13F000157D66 /* main.m in Sources */,
 				50215A8D174F13F000157D66 /* AppDelegate.m in Sources */,
 				50215A96174F13F000157D66 /* GalleryViewController.m in Sources */,
-				50215AA7174F177E00157D66 /* ISSChartView.m in Sources */,
-				50215AAA174F17B500157D66 /* ISSChartHistogramLegendView.m in Sources */,
-				50215AAD174F17D500157D66 /* ISSChartHistogramContentView.m in Sources */,
-				50215AB3174F4DF800157D66 /* ISSChartHistogramAxisView.m in Sources */,
-				50215AB6174F4F2200157D66 /* ISSChartAxis.m in Sources */,
+				503A1835185564DE00C005A5 /* ISSChartHistogramOverlayFactory.m in Sources */,
 				50EF2DF717533A1A0014D001 /* ISSChatGallery.m in Sources */,
 				50EF2DFA17533AE30014D001 /* Manager.m in Sources */,
 				50EF2DFF1753401E0014D001 /* ISSChartHistogramViewController.m in Sources */,
 				50EF2E031753481C0014D001 /* ISSDashing.c in Sources */,
 				50EF2E0A1753561E0014D001 /* NSString+ITTAdditions.m in Sources */,
 				50EF2E0D175357960014D001 /* UIFont+ITTAdditions.m in Sources */,
-				504DDA291754492A00DA75CC /* ISSChartHistogramData.m in Sources */,
-				504DDA2C17544A7100DA75CC /* ISSComponentProperty.m in Sources */,
-				504DDA2F17544B5300DA75CC /* ISSChartAxisProperty.m in Sources */,
-				504DDA331754517500DA75CC /* ISSChartBarProperty.m in Sources */,
-				504DDA361754582D00DA75CC /* ISSChartBar.m in Sources */,
-				504DDA3B1754864500DA75CC /* ISSChartBaseModelObject.m in Sources */,
-				50D8E7C11756EBDB009FD6E6 /* ISSChartHistogramCoordinateSystem.m in Sources */,
-				50D8E7C41756F64B009FD6E6 /* ISSChartAxisItem.m in Sources */,
-				50D8E7C7175752DD009FD6E6 /* ISSChartBarGroup.m in Sources */,
-				50FF3C9F175853BD00B41692 /* ISSChartAxisView.m in Sources */,
+				503A182518555E6900C005A5 /* ISSChartHistogramFactory.m in Sources */,
 				505BE53217587D6D0026F7CF /* ISSChartColorUtil.m in Sources */,
-				505BE535175884D50026F7CF /* ISSChartHistogramView.m in Sources */,
-				507577791758A50D00AF3DB4 /* ISSChartCoordinateSystem.m in Sources */,
-				5013740D175C70F700AF52C4 /* ISSChartLegend.m in Sources */,
-				50137410175C726D00AF52C4 /* ISSChartLegendUnitView.m in Sources */,
 				5071F1DF175C7A2200F5EC73 /* UIView+ITTAdditions.m in Sources */,
+				50C62084175DCCD300ADE95E /* ISSChartLineViewController.m in Sources */,
+				50D0687617609028001A454C /* ISSChartUtil.m in Sources */,
+				5024ABDB184C435A00C4FE91 /* ISSChartHistogramLineDataParser.m in Sources */,
+				503A181F1855575D00C005A5 /* ISSChartViewGenerator.m in Sources */,
+				5035E76917646147003AE996 /* ISSChartPieViewController.m in Sources */,
+				5002C8AE1771A760009D7991 /* ISSChartDataGenerator.m in Sources */,
+				5055193E177EB0BF00B4A78E /* ISSChartHistogramLineViewController.m in Sources */,
+				5024ABD8184C432700C4FE91 /* ISSChartPieDataParser.m in Sources */,
+				50551973177EF78300B4A78E /* ISSChartHistogramBar.m in Sources */,
+				50551974177EF78300B4A78E /* ISSChartHistogramBarGroup.m in Sources */,
+				50537315184EC25800A37E52 /* ISSChartTitle.m in Sources */,
+				50551975177EF78300B4A78E /* ISSChartHistogramBarProperty.m in Sources */,
+				502625CF1820D97F00DC251A /* ISSChartGraduationProperty.m in Sources */,
+				50537C341851D130001DFBBD /* CustomCellBackground.m in Sources */,
+				503A1841185569AF00C005A5 /* ISSChartWaterfallFactory.m in Sources */,
+				50551976177EF78300B4A78E /* ISSChartHistogramData.m in Sources */,
+				503A182B1855618800C005A5 /* ISSChartPieFactory.m in Sources */,
+				50551977177EF78300B4A78E /* ISSChartHistogramLineData.m in Sources */,
+				50551979177EF78300B4A78E /* ISSChartLine.m in Sources */,
+				5055197A177EF78300B4A78E /* ISSChartLineData.m in Sources */,
+				503A183E1855667C00C005A5 /* ISSChartHistogramStackLineFactory.m in Sources */,
+				502625BC1820BB2100DC251A /* ISSChartDashboardView.m in Sources */,
+				5055197B177EF78300B4A78E /* ISSChartLineProperty.m in Sources */,
+				503A1828185560B600C005A5 /* ISSChartLineFactory.m in Sources */,
+				502625D31820DF2E00DC251A /* ISSChartDashboardViewController.m in Sources */,
+				5055197C177EF78300B4A78E /* ISSChartPieData.m in Sources */,
+				5055197D177EF78300B4A78E /* ISSChartPieSection.m in Sources */,
+				5055197E177EF78300B4A78E /* ISSChartPieSectionProperty.m in Sources */,
+				502A439718717DB600CC7D5D /* ISSChartHistogramOverlapLineDataParser.m in Sources */,
+				505A90B7185AEDF8000E9F4F /* ISSChartHistogramOverlapDataParser.m in Sources */,
+				5055198D177EF83200B4A78E /* ISSChartAxis.m in Sources */,
+				5055198E177EF83200B4A78E /* ISSChartAxisItem.m in Sources */,
+				5055198F177EF83200B4A78E /* ISSChartAxisProperty.m in Sources */,
+				50551990177EF83200B4A78E /* ISSChartBaseData.m in Sources */,
+				50BD48E11828926700B57F3F /* ISSChartLengendUtil.m in Sources */,
+				5024ABD5184C42CE00C4FE91 /* ISSChartHistogramDataParser.m in Sources */,
+				50551991177EF83200B4A78E /* ISSChartBaseModelObject.m in Sources */,
+				505C11821846E5D70016752D /* ISSChartDemoViewController.m in Sources */,
+				50551992177EF83200B4A78E /* ISSChartCoordinateSystem.m in Sources */,
+				50551993177EF83200B4A78E /* ISSChartLegend.m in Sources */,
+				505519C4177EF93300B4A78E /* ISSChartAxisView.m in Sources */,
+				50537C3D1851D244001DFBBD /* ISSChartGalleryViewController.m in Sources */,
+				505519C5177EF93300B4A78E /* ISSChartLegendUnitView.m in Sources */,
+				505519C6177EF93300B4A78E /* ISSChartLegendView.m in Sources */,
+				505519C7177EF93300B4A78E /* ISSChartView.m in Sources */,
+				505519C9177EF93300B4A78E /* ISSChartHistogramAxisView.m in Sources */,
+				505519CA177EF93300B4A78E /* ISSChartHistogramContentView.m in Sources */,
+				505519CB177EF93300B4A78E /* ISSChartHistogramLegendView.m in Sources */,
+				50A0D641182373C700253B39 /* ISSChartPointer.m in Sources */,
+				503A1832185562C300C005A5 /* ISSChartHistogramLineFactory.m in Sources */,
+				50A0D6851823B4FB00253B39 /* ISSChartCircle.m in Sources */,
+				502625DD1821123600DC251A /* ISSChartGraduation.m in Sources */,
+				505519CC177EF93300B4A78E /* ISSChartHistogramView.m in Sources */,
+				505519CD177EF93300B4A78E /* ISSChartHistogramLineAxisView.m in Sources */,
+				50167ADF1858198700043663 /* ISSChartLineLegendUnitView.m in Sources */,
+				505519CE177EF93300B4A78E /* ISSChartHistogramLineLegendView.m in Sources */,
+				509A51F81885268C0012EC82 /* ISSChartWaterfallDataParser.m in Sources */,
+				505519CF177EF93300B4A78E /* ISSChartHistogramLineView.m in Sources */,
+				505519D0177EF93300B4A78E /* ISSChartLineAxisView.m in Sources */,
+				505519D1177EF93300B4A78E /* ISSChartLineContentView.m in Sources */,
+				505519D2177EF93300B4A78E /* ISSChartLineHintView.m in Sources */,
+				502625BF1820BB2D00DC251A /* ISSChartDashboardContentView.m in Sources */,
+				50BD48DE1828880F00B57F3F /* ISSChartDashboardLegendView.m in Sources */,
+				505519D4177EF93300B4A78E /* ISSChartLineLegendView.m in Sources */,
+				502625B81820B76C00DC251A /* ISSChartDashboardData.m in Sources */,
+				505519D5177EF93300B4A78E /* ISSChartLineView.m in Sources */,
+				503A182E1855620900C005A5 /* ISSChartDashboardFactory.m in Sources */,
+				505519D6177EF93300B4A78E /* ISSChartPieContentView.m in Sources */,
+				505519D7177EF93300B4A78E /* ISSChartPieLegendView.m in Sources */,
+				505519D9177EF93300B4A78E /* ISSChartPieView.m in Sources */,
+				506F548A178278FF00F1B2FE /* UIDevice+ITTAdditions.m in Sources */,
+				50290DB1178FB9700091982A /* ISSChartHintView.m in Sources */,
+				504C1DA2185EAC880064083E /* ISSChartHistogramOverlapLineLegend.m in Sources */,
+				504C1DA5185EB0DD0064083E /* ISSChartLineLegend.m in Sources */,
+				50088D41184727D7008C795C /* ISSChartPieLegendUnitView.m in Sources */,
+				50290DB5178FBA140091982A /* ISSChartHistogramHintView.m in Sources */,
+				93A2C0AA1797B802003789C7 /* ISSChartHistogramOverlapAxisView.m in Sources */,
+				503A182218555B4000C005A5 /* ISSChartFactory.m in Sources */,
+				93A2C0AB1797B802003789C7 /* ISSChartHistogramOverlapContentView.m in Sources */,
+				50BD48DB182886D300B57F3F /* ISSChartDashboardLegendUnitView.m in Sources */,
+				5024ABD2184C41C400C4FE91 /* ISSChartLineDataParser.m in Sources */,
+				93A2C0AC1797B802003789C7 /* ISSChartHistogramOverlapHintView.m in Sources */,
+				93A2C0AE1797B802003789C7 /* ISSChartHistogramOverlapLegendView.m in Sources */,
+				93A2C0AF1797B802003789C7 /* ISSChartHistogramOverlapView.m in Sources */,
+				93A2C0B71797B815003789C7 /* ISSChartHistogramOverlapLineHintView.m in Sources */,
+				93A2C0B91797B815003789C7 /* ISSChartHistogramOverlapLineLegendView.m in Sources */,
+				93A2C0BA1797B815003789C7 /* ISSChartHistogramOverlapLineView.m in Sources */,
+				504C81921857080E00EF4F86 /* ISSChartHistogramLineHintView.m in Sources */,
+				502625DA1821052700DC251A /* ISSChartCircleUtil.m in Sources */,
+				50167ADC185817CD00043663 /* ISSChartHistogramLegendUnitView.m in Sources */,
+				93A2C0C61797B826003789C7 /* ISSChartSymbolGenerator.m in Sources */,
+				93A2C0C71797B826003789C7 /* ISSChartWaterfallAxisView.m in Sources */,
+				93A2C0C81797B826003789C7 /* ISSChartWaterfallContentView.m in Sources */,
+				93A2C0C91797B826003789C7 /* ISSChartWaterfallHintView.m in Sources */,
+				93A2C0CB1797B826003789C7 /* ISSChartWaterfallView.m in Sources */,
+				93A2C0D51797B855003789C7 /* ISSChartHistogramOverlapLineViewController.m in Sources */,
+				93A2C0D71797B855003789C7 /* ISSChartHistogramOverlapViewController.m in Sources */,
+				93A2C0D91797B855003789C7 /* ISSChartWaterfallViewController.m in Sources */,
+				50537C2C1851CDD4001DFBBD /* ISSChartBaseCollectionViewCell.m in Sources */,
+				5068740118224D7C00D57E96 /* UIColor-Expanded.m in Sources */,
+				93A2C0DD1797B88B003789C7 /* ISSChartHintTextProperty.m in Sources */,
+				93A2C0E01797B8A7003789C7 /* ISSChartHistogramOverlapData.m in Sources */,
+				502625C21820BDD300DC251A /* ISSChartGraduationInterval.m in Sources */,
+				502625C91820D4F300DC251A /* ISSChartParserDataFactory.m in Sources */,
+				93A2C0E31797B8B0003789C7 /* ISSChartHistogramOverlapLineData.m in Sources */,
+				5010DA0C17A8BF9C00F43EEF /* ISSChartWaterfallData.m in Sources */,
+				5010DA0D17A8BF9C00F43EEF /* ISSChartWaterfallSymbolData.m in Sources */,
+				503A18381855655F00C005A5 /* ISSChartHistogramOverlayLineFactory.m in Sources */,
+				50537C2F1851CE8B001DFBBD /* ISSChartViewCell.m in Sources */,
+				9350CC3D17D822F500C481EB /* ISSChartHistogramStackAxisView.m in Sources */,
+				9350CC3E17D822F500C481EB /* ISSChartHistogramStackContentView.m in Sources */,
+				503A183B185565F700C005A5 /* ISSChartHistogramStackFactory.m in Sources */,
+				9350CC3F17D822F500C481EB /* ISSChartHistogramStackHintView.m in Sources */,
+				9350CC4117D822F500C481EB /* ISSChartHistogramStackLegendView.m in Sources */,
+				9350CC4217D822F500C481EB /* ISSChartHistogramStackView.m in Sources */,
+				9350CC4A17D8244100C481EB /* ISSChartHistogramStackData.m in Sources */,
+				502625C61820D47300DC251A /* ISSChartParser.m in Sources */,
+				9350CC4E17D8274900C481EB /* ISSChartHistogramStackViewController.m in Sources */,
+				9350CC5817D832A600C481EB /* ISSChartHistogramStackLineHintView.m in Sources */,
+				9350CC5A17D832A600C481EB /* ISSChartHistogramStackLineLegendView.m in Sources */,
+				9350CC5B17D832A600C481EB /* ISSChartHistogramStackLineView.m in Sources */,
+				9350CC5F17D8337900C481EB /* ISSChartHistogramStackLineData.m in Sources */,
+				9350CC6317D8344500C481EB /* ISSChartHistogramStackLineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,7 +1521,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: LI XIAO (MK636A256V)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -496,15 +1569,18 @@
 		50215AA0174F13F000157D66 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: LI XIAO (MK636A256V)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Scott Lee (94JG5K3RP2)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ChartLib/ChartLib-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = "ChartLib/ChartLib-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "185C78C2-8C08-46F5-88A3-2684665F2FC8";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A88FCDCE-FD0B-47C4-9A00-BDDC7A27C2B5";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -512,15 +1588,18 @@
 		50215AA1174F13F000157D66 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Beijing iTotem Tech Co., Ltd.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ChartLib/ChartLib-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = "ChartLib/ChartLib-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F288BF7F-2ED8-48E4-B33B-E105118ED27B";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D69A7E45-15EA-4CA2-8425-E99FA0CCBEA0";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

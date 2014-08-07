@@ -12,8 +12,10 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import <QuartzCore/QuartzCore.h>
-    #import "Consts.h"
+    #import "CommonFunction.h"
+    #import "ISSChartConsts.h"
     #import "ITTDebug.h"
     #import "ITTCommonMacros.h"
     #import "UIView+ITTAdditions.h"
+	#import "NSString+ITTAdditions.h"
 #endif

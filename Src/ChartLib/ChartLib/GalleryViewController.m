@@ -35,8 +35,8 @@
     NSString *className = [chartName stringByAppendingString:@"Controller"];
     Class class = NSClassFromString(className);
     UIViewController *viewController = [[class alloc] initWithNibName:className bundle:nil];
-    NSString *assertMessage = [NSString stringWithFormat:@"could not load NIB in bundle with nibname %@", chartName];
-    NSAssert((viewController != nil), assertMessage);
+//    NSString *assertMessage = [NSString stringWithFormat:@"could not load NIB in bundle with nibname %@", chartName];
+//    NSAssert((viewController != nil), assertMessage);
     return [viewController autorelease];
 }
 
@@ -63,7 +63,9 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:TRUE];
     NSString *chartName = [[ISSChatGallery sharedInstance] chartNameAtRow:indexPath.row];
-    UIViewController *chartViewController = [self chartDetailViewController:chartName];
-    [self.navigationController pushViewController:chartViewController animated:TRUE];
+	if (chartName && [chartName length]) {
+		UIViewController *chartViewController = [self chartDetailViewController:chartName];
+		[self.navigationController pushViewController:chartViewController animated:TRUE];		
+	}
 }
 @end

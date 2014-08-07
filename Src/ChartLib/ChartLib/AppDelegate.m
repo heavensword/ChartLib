@@ -9,27 +9,30 @@
 #import "AppDelegate.h"
 
 #import "GalleryViewController.h"
+#import "ISSChartGalleryViewController.h"
 
 @implementation AppDelegate
 
 - (void)dealloc
 {
-    [_window release];
     [_rootViewController release];
     [_navController release];
+    [_window release];
     [super dealloc];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+	self.window.backgroundColor = [UIColor blackColor];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        _rootViewController = [[GalleryViewController alloc] initWithNibName:@"GalleryViewController_iPhone" bundle:nil];
+        _rootViewController = [[ISSChartGalleryViewController alloc] initWithNibName:@"ISSChartGalleryViewController_iPhone" bundle:nil];
     } else {
-        _rootViewController = [[GalleryViewController alloc] initWithNibName:@"GalleryViewController_iPad" bundle:nil];
+        _rootViewController = [[ISSChartGalleryViewController alloc] initWithNibName:@"ISSChartGalleryViewController_iPad" bundle:nil];
     }
     _navController = [[UINavigationController alloc] initWithRootViewController:_rootViewController];
+	_navController.navigationBar.translucent = FALSE;
     self.window.rootViewController = _navController;
     [self.window makeKeyAndVisible];
     return YES;
@@ -59,6 +62,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
+    ITTDINFO(@"- (void)applicationWillTerminate:(UIApplication *)application");
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 

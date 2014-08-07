@@ -13,17 +13,25 @@
 #import "ISSChartAxisProperty.h"
 #import "ISSDashing.h"
 #import "ISSChartHistogramData.h"
-#import "ISSChartBar.h"
-#import "ISSChartHistogramCoordinateSystem.h"
+#import "ISSChartHistogramBar.h"
 #import "ISSChartHistogramView.h"
-#import "ISSChartBar.h"
+#import "ISSChartHistogramBar.h"
+#import "ISSChartHintView.h"
+#import "ISSChartHistogramHintView.h"
+#import "ISSChartCoordinateSystem.h"
+#import "ISSChartAxisItem.h"
 
 @interface ISSChartHistogramViewController ()
 {
+    BOOL                  _filter;
+    BOOL                  _changed;
     ISSChartHistogramView *_histogramChartView;
 }
 
+
+@property (retain, nonatomic) IBOutlet UIButton *captureButton;
 @property (retain, nonatomic) IBOutlet UILabel *indicatorLabel;
+@property (retain, nonatomic) IBOutlet UIButton *changeDataButton;
 
 @end
 
@@ -34,6 +42,8 @@
 {
     [_histogramChartView release];
     [_indicatorLabel release];
+    [_captureButton release];
+	[_changeDataButton release];
     [super dealloc];
 }
 
@@ -49,62 +59,106 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.multipleTouchEnabled = TRUE;
     // Do any additional setup after loading the view from its nib.
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    [super viewWillAppear:animated];    
-    _histogramChartView = [[ISSChartHistogramView alloc] initWithFrame:self.view.bounds histogram:[self histogram]];
-    _histogramChartView.didSelectedBarBlock = ^(ISSChartHistogramView *histogramChartView , NSInteger index){
-        ISSChartBar *bar = [_histogramChartView.histogram.bars objectAtIndex:index];
-        self.indicatorLabel.text = [NSString stringWithFormat:@"%@ %.1f", bar.name, bar.valueY];
+    [super viewWillAppear:animated];
+	__block typeof(self)weakSelf = self;
+    _histogramChartView = [[ISSChartHistogramView alloc] initWithFrame:self.view.bounds histogram:[[ISSChartDataGenerator sharedInstance] histogramDataFromParser]];
+    _histogramChartView.didSelectedBarBlock = ^ISSChartHintView *(ISSChartHistogramView *histogramChartView, ISSChartHistogramBar *bar, ISSChartAxisItem *axisItem) {
+        return [weakSelf getHintView:histogramChartView bar:bar xAxisItem:axisItem];
     };
-    //here need to optimization    
+    //here need to optimization
     [self.view addSubview:_histogramChartView];
     [self.view bringSubviewToFront:self.indicatorLabel];
+    [self.view bringSubviewToFront:self.captureButton];
+    [self.view bringSubviewToFront:self.changeDataButton];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [_histogramChartView displayFirstShowAnimation];
+}
+
+- (void)viewDidUnload
+{
+    [self setCaptureButton:nil];
+    [super viewDidUnload];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+	[super viewDidDisappear:animated];
+}
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+	return UIInterfaceOrientationMaskAll;
+}
+
+- (BOOL)shouldAutorotate
+{
+	return TRUE;
+}
+
+// Notifies when rotation begins, reaches halfway point and ends.
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+	ITTDINFO(@"willRotateToInterfaceOrientation");
+}
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+	ITTDINFO(@"didRotateFromInterfaceOrientation");
+}
+
+- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+	ITTDINFO(@"willAnimateRotationToInterfaceOrientation");
 }
 
 #pragma mark - UIResponder
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+- (IBAction)onAnimatedButtonTouched:(id)sender
 {
-    [super touchesEnded:touches withEvent:event];
-    UITouch *touch = [touches anyObject];
-    if (2 == touch.tapCount) {
-        [_histogramChartView animationWithNewHistogram:[self histogram]completion:^(BOOL completion) {
-            if (completion) {
-                ITTDINFO(@"completion!");
-            }
-        }];
-    }
+	__block typeof(self)weakSelf = self;
+	self.changeDataButton.userInteractionEnabled = FALSE;
+	[_histogramChartView animationWithData:[[ISSChartDataGenerator sharedInstance] histogramDataFromParser] completion:^(BOOL completion) {
+		if (completion) {
+			weakSelf.changeDataButton.userInteractionEnabled = TRUE;
+			ITTDINFO(@"completion!");
+		}
+	}];	
 }
 
 #pragma mark - private methods
-- (ISSChartHistogramData*)histogram
+- (IBAction)capture:(id)sender
 {
-    ISSChartHistogramData *histogram = [[ISSChartHistogramData alloc] init];
-//    histogram.histogramStyle = ISSHistogramGradient;
-    histogram.coordinateSystem.xAxis.axisProperty.axisStyle = kDashingNone;
-    static BOOL changed = FALSE;
-    NSArray *yValues = @[@(0), @(100), @(200), @(300), @(400), @(500)];
-    NSArray *yNames = @[@"0", @"100", @"200", @"300", @"400", @"500"];
-    NSArray *xValues = @[@(1), @(2), @(3), @(4), @(5), @(6), @(7), @(8), @(9), @(10), @(11), @(12)];
-    NSArray *xNames = @[@"1月", @"2月", @"3月", @"4月", @"5月", @"6月", @"7月", @"8月", @"9月", @"10月", @"11月", @"12月"];
-    [histogram setXAxisItemsWithNames:xNames values:xValues];
-    [histogram setYAxisItemsWithNames:yNames values:yValues];
-    histogram.legendArray = @[@"流量统计", @"总金额", @"测试名称"];
-    histogram.legendPosition = ISSChartLegendPositionTop;
-    histogram.coordinateSystem.xAxis.rotateAngle = 30;
-//    histogram.coordinateSystem.yAxis.baseValue = 200;
-    if (changed) {
-        [histogram setBarColors:@[[UIColor redColor], [UIColor greenColor], [UIColor yellowColor]]];
-        [histogram setBarDataArraysWithValues:@[@"120", @"333", @"30", @"70", @"23", @"90", @"120", @"378", @"80", @"90", @"120", @"378"],@[@"90", @"330", @"310", @"70", @"80", @"340", @"120", @"378", @"430", @"90", @"120", @"378"],@[@"90", @"190", @"310", @"70", @"210", @"90", @"120", @"400", @"80", @"490", @"120", @"378"], nil];
+    _filter = !_filter;
+    if (_filter) {
+        [_histogramChartView filterVisiableAreaByValue:120 maxValue:390];
     }
     else {
-        [histogram setBarColors:@[[UIColor cyanColor], [UIColor yellowColor], [UIColor blueColor]]];
-        [histogram setBarDataArraysWithValues:@[@"120", @"378", @"80", @"90", @"120", @"378", @"90", @"190", @"310", @"70", @"80", @"90"], @[@"120", @"378", @"80", @"90", @"120", @"378", @"90", @"190", @"310", @"70", @"80", @"90"],@[@"90",  @"70", @"90", @"120", @"190", @"310",@"378", @"80", @"70", @"90", @"333", @"378"], nil];
+        [_histogramChartView resetFilter];
     }
-    changed = !changed;
-    return [histogram autorelease];
+}
+
+- (ISSChartHintView*)getHintView:(ISSChartHistogramView*)histogramView bar:(ISSChartHistogramBar*)bar xAxisItem:(ISSChartAxisItem*)axisItem
+{
+    NSString *identifier = @"ISSChartHistogramHintView";
+    ISSChartHistogramHintView *hintView = (ISSChartHistogramHintView*)[histogramView dequeueHintViewWithIdentifier:identifier];
+    if (!hintView) {
+        hintView = [ISSChartHistogramHintView loadFromNib];
+    }
+    NSString *unit = histogramView.histogramData.coordinateSystem.yAxis.unit;
+	NSString *xunit = histogramView.histogramData.coordinateSystem.xAxis.unit;
+    NSString *message = [NSString stringWithFormat:@"%@: %@\n %.2f 单位:%@", xunit, axisItem.name, bar.valueY, unit];
+//    NSString *message = [NSString stringWithFormat:@"%.2f", bar.valueY];
+    hintView.hint = message;
+    return hintView;
+
 }
 @end

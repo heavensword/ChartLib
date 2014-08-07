@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Sword Zhou. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ISSChartDemoViewController.h"
 
-@interface ISSChartHistogramViewController : UIViewController
+@interface ISSChartHistogramViewController : ISSChartDemoViewController
 
 @property (nonatomic, retain) NSString *chartName;
 

@@ -18,10 +18,19 @@
 
 @synthesize numberOfRows = _numberOfRows;
 
+- (void)clearCacheData
+{
+	//Wo don't want to clear cache data, nothing implement
+}
+
+- (void)clearMemoryCache
+{
+	//Wo don't want to clear cache data, nothing implement
+}
+
 - (void)dealloc
 {
     [_chartItems release];
-    _chartItems = nil;
     [super dealloc];
 }
 
@@ -47,6 +56,11 @@
 
 - (NSString*)chartNameAtRow:(NSInteger)row
 {
-    return [_chartItems objectAtIndex:row];
+	if (_chartItems && row < [_chartItems count]) {
+		return [_chartItems objectAtIndex:row];
+	}
+	else {
+		return nil;
+	}
 }
 @end

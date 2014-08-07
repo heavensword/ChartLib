@@ -14,10 +14,10 @@
 - (BOOL)isStartWithString:(NSString*)start;
 - (BOOL)isEndWithString:(NSString*)end;
 
-- (NSInteger)numberOfLinesWithFont:(UIFont*)font withLineWidth:(NSInteger)lineWidth;
+- (NSInteger)numberOfLinesWithFont:(UIFont*)font withLineWidth:(CGFloat)lineWidth;
 
-- (CGFloat)heightWithFont:(UIFont*)font withLineWidth:(NSInteger)lineWidth;
-- (CGFloat)widthWithFont:(UIFont*)font withLineHeight:(NSInteger)lineHeight;
+- (CGFloat)heightWithFont:(UIFont*)font withLineWidth:(CGFloat)lineWidth;
+- (CGFloat)widthWithFont:(UIFont*)font withLineHeight:(CGFloat)lineHeight;
 - (NSString *)md5;
 
 @end

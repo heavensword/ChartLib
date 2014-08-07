@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@class GalleryViewController;
+@class ISSChartGalleryViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) UINavigationController *navController;
-@property (strong, nonatomic) GalleryViewController *rootViewController;
+@property (strong, nonatomic) ISSChartGalleryViewController *rootViewController;
 
 @end

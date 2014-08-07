@@ -57,7 +57,7 @@
             color = [UIColor brownColor];
             break;
         default:
-            color = [UIColor whiteColor];
+            color = [UIColor redColor];
             break;
     }
     return color;

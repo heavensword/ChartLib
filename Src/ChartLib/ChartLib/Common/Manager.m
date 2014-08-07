@@ -116,6 +116,12 @@ static NSMutableDictionary *_instancesDic = nil;
     return self;
 }
 
+- (void)dealloc
+{
+	ITTDINFO(@"%@ dealloc", NSStringFromClass([self class]));
+	[super dealloc];
+}
+
 - (id)init
 {
     ITTDINFO(@"%@ init", [self class]);

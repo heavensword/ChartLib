@@ -7,38 +7,38 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <CommonCrypto/CommonDigest.h>
-#import "NSString+ITTAdditions.h"
+
 #import "UIFont+ITTAdditions.h"
 
 
 @implementation NSString (ITTAdditions)
 
 - (NSInteger)numberOfLinesWithFont:(UIFont*)font
-                     withLineWidth:(NSInteger)lineWidth
+                     withLineWidth:(CGFloat)lineWidth
 {
     CGSize size = [self sizeWithFont:font
                    constrainedToSize:CGSizeMake(lineWidth, CGFLOAT_MAX)
-                       lineBreakMode:UILineBreakModeTailTruncation];
+                       lineBreakMode:NSLineBreakByTruncatingTail];
 	NSInteger lines = size.height / [font ittLineHeight];
 	return lines;
 }
 
 - (CGFloat)heightWithFont:(UIFont*)font
-            withLineWidth:(NSInteger)lineWidth
+            withLineWidth:(CGFloat)lineWidth
 {
     CGSize size = [self sizeWithFont:font
                    constrainedToSize:CGSizeMake(lineWidth, CGFLOAT_MAX)
-                       lineBreakMode:UILineBreakModeTailTruncation];
+                       lineBreakMode:NSLineBreakByTruncatingTail];
 	return size.height;
 	
 }
 
 - (CGFloat)widthWithFont:(UIFont*)font
-            withLineHeight:(NSInteger)lineHeight
+            withLineHeight:(CGFloat)lineHeight
 {
     CGSize size = [self sizeWithFont:font
                    constrainedToSize:CGSizeMake(CGFLOAT_MAX, lineHeight)
-                       lineBreakMode:UILineBreakModeTailTruncation];
+                       lineBreakMode:NSLineBreakByTruncatingTail];
 	return size.width;
 	
 }
