@@ -128,11 +128,6 @@
 		5071F1DF175C7A2200F5EC73 /* UIView+ITTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5071F1DE175C7A2200F5EC73 /* UIView+ITTAdditions.m */; };
 		5076B6311829DFFF000EB5F3 /* circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5076B62F1829DFFF000EB5F3 /* circle@2x.png */; };
 		5076B6321829DFFF000EB5F3 /* pointer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5076B6301829DFFF000EB5F3 /* pointer@2x.png */; };
-		5076B6371829E388000EB5F3 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 5076B6331829E388000EB5F3 /* Icon-72.png */; };
-		5076B6381829E388000EB5F3 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 5076B6341829E388000EB5F3 /* Icon-76.png */; };
-		5076B63A1829E388000EB5F3 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5076B6361829E388000EB5F3 /* Icon-76@2x.png */; };
-		5076B63E1829E420000EB5F3 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5076B63B1829E420000EB5F3 /* Icon-72@2x.png */; };
-		5076B63F1829E420000EB5F3 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5076B63C1829E420000EB5F3 /* Icon.png */; };
 		5076B6401829E420000EB5F3 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5076B63D1829E420000EB5F3 /* Icon@2x.png */; };
 		5076B6451829E6D1000EB5F3 /* bad_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5076B6431829E6D1000EB5F3 /* bad_left@2x.png */; };
 		5076B6461829E6D1000EB5F3 /* good_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5076B6441829E6D1000EB5F3 /* good_right@2x.png */; };
@@ -424,11 +419,6 @@
 		5071F1DE175C7A2200F5EC73 /* UIView+ITTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ITTAdditions.m"; sourceTree = "<group>"; };
 		5076B62F1829DFFF000EB5F3 /* circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle@2x.png"; sourceTree = "<group>"; };
 		5076B6301829DFFF000EB5F3 /* pointer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pointer@2x.png"; sourceTree = "<group>"; };
-		5076B6331829E388000EB5F3 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
-		5076B6341829E388000EB5F3 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
-		5076B6361829E388000EB5F3 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
-		5076B63B1829E420000EB5F3 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
-		5076B63C1829E420000EB5F3 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		5076B63D1829E420000EB5F3 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		5076B6431829E6D1000EB5F3 /* bad_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bad_left@2x.png"; sourceTree = "<group>"; };
 		5076B6441829E6D1000EB5F3 /* good_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "good_right@2x.png"; sourceTree = "<group>"; };
@@ -602,11 +592,6 @@
 				5076B6441829E6D1000EB5F3 /* good_right@2x.png */,
 				50120A561773FA6B000CA216 /* hint_bg_arrow_down.png */,
 				50120A571773FA6B000CA216 /* hint_bg_arrow_left.png */,
-				5076B6331829E388000EB5F3 /* Icon-72.png */,
-				5076B63B1829E420000EB5F3 /* Icon-72@2x.png */,
-				5076B6341829E388000EB5F3 /* Icon-76.png */,
-				5076B6361829E388000EB5F3 /* Icon-76@2x.png */,
-				5076B63C1829E420000EB5F3 /* Icon.png */,
 				5076B63D1829E420000EB5F3 /* Icon@2x.png */,
 				5076B64A1829E7D6000EB5F3 /* pointer.png */,
 				5076B6301829DFFF000EB5F3 /* pointer@2x.png */,
@@ -1286,7 +1271,6 @@
 				502A439F1871818900CC7D5D /* histogramoverlapline2.txt in Resources */,
 				50215A9C174F13F000157D66 /* GalleryViewController_iPad.xib in Resources */,
 				50537C3E1851D244001DFBBD /* ISSChartGalleryViewController_iPad.xib in Resources */,
-				5076B63F1829E420000EB5F3 /* Icon.png in Resources */,
 				50EF2E001753401E0014D001 /* ISSChartHistogramViewController.xib in Resources */,
 				50E99950187FA474009AFE9E /* pointer_small.png in Resources */,
 				5076B64B1829E7D6000EB5F3 /* bad_left.png in Resources */,
@@ -1304,9 +1288,7 @@
 				50F68B3A18501CBD00A74821 /* piedata.txt in Resources */,
 				50290DB6178FBA140091982A /* ISSChartHistogramHintView.xib in Resources */,
 				50F2528E18517A7E0062566E /* histogramdata2.txt in Resources */,
-				5076B6381829E388000EB5F3 /* Icon-76.png in Resources */,
 				93A2C0AD1797B802003789C7 /* ISSChartHistogramOverlapHintView.xib in Resources */,
-				5076B6371829E388000EB5F3 /* Icon-72.png in Resources */,
 				93A2C0B81797B815003789C7 /* ISSChartHistogramOverlapLineHintView.xib in Resources */,
 				93A2C0CA1797B826003789C7 /* ISSChartWaterfallHintView.xib in Resources */,
 				50537317184EDBA700A37E52 /* linedata2.txt in Resources */,
@@ -1323,8 +1305,6 @@
 				9350CC4F17D8274900C481EB /* ISSChartHistogramStackViewController.xib in Resources */,
 				5076B64D1829E7D6000EB5F3 /* good_right.png in Resources */,
 				9350CC5917D832A600C481EB /* ISSChartHistogramStackLineHintView.xib in Resources */,
-				5076B63E1829E420000EB5F3 /* Icon-72@2x.png in Resources */,
-				5076B63A1829E388000EB5F3 /* Icon-76@2x.png in Resources */,
 				50F2528D18517A7E0062566E /* histogramdata.txt in Resources */,
 				9350CC6417D8344500C481EB /* ISSChartHistogramStackLineViewController.xib in Resources */,
 				50E99954187FA4F7009AFE9E /* pointer_small@2x.png in Resources */,
