@@ -32,7 +32,7 @@
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
-	<string>com.isoftstone.www.chartlibipad</string>
+	<string>com.sword.www.chartlibipad</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
