@@ -486,13 +486,14 @@
                   continueAfterRunningActions = "No"
                   symbolName = "-[ISSChartPieViewController onChangeButtonTouched:]"
                   moduleName = "ChartLib"
-                  urlString = "file:///Users/Sword/iSoftstone/SVN/ChartLib/trunk/src/ChartLib/ChartLib/ISSChartPieViewController.m"
-                  timestampString = "411379955.630026"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Sword/OSC/ChartLib/Src/ChartLib/ChartLib/ISSChartPieViewController.m"
+                  timestampString = "522476801.569067"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "77"
                   endingLineNumber = "77"
-                  offsetFromSymbolStart = "38">
+                  offsetFromSymbolStart = "36">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -500,13 +501,14 @@
                   continueAfterRunningActions = "No"
                   symbolName = "__Block_byref_object_copy_"
                   moduleName = "ChartLib"
-                  urlString = "file:///Users/Sword/iSoftstone/SVN/ChartLib/trunk/src/ChartLib/ChartLib/ISSChartPieViewController.m"
-                  timestampString = "411379955.630354"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Sword/OSC/ChartLib/Src/ChartLib/ChartLib/ISSChartPieViewController.m"
+                  timestampString = "522476801.570514"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "77"
                   endingLineNumber = "77"
-                  offsetFromSymbolStart = "23">
+                  offsetFromSymbolStart = "12">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -514,13 +516,14 @@
                   continueAfterRunningActions = "No"
                   symbolName = "__Block_byref_object_dispose_"
                   moduleName = "ChartLib"
-                  urlString = "file:///Users/Sword/iSoftstone/SVN/ChartLib/trunk/src/ChartLib/ChartLib/ISSChartPieViewController.m"
-                  timestampString = "411379955.630719"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Sword/OSC/ChartLib/Src/ChartLib/ChartLib/ISSChartPieViewController.m"
+                  timestampString = "522476801.571952"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "77"
                   endingLineNumber = "77"
-                  offsetFromSymbolStart = "17">
+                  offsetFromSymbolStart = "10">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -761,36 +764,6 @@
             endingLineNumber = "178"
             landmarkName = "-dataUpdateAnimation:"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[ISSChartHistogramOverlapLineView dataUpdateAnimation:]"
-                  moduleName = "ChartLib"
-                  urlString = "file:///Users/Sword/iSoftstone/SVN/ChartLib/trunk/src/ChartLib/ChartLib/View/HistogramOverlapLine/ISSChartHistogramOverlapLineView.m"
-                  timestampString = "411379955.635395"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "178"
-                  endingLineNumber = "178"
-                  offsetFromSymbolStart = "1981">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[ISSChartHistogramOverlapLineView dataUpdateAnimation:]"
-                  moduleName = "ChartLib"
-                  urlString = "file:///Users/Sword/iSoftstone/SVN/ChartLib/trunk/src/ChartLib/ChartLib/View/HistogramOverlapLine/ISSChartHistogramOverlapLineView.m"
-                  timestampString = "411379955.635694"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "178"
-                  endingLineNumber = "178"
-                  offsetFromSymbolStart = "3113">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -886,7 +859,7 @@
             startingLineNumber = "83"
             endingLineNumber = "83"
             landmarkName = "-getMinYValue"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
